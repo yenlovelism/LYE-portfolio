@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    
+    <!-- 모바일 주소창 컬러 지정 -->
+    <!-- Chrome, Firefox, Opera -->
+    <meta content='#0058ce' name='theme-color'/>
+
+    <!-- Windows Phone -->
+    <meta content='#0058ce' name='msapplication-navbutton-color'/>
+
+    <!-- iOS Safari -->
+    <meta content='#0058ce' name='apple-mobile-web-app-status-bar-style'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+
+    <title>타지역서비스 등록센터</title>
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    
+    <!--css-->
+    <link rel="stylesheet" href="../company/css/jquery.fullPage.css">
+    <link rel="stylesheet" href="../company/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../company/css/Pretendard/pretendard.css">
+    <link rel="stylesheet" href="../../css/fontawesome/all.min.css">
+    <link rel="stylesheet" href="../../css/animate.min.css">
+    <link rel="stylesheet" href="../../css/aos.css"> 
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+
+    <!--js-->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/aos.js"></script> 
+    <script>$(function(){AOS.init();});</script>
+    <script src="../company/js/TweenMax.min.js"></script>
+    <script src="../company/js/jquery.fullPage.js"></script>
+    <script src="../company/js/scrolloverflow.min.js"></script>
+    <script src="../company/js/swiper-bundle.min.js"></script>
+    <script src="../company/js/jquery.lettering.js"></script>
+    <script src="../company/js/jquery.textillate.js"></script>
+    <script src="../company/js/jquery.mousefollow.js"></script>
+</head>
+<body>
+    <!--mouse custom-->
+    <div class="circlep"></div>
+    <div class="circle-follow"></div>
+
+    <!--header-->
+    <header class="dark" data-aos="fade-down" data-aos-duration="1000">
+        <div class="header_wrap">
+            <div class="logo">
+               <a href="index.html" style="margin-top: -3px;">
+                   <img src="./images/logo_pup_bla.png" class="dark" alt="미래비즈코리아 로고">
+                   <img src="./images/logo_pup_w.png" class="bright" alt="미래비즈코리아 로고">
+                </a>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html#main">기업소개</a>
+                    <ul class="sub">
+                        <li><a href="about.html#main">소개</a></li> 
+                        <li><a href="about.html#history">연혁</a></li> 
+                        <li><a href="about.html#keyword">키워드</a></li> 
+                        <li><a href="about.html#certificate">특허 / 인증</a></li> 
+                        <li><a href="about.html#ci">CI</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a href="service_other_area.html">통신서비스</a>
+                    <ul class="sub">
+                        <li><a href="service_other_area.html">타지역서비스</a></li>
+                        <li><a href="service_wide_number.html">전국대표번호</a></li>
+                        <li><a href="service_callback.html">콜백문자서비스</a></li>
+                        
+                        <li><a href="service_ktbizcall.html">KT비즈콜</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="subs_benefits.html">가입혜택</a>
+                    <ul class="sub">
+                        <li><a href="subs_benefits.html#cid">CID</a></li>
+                        <li><a href="subs_benefits.html#naver">modoo! 홈페이지 무료제작</a></li>
+                        <li><a href="subs_benefits.html#modoo">네이버 검색등록 대행</a></li>
+                        <li><a href="subs_benefits.html#blog_video">블로그 동영상 제작</a></li>
+                        <li><a href="subs_benefits.html#search">키워드광고 대행 지원</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contact.html">소통안내</a>
+                    <ul class="sub">
+                        <li><a href="contact.html">오시는 길</a></li> 
+                        <li><a href="contact.html#anchor2">상담신청</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a href="reference_room.html">자료실</a>
+                    <ul class="sub">
+                        <li><a href="reference_room.html">고객후기</a></li> 
+                        <li><a href="reference_room.html#reference_room_joindown">신청서다운로드</a></li> 
+                    </ul>
+                </li>
+            </ul>  
+        </div>
+        
+    </header>
+    <div class="hamburger">
+        <input type="checkbox" id="check"/> 
+        <label for="check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <div class="hamburger_menu">
+            <ul class="hbg_gnb">
+                <li class="animate__animated">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="animate__animated">
+                    <a href="about.html#main">기업소개</a>
+                    <ul class="hbg_sub">
+                        <li><a href="about.html#main">소개</a></li> 
+                        <li><a href="about.html#history">연혁</a></li> 
+                        <li><a href="about.html#keyword">키워드</a></li> 
+                        <li><a href="about.html#certificate">특허 / 인증</a></li> 
+                        <li><a href="about.html#ci">CI</a></li> 
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="service_other_area.html">통신서비스</a>
+                    <ul class="hbg_sub">
+                        <li><a href="service_other_area.html">타지역서비스</a></li>
+                        <li><a href="service_wide_number.html">전국대표번호</a></li>
+                        <li><a href="service_callback.html">콜백문자서비스</a></li>
+                        
+                        <li><a href="service_ktbizcall.html">KT비즈콜</a></li>
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="subs_benefits.html">가입혜택</a>
+                    <ul class="hbg_sub">
+                        <li><a href="subs_benefits.html#cid">CID</a></li>
+                        <li><a href="subs_benefits.html#naver">modoo! 홈페이지 무료제작</a></li>
+                        <li><a href="subs_benefits.html#modoo">네이버 검색등록 대행</a></li>
+                        <li><a href="subs_benefits.html#blog_video">블로그 동영상 제작</a></li>
+                        <li><a href="subs_benefits.html#search">키워드광고 대행 지원</a></li>
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="contact.html">소통안내</a>
+                    <ul class="hbg_sub">
+                        <li><a href="contact.html">오시는 길</a></li> 
+                        <li><a href="contact.html#anchor2">상담신청</a></li> 
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="reference_room.html">자료실</a>
+                    <ul class="hbg_sub">
+                        <li><a href="reference_room.html">고객후기</a></li> 
+                        <li><a href="reference_room.html#reference_room_joindown">신청서다운로드</a></li> 
+                    </ul>
+                </li>
+            </ul>
+            <div class="footer_sns">
+                <span>SOCIAL MEDIA</span>
+                <ul>
+                    <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li class="blog"><a href="" target="_blank"><i></i></a></li>
+                    <li class="post"><a href="" target="_blank"><i></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <p>Copyright © Mirae Biz Korea, Co., Ltd All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>              
+    <!--header end-->
+    <div id="homeFullPage">
+        <div class="cont cont_about hd_bright section fp-noscroll" >
+            <div class="about_video">
+                <video id="aboutVideo" src="video/miraebiz_video.mp4" muted autoplay loop playsinline data-keepplaying>
+                </video>
+                <button id="unmuteButton" class="video_btn on" onclick="unmute()"><span class="sound_txt"></span><i class="fas fa-volume-up" title="음소거 해제"></i></button>
+                <button id="muteButton" class="video_btn off" onclick="muted()"><span class="sound_txt"></span><i class="fas fa-volume-mute" title="음소거"></i></button>
+            </div>
+        </div>
+        <div class="cont cont_count hd_bright section fp-noscroll">
+            <div class="count_wrap">
+                <ul>
+                    <li class="count_box">
+                        <h3>기존 고객의 신규 고객(지인) 소개</h3>
+                        <div>
+                            <span class="percent"><b class="counter txtshadow" data-count="77">0</b>%</span>
+                            <div class="rank">
+                                <i class="neonshadow">1</i>위
+                            </div>
+                        </div>
+                    </li>
+                    <li class="count_box">
+                        <h3>재가입율</h3>
+                        <div>
+                            <span class="percent"><b class="counter txtshadow" data-count="88">0</b>%</span>
+                            <div class="rank">
+                                <i class="neonshadow">1</i>위
+                            </div>
+                        </div>
+                    </li>
+                    <li class="count_box">
+                        <h3>고객 만족도</h3>
+                        <div>
+                            <span class="percent"><b class="counter txtshadow" data-count="86">0</b>%</span>
+                            <div class="rank">
+                                <i class="neonshadow">1</i>위
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+        <div class="cont cont_why hd_dark section ">
+            <div class="why_wrap">
+                <div class="circle one">
+                    <svg version="1.1" viewBox="-65 -40 180 180" preserveAspectRatio="xMinYMin meet">
+                        <circle cx="50" cy="50" r="25" fill="rgba(242, 124, 56, 0.8)"/>
+                    </svg>
+                </div>
+                <div class="circle two">
+                    <svg version="1.1" viewBox="-200 -150 300 300" preserveAspectRatio="xMinYMin meet">
+                        <circle cx="50" cy="50" r="25" fill="rgba(86, 91, 191, 0.6)"/>
+                    </svg>
+                </div>
+                <div class="circle three">
+                    <svg version="1.1" viewBox="-300 -475 850 850" preserveAspectRatio="xMinYMin meet">
+                        <circle cx="50" cy="50" r="25" fill="rgba(86, 91, 191, 1)"/>
+                    </svg>
+                </div>
+                <div class="circle four">
+                    <svg version="1.1" viewBox="-80 -500 1400 1400" preserveAspectRatio="xMinYMin meet">
+                        <circle cx="50" cy="50" r="25" fill="rgba(86, 91, 191, 1)"/>
+                    </svg>
+                </div>
+                <div class="circle five">
+                    <svg version="1.1" transform="rotate(130)" viewBox="-750 -950 1400 1400" preserveAspectRatio="xMinYMin meet">
+                        <rect width="40" height="15" fill="#403124"/>
+                    </svg>
+                </div>
+
+                <div class="circle six">
+                    <svg version="1.1" transform="rotate(30)" viewBox="-300 -1100 1400 1400" preserveAspectRatio="xMinYMin meet">
+                        <path d="M25 0 L12 25 L30 25 Z" fill="#f2b6a0">
+                    </svg>
+                </div>
+
+                <div class="left_why">
+                    <h2 class="why_title1 animate__animated" style="animation-duration:1s;">WHY?</h2>
+                    <h3 class="why_title2" data-text="이유있는 1등">이유있는 1등</h3>
+                </div>
+                <div class="right_why">
+                    <div class="animate__animated" style="animation-duration:0.8s;">
+                        <div class="swiper whyswiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <span class="slide-number">01</span> 
+                                    <p><i class="p-purple">업무시간부터 다릅니다.</i> <br>새벽부터 업무를 시작하는 업종의 고객님들을 위해 <i class="p-purple">아침 7시부터 업무를 시작</i>합니다. <br>이른 아침에도 업무 요청 및 문의가 가능합니다.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="slide-number">02</span> 
+                                    <p>타지역 서비스만 <i class="p-purple">10년 경력의 광고 전문가</i>는 물론, <br><i class="p-purple">개발자, 디자이너 등 전문 인력 30명 이상</i>으로 구성되어 운영되고 있습니다.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="slide-number">03</span> 
+                                    <p>일반 대리점과 다릅니다.<br><i class="p-purple">모든 통신사 전산 시스템을 보유</i>하여 <br><i class="p-purple">직접 업무 진행 및 관리</i>로 빠르고 정확한 처리가 진행됩니다.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="slide-number">04</span> 
+                                    <p><i class="p-purple">자체 전산 및 프로그램을 보유</i>하여 <br>체계적인 시스템화로 <i class="p-purple">고객 상태를 매일 실시간 모니터링 관리</i>합니다.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="slide-number">05</span> 
+                                    <p>국내 모든 데이터의 집합체인 <i class="p-purple">KT is의 제3자 동의 완료</i>된<br><i class="p-purple">합법적이고 정확한 데이터를 기반</i>으로 모든 업종 분석이 가능하여<br><i class="p-purple">전문적인 전략 컨설팅</i>이 진행됩니다.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="slide-number">06</span> 
+                                    <p><i class="p-purple">고객의 매출 상승</i>을 위하여 <br><i class="p-purple">추가 혜택 제공</i>과 <i class="p-purple">서포터 역할</i>로 최고의 사업 파트너가 되기 위해 최선을 다합니다.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <span class="slide-number">07</span> 
+                                    <p><i class="p-purple">대량 회선 가입 고객</i>은 <i class="p-purple">전문가가 직접 방문 상담</i> 후 <br>면밀하게 파악하여 컨설팅을 진행합니다.</p>
+                                </div>
+                            </div>   
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer class="section hd_dark">
+            <div id="footer_pc" class="footer">
+                <div class="footer_wrap">
+                    <div class="footer_left">
+                        <ul class="footer_menu">
+                            <li class="home">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="about">
+                                <a href="about.html#main">기업소개</a>
+                            </li>
+                            <li class="business">
+                                <a href="service_other_area.html">통신서비스</a>
+                            </li>    
+                            <li class="brand">
+                                <a href="subs_benefits.html">가입혜택</a>
+                            </li>
+                            <li class="contact">
+                                <a href="contact.html">소통안내</a>
+                            </li>
+                            <li class="news">
+                                <a href="reference_room.html">자료실</a>
+                            </li>
+                        </ul>
+            
+                        <div class="footer_sns">
+                            <span>SOCIAL MEDIA</span>
+                            <ul>
+                                <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                <li class="blog"><a href="" target="_blank"><i></i></a></li>
+                                <li class="post"><a href="" target="_blank"><i></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_right">
+                        <a href="index.html"><img src="./images/logo_pup_bla.png" class="footer_logo" alt="미래비즈블랙로고"></a>
+            
+                        <p class="company_info">
+                            <i>(주) 미래비즈코리아</i><br>
+                            대표자&nbsp;&nbsp;김비즈<br>
+                            사업자번호&nbsp;&nbsp;000-00-00000
+                        </p>
+            
+                        <p class="company_info">
+                            서울특별시 ㅇㅇ구 ㅇㅇ로 000 서울타워 0차 0000호<br>
+                            Copyright © Mirae Biz Korea, Co., Ltd All Rights Reserved.
+                        </p>
+            
+                        <p class="company_info">
+                            Tel&nbsp;&nbsp;<a href="tel:" title="전화연결">0000-0000</a><br>
+                            Fax&nbsp;&nbsp;<a href="tel:" title="팩스연결">00-0000-0000</a><br>
+                            Contact to&nbsp;&nbsp;<a href="mailto:mailto@mail.com" title="메일전송">mailto@mail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_m" class="footer">
+                <div class="footer_wrap">
+                        <a href="index.html"><img src="./images/logo_pup_bla.png" class="footer_logo" alt="미래비즈블랙로고"></a>
+                        
+                        <ul class="footer_menu">
+                            <li class="home">
+                                <a href="index.html">Home</a>
+                            </li>
+            
+                            <li class="about">
+                                <a href="about.html#main">기업소개</a>
+                            </li>
+            
+                            <li class="business">
+                                <a href="service_other_area.html">통신서비스</a>
+                            </li>
+            
+                            <li class="brand">
+                                <a href="subs_benefits.html">가입혜택</a>
+                            </li>
+            
+                            <li class="contact">
+                                <a href="contact.html">소통안내</a>
+                            </li>
+            
+                            <li class="news">
+                                <a href="reference_room.html">자료실</a>
+                            </li>
+                        </ul>
+            
+                        <p class="company_info">
+                            <i>(주) 미래비즈코리아</i><br>
+                            대표자&nbsp;&nbsp;김비즈<br>
+                            사업자번호&nbsp;&nbsp;000-00-00000
+                        </p>
+            
+                        <p class="company_info">
+                            서울특별시 ㅇㅇ구 ㅇㅇ로 000 서울타워 0차 0000호<br>
+                            Copyright © Mirae Biz Korea, Co., Ltd All Rights Reserved.
+                        </p>
+            
+                        <p class="company_info">
+                            Tel&nbsp;&nbsp;<a href="tel:" title="전화연결">0000-0000</a><br>
+                            Fax&nbsp;&nbsp;<a href="tel:" title="팩스연결">00-0000-0000</a><br>
+                            Contact to&nbsp;&nbsp;<a href="mailto:mailto@mail.com" title="메일전송">mailto@mail.com</a>
+                        </p>
+            
+                        <div class="footer_sns">
+                            <ul>
+                                <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                <li class="blog"><a href="" target="_blank"><i></i></a></li>
+                                <li class="post"><a href="" target="_blank"><i></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer end-->
+    </div>
+
+<!--script-->
+<script src="./js/common.js"></script>
+<script>
+    $(".footer_menu .home").addClass("on").siblings().removeClass("on");
+    //index header color
+    $("header").addClass("bright").removeClass("dark");
+
+	/* Slide variable */
+    var slideIndexBis = 1;
+    var sliding = false;
+
+    //fullpage
+    $('#homeFullPage').fullpage({
+        verticalCentered: true,
+        touchSensitivity:15,
+        anchors: ['main', 'count', 'why', 'footer'],
+        menu: '#menu',
+        scrollOverflow: true,
+
+        onLeave: function(){
+            $(".why_wrap .why_title1").removeClass("animate__zoomIn").addClass("animate__fadeOut");
+            $(".why_wrap .why_title2, .why_wrap .circle").removeClass("ani");
+            $(".right_why > div").removeClass("animate__fadeInRight").addClass("animate__fadeOut");
+        },
+        
+        afterLoad:function(anchorLink, index){
+            $(".why_wrap .why_title1").removeClass("animate__fadeOut").addClass("animate__zoomIn");
+            $(".why_wrap .why_title2, .why_wrap .circle").addClass("ani");
+            $(".right_why > div").removeClass("animate__fadeOut").addClass("animate__fadeInRight");
+            
+            
+            if($(".section.active").hasClass("hd_dark") === true) {
+                $("header").removeClass("bright").addClass("dark");
+            }else{
+                $("header").removeClass("dark").addClass("bright");
+            }
+
+            /*footer blur 추가*/
+            if(anchorLink == 'footer') {
+                $("body").addClass("hd_bg");
+            }
+            else if(anchorLink == 'why') {
+                $("body").addClass("hd_bg");
+            }
+            else {
+                $("body").removeClass("hd_bg");
+            }
+
+            if(anchorLink == 'count') {
+                //counter 
+                $(".counter").each(function () {
+                    var $this = $(this),
+                        countTo = $this.attr("data-count");
+
+                    $({ countNum: $this.text() }).animate(
+                        {
+                        countNum: countTo
+                        }, {
+                        duration: 2000,
+                        easing: "linear",
+                        step: function () {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            $this.text(this.countNum);
+                        }
+                        }
+                    );
+                });
+            }
+        }
+    });
+    
+    //메인배너 영상 음소거버튼 효과
+    function unmute() {
+        $("#aboutVideo").prop('muted', false);
+        $("#unmuteButton").hide();
+        $("#muteButton").show();
+    }
+    function muted() {
+        $("#aboutVideo").prop('muted', true);
+        $("#muteButton").hide();
+        $("#unmuteButton").show();
+    }
+
+    // 스와이퍼
+    var swiper = new Swiper(".whyswiper", {
+        direction: "vertical",
+        centeredSlides: true,
+        slidesPerView: 3,
+        spaceBetween: 45,
+        allowTouchMove: false,
+        autoplay: {
+            delay: 5000
+        },
+        nested: true,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+</script>
+</body>
+</html>
+

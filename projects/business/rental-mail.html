@@ -1,0 +1,68 @@
+<?php
+require_once 'config.php';
+//Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer's autoloader
+require 'vendor/autoload.php';
+
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
+
+$name = $_POST["name"];
+$phone = $_POST["number"];
+$description = $_POST["inquiry"];
+
+
+if ($name !== "" && $phone !== "" && $description !== "") {
+  // echo $_POST;
+
+  try {
+    //Server settings
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host       = 'smtp.naver.com';                     //naver smtp로 설정
+    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+    $mail->Username   = $USERID;                     //SMTP 사용자 아이디
+    $mail->Password   = $PW;                               //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->ContentType = "text/html"; // HTML 코드 삽입 가능하게 하는것
+    $mail->CharSet = "utf-8"; // 한글 깨짐 방지
+
+    //Recipients
+    $mail->setFrom($USERID . '@naver.com', 'VRro site');         //보내는 사람
+    $mail->addAddress('mailto@mail.com');
+
+    //Attachments
+    // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+    // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = '렌탈창업 문의🤩 이름 : ' . $name;
+    $mail->Body    =  '<h1>브이알로 렌탈창업 문의 🤗</h1><br>' . '<h2>이름 : ' . $name . '</h2><br>' . '<h2>연락처 : ' . $phone . '</h2><br>' . '<h2>통화가능 시간 및 내용 : <br>' . $description . '</h2><br>';
+    // $mail->AltBody = 'non-html 본문';
+
+    ob_start();     //echo가 깔끔하게 출력되게
+    $tt = $mail->send();
+    ob_end_clean();  //echo가 깔끔하게 출력되게
+    if ($tt) {
+      echo '이메일 전송에 성공했습니다.}';
+    } else {
+      echo '이메일 전송에 실패하였습니다. 다시 시도해주세요.';
+    };
+    // echo 'Message has been sent';
+  } catch (Exception $e) {
+    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo '이메일 전송 중 오류가 발생했습니다. 다시 시도해주세요.';
+  }
+} else if (!$_POST["agree"]) {
+  $alam =  '개인정보 수집 및 이용에 동의해주세요.';
+  echo $alam;
+} else {
+  echo "값이 잘못되었습니다.";
+}

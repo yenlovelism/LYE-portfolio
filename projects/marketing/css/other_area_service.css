@@ -1,0 +1,912 @@
+/*타지역서비스 소개*/
+.other_area_service_wrap {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.point_puple {
+    color: var(--point-color2) !important;
+}
+.point_org {
+    color: var(--point-color) !important;
+}
+.point_bold {
+    font-weight: 600 !important;
+}
+
+/*타지역서비스 소개*/
+#other_area_service .section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -2;
+    overflow: hidden;
+}
+.wave_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.wave_bg .call_bg {
+    position: absolute;
+    left: 0;
+    top: -80%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: url("../images/service_img/other_area_service/calling_bg_dim3.jpg") center bottom 20%;
+    background-size: cover;
+}
+.wave_bg .call_bg.ani{
+    animation: bg_down 1s forwards ;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1)
+}
+@keyframes bg_down {
+    to {top: 0; opacity: 1;}
+}
+.bubble_zone {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.bubble_zone .bub{
+    display: block;
+    position: absolute;
+}
+.bubble_zone .bub.bub1.ani {
+    left: -1%;
+    top: 100%;
+    width: 120px;
+    height: 120px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 60% 50% 100% 70%;
+    animation: bub_up 5.5s linear infinite backwards, bub_wave 2s linear 2s infinite;
+}
+.bubble_zone .bub.bub2.ani {
+    left: 0%;
+    top: 100%;
+    width: 90px;
+    height: 90px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 60% 50% 100% 70%;
+    animation: bub_up 6s linear 1.5s infinite backwards, bub_wave 2s linear 1s infinite;
+}
+.bubble_zone .bub.bub3.ani {
+    left: 15%;
+    top: 100%;
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 60% 50% 100% 70%;
+    animation: bub_up 6s linear 3.5s infinite backwards, bub_wave 2s linear 1.5s infinite;
+}
+.bubble_zone .bub.bub4.ani {
+    left: 30%;
+    top: 100%;
+    width: 150px;
+    height: 150px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 60% 100% 100% 70%;
+    animation: bub_up 7s linear 3.5s infinite backwards, bub_wave 2s linear 1.5s infinite;
+}
+.bubble_zone .bub.bub5.ani {
+    right: 15%;
+    top: 100%;
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 60% 50% 100% 70%;
+    animation: bub_up 5.5s linear 1.5s infinite backwards, bub_wave 2s linear 0.5s infinite;
+}
+.bubble_zone .bub.bub6.ani {
+    right: 20%;
+    top: 100%;
+    width: 30px;
+    height: 30px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 60% 50% 100% 70%;
+    animation: bub_up 5.5s linear 2.5s infinite backwards, bub_wave 2s linear 1s infinite;
+}
+.bubble_zone .bub.bub7.ani {
+    right: 10%;
+    top: 100%;
+    width: 90px;
+    height: 90px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 60% 50% 100% 70%;
+    animation: bub_up 6s linear 3.5s infinite backwards, bub_wave 2s linear 2s infinite;
+}
+.bubble_zone .bub.bub8.ani {
+    right: 0%;
+    top: 100%;
+    width: 120px;
+    height: 120px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 60% 50% 100% 70%;
+    animation: bub_up 6.5s linear 4s infinite backwards, bub_wave 2s linear 2.5s infinite;
+}
+@keyframes bub_up {
+    to {top: -30%;}
+}
+@keyframes bub_wave {
+    0%, 100% {border-radius: 60% 50% 100% 70%;}
+    34% {border-radius: 80% 40% 80% 50%;}
+    67% {border-radius: 70% 60% 90% 60%;}
+}
+.other_area_service_intro .other_area_service_cont {
+    margin: 30px auto;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #fff;
+}
+.other_area_service_intro .other_area_service_cont:nth-child(1) {
+    opacity: 0;
+}
+.other_area_service_tit.main_tit {
+    padding-bottom: 30px;
+    font-size: 3.5em;
+    font-weight: 500;
+}
+.other_area_service_tit.sub_tit {
+    padding-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+.other_area_service_intro .other_area_service_cont strong {
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 1.6em;
+    word-break: keep-all;
+}
+.other_area_service_intro .other_area_service_cont>span {
+    padding-bottom: 30px;
+    display: inline-block;
+    word-break: keep-all;
+    font-size: 1.8em;
+    opacity: 0;
+    color: #fff;
+}
+.other_area_service_intro .other_area_service_cont>ul {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+.other_area_service_intro .other_area_service_cont>ul>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 30px 25px;
+    width: 15%;
+    word-break: keep-all;
+    line-height: 1.4em;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgba(64, 49, 36, 0.8);
+    background: linear-gradient(173deg, rgba(255,255,255,0.8), rgba(242, 242, 242,0.8));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    /* background-color: #f2f2f2; */
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 10px rgba(255,255,255,0.8), 2px 2px 15px rgba(160, 160, 160, 0.3);
+    box-sizing: border-box;
+    opacity: 0;
+}
+.other_area_service_intro .other_area_service_cont > ul > li:nth-child(1).animate__animated.animate__fadeInUp {
+    animation-delay: 0.7s;
+}
+.other_area_service_intro .other_area_service_cont > ul > li:nth-child(2).animate__animated.animate__fadeInUp {
+    animation-delay: 0.8s;
+}
+.other_area_service_intro .other_area_service_cont > ul > li:nth-child(3).animate__animated.animate__fadeInUp {
+    animation-delay: 0.9s;
+}
+.other_area_service_intro .other_area_service_cont > ul > li:nth-child(4).animate__animated.animate__fadeInUp {
+    animation-delay: 1s;
+}
+.other_area_service_intro .other_area_service_cont > ul > li.animate__animated.animate__fadeOut {
+    animation-delay: 0;
+}
+.other_area_service_intro .other_area_service_cont>ul>li img {
+    padding: 10px;
+    margin-bottom: 13px;
+    width: 40px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(160, 160, 160, 0.25);
+}
+
+
+
+
+
+/*타지역서비스 장점*/
+.section.other_area_service_pros {
+    height: auto !important;
+}
+.section.other_area_service_pros .other_area_service_wrap {
+    position: relative;
+    padding: 150px 0 250px;
+}
+.section.other_area_service_pros .other_area_service_cont>ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+.section.other_area_service_pros .other_area_service_cont>ul>li {
+    margin: 0 20px;
+    width: 20%;
+}
+.section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(2) {
+    margin-top: 200px;
+}
+.section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(3) {
+    margin-top: 100px;
+}
+.section.other_area_service_pros .other_area_service_cont .pros_box {
+    position: relative;
+    margin: 80px 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(1) .pros_box {
+    background-color: rgba(242, 182, 160, 0.08);
+}
+.section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(2) .pros_box {
+    background-color: rgba(86, 91, 191, 0.08);
+}
+.section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(3) .pros_box {
+    background-color: rgba(242, 182, 160, 0.08);
+}
+.section.other_area_service_pros .other_area_service_cont .pros_box span {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.5em;
+    font-weight: 600;
+    word-break: keep-all;
+}
+.section.other_area_service_pros .other_area_service_cont .pros_box i {
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1.3em;
+    word-break: keep-all;
+}
+.section.other_area_service_pros .other_area_service_cont .pros_box img {
+    width: 60%;
+    margin: 30px auto;
+}
+.section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(3) .pros_box:last-child img {
+    width: 140%;
+    margin: 30px -20% 0;
+}
+.section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(2).animate__fadeInUp {
+    animation-delay: 0.2s;
+}
+.section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(3).animate__fadeInUp {
+    animation-delay: 0.4s;
+}
+
+
+/*타지역서비스 유입과정*/
+.section.other_area_service_process .other_area_service_cont>ul {
+    position: relative;
+    margin: 50px 0;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.section.other_area_service_process .other_area_service_cont>ul::after {
+    position: absolute;
+    content: "";
+    display: block;
+    left: -10%;
+    top: 54.5%;
+    width: 0%;
+    height: 2px;
+    background-color: var(--point-color-op8);
+}
+.section.other_area_service_process .other_area_service_cont>ul>li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.section.other_area_service_process .other_area_service_cont>ul>li img {
+    width: 60%;
+}
+.section.other_area_service_process .other_area_service_cont>ul>li .dot {
+    display: block;
+    margin: 20% 0;
+    width: 15px;
+    height: 15px;
+    background-color: var(--point-color);
+    border-radius: 100%;
+}
+.section.other_area_service_process .other_area_service_cont>ul>li span {
+    display: inline-block;
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+.section.other_area_service_process .other_area_service_cont.ani>ul::after {
+    animation: point-line 2.7s forwards;
+}
+.section.other_area_service_process .other_area_service_cont.ani>ul>li {
+    animation: fadeIn 0.4s forwards;
+}
+.section.other_area_service_process .other_area_service_cont.ani>ul>li:nth-child(1) {
+    animation-delay: 0.3s;
+} 
+.section.other_area_service_process .other_area_service_cont.ani>ul>li:nth-child(2) {
+    animation-delay: 0.6s;
+} 
+.section.other_area_service_process .other_area_service_cont.ani>ul>li:nth-child(3) {
+    animation-delay: 0.9s;
+} 
+.section.other_area_service_process .other_area_service_cont.ani>ul>li:nth-child(4) {
+    animation-delay: 1.2s;
+} 
+
+
+/*타지역서비스 진행절차*/
+.section.other_area_service_step .other_area_service_cont>ul {
+    margin: 50px 0;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.section.other_area_service_step .other_area_service_cont>ul>li {
+    width: 18%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.section.other_area_service_step .other_area_service_cont>ul>li::after {
+    position: absolute;
+    content: "\f0da";
+    display: block;
+    top: 8%;
+    right: -15%;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.4em;
+    font-weight: 600;
+    color: var(--point-color);
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.section.other_area_service_step .other_area_service_cont>ul>li:nth-child(4):after {
+    display: none;
+}
+.section.other_area_service_step .other_area_service_cont>ul>li span {
+    display: inline-block;
+    margin: 10% auto;
+    font-size: 1em;
+    font-weight: 500;
+}
+.section.other_area_service_step .other_area_service_cont .step_box {
+    width: 100%;
+    padding: 40px;
+    display: block;
+    border-radius: 30px;
+    box-shadow: 5px 5px 17px rgba(64, 49, 36, 0.15);
+    box-sizing: border-box;
+}
+.section.other_area_service_step .other_area_service_cont .step_box strong {
+    display: block;
+    margin-bottom: 15%;
+    font-size: 1.45em;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+.section.other_area_service_step .other_area_service_cont .step_box img {
+    width: 55%;
+}
+.section.other_area_service_step .other_area_service_cont>ul>li span {
+    display: inline-block;
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+.section.other_area_service_step .other_area_service_cont.ani>ul>li {
+    animation: fadeIn 0.5s forwards;
+}
+.section.other_area_service_step .other_area_service_cont.ani>ul>li::after {
+    animation: fadeIn 0.3s forwards
+}
+.section.other_area_service_step .other_area_service_cont.ani>ul>li:nth-child(1)::after {
+    animation-delay: 0.2s;
+}
+.section.other_area_service_step .other_area_service_cont.ani>ul>li:nth-child(2) {
+    animation-delay: 0.4s;
+} 
+.section.other_area_service_step .other_area_service_cont.ani>ul>li:nth-child(2)::after {
+    animation-delay: 0.6s;
+}
+.section.other_area_service_step .other_area_service_cont.ani>ul>li:nth-child(3) {
+    animation-delay: 0.8s;
+} 
+.section.other_area_service_step .other_area_service_cont.ani>ul>li:nth-child(3)::after {
+    animation-delay: 1s;
+}
+.section.other_area_service_step .other_area_service_cont.ani>ul>li:nth-child(4) {
+    animation-delay: 1.2s;
+} 
+
+
+/*타지역서비스 비전-10년간-*/
+.section.other_area_service_vision {
+    height: auto !important;
+    /* background-color: rgba(242, 182, 160, 0.07); */
+    background-color: rgba(86, 91, 191,0.1);
+}
+.section.other_area_service_vision .other_area_service_wrap {
+    padding: 150px 0;
+}
+.section.other_area_service_vision .other_area_service_wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.section.other_area_service_vision .other_area_service_cont {
+    margin: 50px 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section.other_area_service_vision .other_area_service_cont strong {
+    text-align: center;
+    word-break: keep-all;
+    line-height: 1.6em;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+.section.other_area_service_vision .other_area_service_cont>ul>li {
+    padding: 50px;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+.section.other_area_service_vision .other_area_service_cont>ul>li:nth-child(1) {
+    text-align: right;
+    border-right: 1px solid var(--point-color);
+    border-bottom: 1px solid var(--point-color);
+}
+.section.other_area_service_vision .other_area_service_cont>ul>li:nth-child(2) {
+    border-left: 1px solid var(--point-color);
+    border-bottom: 1px solid var(--point-color); 
+}
+.section.other_area_service_vision .other_area_service_cont>ul>li:nth-child(3) {
+    text-align: right;
+    border-right: 1px solid var(--point-color);
+    border-top: 1px solid var(--point-color); 
+}
+.section.other_area_service_vision .other_area_service_cont>ul>li:nth-child(4) {
+    border-left: 1px solid var(--point-color);
+    border-top: 1px solid var(--point-color);  
+}
+.section.other_area_service_vision .other_area_service_cont>ul>li img {
+    width: 20%;
+}
+.section.other_area_service_vision .other_area_service_cont>ul>li span {
+    margin-top: 4%;
+    display: block;
+    font-size: 1.2em;
+}
+.section.other_area_service_vision .other_area_service_cont>ul>li p {
+    margin: 4% 0;
+    display: block;
+    word-break: keep-all;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+.section.other_area_service_vision .other_area_service_cont>ul>li i {
+    display: block;
+    font-size: 0.8em;
+}
+
+
+
+/*가입무료혜택*/
+.section.free_benefit {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(88, 94, 218, 0.8), rgba(148, 82, 255 , 0.6));
+}
+.section.free_benefit .ribbon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.section.free_benefit .ribbon img {
+    position: absolute;
+    transform: scale(0.6);
+    opacity: 0;
+}
+.section.free_benefit .ribbon.ani img.star1 {
+    left: 20%;
+    top: 10%;
+    width: 20px;
+    height: 20px;
+    animation: ribbon 2s infinite 0.9s;
+}
+.section.free_benefit .ribbon.ani img.star2 {
+    left: 40%;
+    top: 3%;
+    width: 25px;
+    height: 25px;
+    animation: ribbon 3s infinite 0.6s;
+}
+.section.free_benefit .ribbon.ani img.star3 {
+    right: 35%;
+    top: 20%;
+    width: 22px;
+    height: 22px;
+    animation: ribbon 2.5s infinite 0.6s;
+}
+.section.free_benefit .ribbon.ani img.star4 {
+    right: 45%;
+    top: 40%;
+    width: 20px;
+    height: 20px;
+    animation: ribbon 3.5s infinite 0.8s;
+}
+.section.free_benefit .ribbon.ani img.star5 {
+    left: 38%;
+    top: 40%;
+    width: 25px;
+    height: 25px;
+    animation: ribbon 1s infinite 0.3s;
+}
+
+
+.section.free_benefit .ribbon div {
+    position: absolute;
+    transform: scale(0.6);
+    border-radius: 50%;
+    opacity: 0;
+}
+.section.free_benefit .ribbon.ani div.bub_s1 {
+    left: 30%;
+    top: 1%;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    animation: ribbon 5s linear infinite 0.8s;
+}
+.section.free_benefit .ribbon.ani div.bub_s2 {
+    left: 25%;
+    top: 20%;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    animation: ribbon 2s linear infinite 0.6s;
+}
+.section.free_benefit .ribbon.ani div.bub_s3 {
+    left: 32%;
+    bottom: 40%;
+    width: 90px;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.3);
+    animation: ribbon 4s linear infinite 0.9s;
+}
+.section.free_benefit .ribbon.ani div.bub_s4 {
+    right: 30%;
+    top: 10%;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    animation: ribbon 3s linear infinite 1s;
+}
+.section.free_benefit .ribbon.ani div.bub_s5 {
+    right: 45%;
+    top: 0%;
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.6);
+    animation: ribbon 4s linear infinite 0.2s;
+}
+.section.free_benefit .ribbon.ani div.bub_s6 {
+    right: 40%;
+    bottom: 32%;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.1);
+    animation: ribbon 3.5s linear infinite 0.5s;
+}
+.section.free_benefit .ribbon.ani div.bub_s7 {
+    right: 30%;
+    top: 40%;
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.3);
+    animation: ribbon 3.5s linear infinite 0.3s;
+}
+@keyframes ribbon {
+    0% {opacity: 0; transform: scale(0.6);}
+    50% {opacity: 1; transform: scale(0.8);}
+    100% {opacity: 0; transform: scale(0.6);}
+}
+
+.section.free_benefit .ocean{
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+}
+.section.free_benefit .ocean svg {
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    width: 100%;
+}
+.section.free_benefit .other_area_service_cont .benefit_box h2 {
+    line-height: 1.4em;
+    letter-spacing: 0.15em;
+    font-size: 4.5em;
+    font-weight: 500;
+    color: #fff;
+}
+.section.free_benefit .other_area_service_cont .benefit_box.ani h2 {
+    animation: neon_purple2 2.5s infinite;
+}
+@keyframes neon_purple2 {
+    0% {text-shadow: transparent;}
+    50% {    
+    text-shadow:
+        0 0 5px #fff,
+        0 0 20px #494fc4,
+        0 0 40px #494fc4}
+    100% {text-shadow: transparent;}
+}
+
+.section.free_benefit .other_area_service_cont .benefit_box p {
+    margin: 3% 0;
+    word-break: keep-all;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.03em;
+    color: #fff;
+}
+
+
+/*고객을 진심으로*/
+.section.other_area_service_partner {
+    position: relative;
+    background: url("../images/service_img/other_area_service/partner_bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    overflow: hidden;
+    height: auto !important;
+}
+.section.other_area_service_partner.ani {
+    animation: img_updown 5s linear forwards;
+}
+@keyframes img_updown {
+    0% {background-position: 0% 0%;}
+    50% {background-position: 10% 10%;}
+    100% {background-position: 0% 0%;}
+}
+
+.section.other_area_service_partner .fp-tableCell {
+    height: auto !important;
+}
+.section.other_area_service_partner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.7);
+}
+.section.other_area_service_partner .other_area_service_wrap {
+    padding: 300px 0;
+}
+.section.other_area_service_partner h2 {
+    max-width: 40ch;
+    display: block;
+    word-break: keep-all;
+    line-height: 1.5em;
+    font-size: 3em;
+    font-weight: 500;
+    transform: scale(0.94);
+    animation: text-scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes text-scale {
+    100% {
+        transform: scale(1);
+    }
+}
+
+.section.other_area_service_partner h2 span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+.section.other_area_service_partner.ani h2 span:nth-child(1) {
+    animation: text-in 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.section.other_area_service_partner.ani h2 span:nth-child(2) {
+    animation: text-in 1s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.section.other_area_service_partner.ani h2 span:nth-child(3) {
+    animation: text-in 1s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.section.other_area_service_partner.ani h2 span:nth-child(4) {
+    animation: text-in 1s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.section.other_area_service_partner.ani h2 span:nth-child(5) {
+    animation: text-in 1s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.section.other_area_service_partner.ani h2 span:nth-child(6) {
+    animation: text-in 1s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.section.other_area_service_partner.ani h2 span:nth-child(7) {
+    animation: text-in 1s 2.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes text-in {
+    100% {
+    opacity: 1;
+    filter: blur(0);
+    }
+}
+
+/*bottom_banner*/
+#other_area_service .section.bottom_banner {
+    height: auto !important;
+}
+#other_area_service .section .fp-tableCell {
+    height: auto !important;
+}
+
+
+@keyframes fadeIn {
+    to {transform: translateX(0); opacity: 1;}
+}
+@keyframes point-line {
+    to {width: 120%;}
+}
+@media all and (max-width: 1600px) {
+    .other_area_service_wrap {width: 90%; font-size: 0.9em;}
+    .section.other_area_service_pros .other_area_service_cont>ul>li {width: 25%;}
+    .section.other_area_service_process .other_area_service_cont>ul>li img {width: 50%;}
+    .section.other_area_service_step .other_area_service_cont .step_box {padding: 30px;}
+}
+@media all and (max-width: 1200px) {
+    .other_area_service_intro .other_area_service_cont>ul>li {padding: 20px; width: 20%;}
+}
+@media all and (max-width: 1050px) {
+    .section.other_area_service_pros .other_area_service_cont>ul>li {width: 30%;}
+    .section.other_area_service_pros .other_area_service_cont .pros_box {font-size: 0.9em;}
+    
+    .section.other_area_service_process .other_area_service_cont {font-size: 0.9em;}
+    .section.other_area_service_process .other_area_service_cont>ul>li img {width: 40%;}
+    .section.other_area_service_process .other_area_service_cont>ul::after {top: 52%;}
+
+    .section.other_area_service_step .other_area_service_cont {font-size: 0.9em;}
+    .section.other_area_service_step .other_area_service_cont .step_box {padding: 20px;}
+
+    .section.free_benefit .ocean svg {bottom: -10%;}
+
+    .section.other_area_service_partner .other_area_service_wrap {padding: 250px 0;}
+}
+@media all and (max-width: 850px) {
+    .section.other_area_service_pros .other_area_service_wrap {padding: 150px 0;}
+    .section.other_area_service_pros .other_area_service_cont>ul>li {margin: 0 10px;}
+    .section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(2) {margin-top: 130px;}
+    .section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(3) {margin-top: 65px;}
+    .section.other_area_service_pros .other_area_service_cont .pros_box {margin: 50px 0; padding: 20px;}
+    .section.other_area_service_process .other_area_service_cont>ul::after {top: 53%;}
+    .section.free_benefit .other_area_service_cont .banner_box p {margin: 30px 0;}
+
+    .section.other_area_service_partner .other_area_service_wrap {font-size: 0.8em;}
+}
+
+@media all and (max-width: 750px) {
+    .other_area_service_intro .other_area_service_cont>ul {display: block; width: 100%;}
+    .other_area_service_intro .other_area_service_cont>ul>li {margin: 0 30px 15px 30px; float: left; width: calc((100% - 120px)/2);}
+    .other_area_service_intro .other_area_service_cont>ul>li>img {padding: 8px; width: 36px;}
+
+    .section.other_area_service_process, .section.other_area_service_step  {height: auto !important;}
+    .section.other_area_service_process .other_area_service_wrap, .section.other_area_service_step .other_area_service_wrap {padding: 150px 0 150px;}
+    .section.other_area_service_process .other_area_service_cont>ul {flex-direction: column;}
+    .section.other_area_service_process .other_area_service_cont>ul::after, .section.other_area_service_process .other_area_service_cont>ul>li .dot {display: none;}
+    .section.other_area_service_process .other_area_service_cont>ul>li img {width: 20%;}
+    .section.other_area_service_process .other_area_service_cont>ul>li span {margin: 5% 0 15%; font-size: 1.7em;}
+
+    .section.other_area_service_step .other_area_service_cont>ul {display: block;}
+    .section.other_area_service_step .other_area_service_cont>ul>li {margin: 0 40px; float: left; width: calc((100% - 160px)/2);}
+    .section.other_area_service_step .other_area_service_cont>ul>li:nth-child(3), .section.other_area_service_step .other_area_service_cont>ul>li:nth-child(4) {margin: 40px;}
+    .section.other_area_service_step .other_area_service_cont>ul>li::after {display: none; animation: none;}
+    .section.other_area_service_step .other_area_service_wrap::after {content: ""; display: block; clear: both;}
+
+    .section.other_area_service_vision .other_area_service_cont>ul>li img {width: 30%;}
+
+    .section.other_area_service_partner .other_area_service_wrap {font-size: 0.7em;}
+}
+
+@media all and (max-width: 640px) {
+    #other_area_service ~ #fp-nav {display: none !important;}
+    .other_area_service_intro .other_area_service_cont>ul>li {margin: 0 10px 15px 10px; float: left; width: calc((100% - 40px)/2);}
+
+    .section.other_area_service_pros .other_area_service_cont>ul {display: block;}
+    .section.other_area_service_pros .other_area_service_cont>ul>li {float: left; width: calc((100% - 40px)/2); margin: 0 10px; }
+    .section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(2), .section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(3) {margin-top: 0px;}
+    .section.other_area_service_pros .other_area_service_cont .pros_box {height: 230px;}
+    .section.other_area_service_pros .other_area_service_cont .pros_box img {width: 50%; margin: 20px auto;}
+    .section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(3) .pros_box:last-child img {width: 140%; margin: 20px -20% 0;}
+    .section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(3) {width: 96%; display: flex;}
+    .section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(3) .pros_box {margin-top: 0;}
+    .section.other_area_service_pros .other_area_service_cont>ul>li:nth-child(3) .pros_box:nth-child(1) {margin-right: 20px;}
+    .section.other_area_service_pros .other_area_service_cont>ul>li.animate__fadeInUp {animation: none;}
+    .section.other_area_service_pros .other_area_service_wrap::after {content: ""; display: block; clear: both;}
+
+    .section.other_area_service_step .other_area_service_cont>ul>li {margin: 0 30px; float: left; width: calc((100% - 120px)/2);}
+    .section.other_area_service_step .other_area_service_cont>ul>li:nth-child(3), .section.other_area_service_step .other_area_service_cont>ul>li:nth-child(4) {margin: 40px 30px;}
+
+    .section.other_area_service_vision .other_area_service_cont:last-child {display: block;}
+    .section.other_area_service_vision .other_area_service_cont>ul>li {width: 100%; float: none; border: none !important; text-align: center !important; font-size: 1.2em;}
+    .section.other_area_service_vision .other_area_service_cont>ul>li img {width: 20%;}
+    .section.other_area_service_vision .other_area_service_cont>ul>li span {margin-top: 20px}
+
+    .section.other_area_service_partner .other_area_service_wrap {padding: 170px 0;}
+    .section.other_area_service_partner .other_area_service_wrap h2 {max-width: 25ch;}
+}
+
+@media all and (max-width: 430px) {
+    .section.other_area_service_intro .other_area_service_cont>strong br {display: none;}
+    .section.other_area_service_intro .other_area_service_cont>span {font-size: 1.3em;}
+    .other_area_service_intro .other_area_service_cont>ul>li {margin: 0 5px 10px 5px; padding: 20px 0; float: left; width: calc((100% - 20px)/2);}
+
+    .section.other_area_service_pros .other_area_service_cont .pros_box {height: 200px; font-size: 0.8em;}
+    .section.other_area_service_pros .other_area_service_cont .pros_box img {width: 55%;}
+    .section.other_area_service_pros .other_area_service_cont .pros_box span br {display: none;}
+    .section.other_area_service_process .other_area_service_cont>ul>li span {font-size: 1.5em;}
+
+    .section.other_area_service_step .other_area_service_cont>ul>li {margin: 0 10px; float: left; width: calc((100% - 40px)/2);}
+    .section.other_area_service_step .other_area_service_cont>ul>li:nth-child(3), .section.other_area_service_step .other_area_service_cont>ul>li:nth-child(4) {margin: 40px 10px;}
+
+    .section.other_area_service_vision .other_area_service_cont>ul>li {padding: 40px;}
+    .section.other_area_service_vision .other_area_service_cont strong br {display: none;}
+    .section.other_area_service_vision .other_area_service_cont>ul>li img {width: 30%;}
+}
+
+@media all and (max-width: 390px) {
+    .section.other_area_service_pros .other_area_service_cont .pros_box {height: 190px;}
+    .section.other_area_service_vision .other_area_service_cont {font-size: 0.9em;}
+    .section.other_area_service_vision .other_area_service_cont>ul>li img {width: 35%;}
+}
+

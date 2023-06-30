@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+     
+    <!-- 모바일 주소창 컬러 지정 -->
+    <!-- Chrome, Firefox, Opera -->
+    <meta content='#0058ce' name='theme-color'/>
+
+    <!-- Windows Phone -->
+    <meta content='#0058ce' name='msapplication-navbutton-color'/>
+
+    <!-- iOS Safari -->
+    <meta content='#0058ce' name='apple-mobile-web-app-status-bar-style'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+
+    <title>미래비즈코리아</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    
+    <!--css-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="../../css/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    
+    <!--animate css-->
+    <link rel="stylesheet" href="../../css/animate.min.css">
+
+    <!--js-->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!--fullpage -->
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <script src="./js/jquery.fullPage.js"></script>
+    <script src="./js/scrolloverflow.min.js"></script>
+    
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="./js/swiper-bundle.min.js"></script>
+    
+    <!--aos-->
+    <link rel="stylesheet" href="../../css/aos.css"> 
+    <script src="../../js/aos.js"></script> 
+    <script>$(function(){AOS.init();});</script>
+
+    <!--mousefollow-->
+    <script src="./js/jquery.mousefollow.js"></script>
+
+    <!--TweenMax.js-->
+    <script src="./js/TweenMax.min.js"></script>
+
+    <!-- masonry -->
+    <script src="./js/masonry.pkgd.min.js"></script>
+    <script src="./js/imagesloaded.pkgd.js"></script>
+    <script src="./js/scrollreveal.js"></script>
+
+    <!-- textillate -->
+    <script src="./js/jquery.lettering.js"></script>
+    <script src="./js/jquery.textillate.js"></script>
+</head>
+
+<body>
+    <div class="circlep"></div>
+    <div class="circle-follow"></div>
+
+    <!--header-->
+    <header class="dark" data-aos="fade-down" data-aos-duration="1000">
+        <div class="header_wrap">
+            <div class="logo">
+               <a href="./index.html">
+                   <img src="./images/logo.png" class="dark" alt="미래비즈코리아 로고">
+                   <img src="./images/logo_w.png" class="bright" alt="미래비즈코리아 화이트 로고">
+                </a>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html#main">About</a>
+                    <ul class="sub">
+                        <li><a href="./about.html#main">기업 소개</a></li> 
+                        <li><a href="./about.html#history">연혁</a></li> 
+                        <li><a href="./about.html#keyword">키워드</a></li> 
+                        <li><a href="./about.html#vision">비전</a></li> 
+                        <li><a href="./about.html#certificate01">특허 / 인증</a></li> 
+                        <li><a href="./about.html#ci">CI</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a href="./business.html#anchor1">Business</a>
+                </li>
+                <li>
+                    <a href="./brand.html">Brand</a>
+                    <ul class="sub">
+                        <li><a href="./brand.html#family">패밀리</a></li>
+                        <li><a href="./brand.html#brand">브랜드</a></li>
+                        <li><a href="./brand.html#portfolio">포트폴리오</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                    <ul class="sub">
+                        <li><a href="./contact.html">오시는 길</a></li> 
+                        <li><a href="./contact.html#anchor2">소통 안내</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a href="./history.html">History</a>
+                </li>
+                <li>
+                    <a href="./news.html">News</a>
+                </li>
+            </ul>  
+        </div>
+    </header>
+    
+    <div class="hamburger">
+        <input type="checkbox" id="check"/> 
+        <label for="check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="hamburger_menu">
+            <ul class="hbg_gnb">
+                <li class="animate__animated">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="animate__animated">
+                    <a href="./about.html#main">About</a>
+                    <ul class="hbg_sub">
+                        <li><a href="./about.html#main">기업 소개</a></li> 
+                        <li><a href="./about.html#history">연혁</a></li> 
+                        <li><a href="./about.html#keyword">키워드</a></li> 
+                        <li><a href="./about.html#vision">비전</a></li> 
+                        <li><a href="./about.html#certificate01">특허 / 인증</a></li> 
+                        <li><a href="./about.html#ci">CI</a></li> 
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="./business.html#anchor1">Business</a>
+                    <ul class="hbg_sub">
+                        <li><a href="./business.html#anchor1">주력사업</a></li>
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="./brand.html">Brand</a>
+                    <ul class="hbg_sub">
+                        <li><a href="./brand.html#family">패밀리</a></li>
+                        <li><a href="./brand.html#brand">브랜드</a></li>
+                        <li><a href="./brand.html#portfolio">포트폴리오</a></li>
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="./contact.html">Contact</a>
+                    <ul class="hbg_sub">
+                        <li><a href="./contact.html">오시는 길</a></li> 
+                        <li><a href="./contact.html#anchor2">소통 안내</a></li> 
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="./history.html">History</a>
+                    <ul class="hbg_sub">
+                        <li><a href="./history.html">히스토리</a></li> 
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="./news.html">News</a>
+                    <ul class="hbg_sub">
+                        <li><a href="./news.html">미디어 룸</a></li> 
+                    </ul>   
+                </li>
+            </ul>
+            <div class="footer_sns">
+                <span>SOCIAL MEDIA</span>
+                <ul>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="blog"><a href="" target="_blank"><i></i></a></li>
+                    <li class="post"><a href="" target="_blank"><i></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+                <p>Copyright © Mirae Biz Korea, Co., Ltd All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/header.js"></script>      
+
+<section id="business">
+    <div id="businessFullPage">
+        <!--page01-->
+        <div class="business_cont page1 section hd_bright">
+            <div class="business_ani_circle"></div>
+            <div class="business_ani_circle2"></div>
+            <div class="business_ani_tit">미래비즈코리아 주력사업 프로젝트</div>
+            <div class="business_ani_circle_big"></div>
+            <div class="business_ani_tit2">
+                <svg width=510 height=130 viewBox="0 0 510 130">
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">Miraebiz</text>
+                </svg>
+            </div>
+            <div class="business_ani_tit3">
+                <svg width=450 height=120 >
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">Korea</text>
+                </svg>
+            </div>
+            <div class="business_ani_tit4">
+                <svg width=370 height=125>
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">Main</text>
+                </svg>
+            </div>
+            <div class="business_ani_tit5">
+                <svg width=500 height=125>
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">Business</text>
+                </svg>
+            </div>
+            <div class="business_ani_tit_bg">MIRAEBIZ KOREA</div>
+            <!--스크롤-->
+            <div id="scroll-wrapper">
+                <div id="scroll-wrapper-inner">
+                    <div id="scroll-title">Scroll</div>
+                    <div id="scroll-down"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--page02-->
+        <div class="business_cont page2 section hd_dark">    
+            <!--pc-->
+            <div class="cont_business_wrap pc">
+                <div class="business_box"> 
+                    <div class="business_img" >
+                        <img src="./images/brand_img/business_img1.jpg" alt="렌탈 비즈니스 이미지">
+                    </div>
+                    <div class="business_icon">
+                        <img src="./images/brand_img/business_icon1.png" alt="렌탈 비즈니스 아이콘">
+                    </div>
+                    <h2>렌탈 비즈니스 플랫폼<br><span>RENTAL BUSINESS PLATFORM</span></h2>
+                    <div class="middle_txt" >
+                        <p>- 개인/기업의 일반 렌탈사업 진입을 위한 장벽을 낮춰주는<br> <b>자체 개발 ALL-in One 렌탈 창업 플랫폼 서비스</b></p>
+                        <p>- 제조업/유통업의 렌탈사 설립부터 안정까지 컨설팅하는<br>금융, 유통, 전산, 콜센터 지원 <b>렌탈 금융 플랫폼 시스템</b></p>
+                    </div>
+                    <ul>
+                        <li>렌탈창업<br> 플랫폼</li>
+                        <li>렌탈금융<br> 플랫폼</li>
+                        <li>홈쇼핑&라이브쇼핑<br> 플랫폼</li>
+                    </ul>
+                </div>
+
+                <div class="business_box">
+                    <div class="business_img">
+                        <img src="./images/brand_img/business_img2.jpg" alt="전기차 비즈니스 이미지">>
+                    </div>
+                    <div class="business_icon">
+                        <img src="./images/brand_img/business_icon2.png" alt="전기차 비즈니스 아이콘">>
+                    </div>
+                    <h2>전기차 충전 비즈니스<br><span>EV CHARGE BUSINESS PLATFORM</span></h2>
+                    <div class="middle_txt">
+                        <p>- 산업통상자원부 <b>공식 전기차 충전서비스 플랫폼 서비스</b><br>(전기자동차충전사업 제223호)</p>
+                        <p>- 특허 등록 완료된 안정적이고 공신력 있는 <b>미래지향 친환경 비즈니스</b><br>(전기차충전기렌탈서비스시스템)</p>
+                    </div>
+                    <ul>
+                        <li>전기차<br>충전사업</li>
+                        <li>EV 충전기<br> 전문쇼핑몰 플랫폼</li>
+                        <li>EV 인프라<br> 사업</li>
+                    </ul>
+                </div>
+
+                <div class="business_box">
+                    <div class="business_img">
+                        <img src="./images/brand_img/business_img3.jpg" alt="VR 비즈니스 이미지">
+                    </div>
+                    <div class="business_icon">
+                        <img src="./images/brand_img/business_icon3.png" alt="VR 비즈니스 아이콘">
+                    </div>
+                    <h2>VR 가상현실 비즈니스<br><span>VIRTUAL REALITY BUSINESS</span></h2>
+                    <div class="middle_txt">
+                        <p>- 4차 산업혁명의 대표 정보통신 융합기술인 <b>VR과 <br>메타버스 컨텐츠 제작 사업 및 교육 사업</b></p>
+                        <p>- 건축/인테리어/쇼핑 등 가상현실 구현을 위한 <br><b>언리얼엔진의 비게임 분야 독보 기술 보유 및 제작위탁사업</b></p>
+                    </div>
+                    <ul>
+                        <li>VR 컨텐츠<br> 제작사업</li>
+                        <li>VR 전문인력 양성<br> 교육사업</li>
+                        <li>VR 쇼핑몰<br> 플랫폼</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--mobile-->
+            <div class="cont_business_wrap_m">
+                <div class="mobile_tit"><h2>미래비즈코리아 주력사업</h2></div>
+                <div class="business_box">
+                    <div class="business_img">
+                        <img src="./images/brand_img/business_img_m1.jpg" alt="모바일 렌탈 비즈니스 이미지">
+                    </div>
+                    <div class="business_text">
+                        <h2><b>렌탈 비즈니스</b> 플랫폼<br><span>RENTAL BUSINESS PLATFORM</span></h2>
+                        <div class="middle_txt" >
+                            <p>- 개인/기업의 일반 렌탈사업 진입을 위한 장벽을 낮춰주는<br> <b>자체 개발 ALL-in One 렌탈 창업 플랫폼 서비스</b></p>
+                            <p>- 제조업/유통업의 렌탈사 설립부터 안정까지 컨설팅하는<br>금융, 유통, 전산, 콜센터 지원 <b>렌탈 금융 플랫폼 시스템</b></p>
+                        </div>
+                        <ul>
+                            <li>렌탈창업<br> 플랫폼</li>
+                            <li>렌탈금융<br> 플랫폼</li>
+                            <li>홈쇼핑&라이브쇼핑<br> 플랫폼</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="business_box">
+                    <div class="business_img">
+                        <img src="./images/brand_img/business_img_m2.jpg" alt="모바일 전기차 비즈니스 이미지">
+                    </div>
+                    <div class="business_text">
+                        <h2><b>전기차 충전</b> 비즈니스<br><span>EV CHARGE BUSINESS PLATFORM</span></h2>
+                        <div class="middle_txt">
+                            <p>- 산업통상자원부 <b>공식 전기차 충전서비스 플랫폼 서비스</b><br>(전기자동차충전사업 제223호)</p>
+                            <p>- 특허 등록 완료된 안정적이고 공신력 있는 <b>미래지향 친환경 비즈니스</b><br>(전기차충전기렌탈서비스시스템)</p>
+                        </div>
+                        <ul>
+                            <li>전기차<br>충전사업</li>
+                            <li>EV 충전기<br> 전문쇼핑몰 플랫폼</li>
+                            <li>EV 인프라<br> 사업</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="business_box">
+                    <div class="business_img">
+                        <img src="./images/brand_img/business_img_m3.jpg" alt="모바일 VR 비즈니스 이미지">
+                    </div>
+                    <div class="business_text">
+                        <h2><b>VR 가상현실</b> 비즈니스<br><span>VIRTUAL REALITY BUSINESS</span></h2>
+                        <div class="middle_txt">
+                            <p>- 4차 산업혁명의 대표 정보통신 융합기술인 <b>VR과 <br>메타버스 컨텐츠 제작 사업 및 교육 사업</b></p>
+                            <p>- 건축/인테리어/쇼핑 등 가상현실 구현을 위한 <br><b>언리얼엔진의 비게임 분야 독보 기술 보유 및 제작위탁사업</b></p>
+                        </div>
+                        <ul>
+                            <li>VR 컨텐츠<br> 제작사업</li>
+                            <li>VR 전문인력 양성<br> 교육사업</li>
+                            <li>VR 쇼핑몰<br> 플랫폼</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer class="section">
+            <div id="footer_pc" class="footer">
+                <div class="footer_wrap">
+                    <div class="footer_left">
+                        <ul class="footer_menu">
+                            <li class="home">
+                                <a href="./index.html">Home</a>
+                            </li>
+            
+                            <li class="about">
+                                <a href="./about.html#main">About</a>
+                            </li>
+            
+                            <li class="business">
+                                <a href="./business.html#anchor1">Business</a>
+                            </li>    
+            
+                            <li class="brand">
+                                <a href="./brand.html">Brand</a>
+                            </li>
+            
+                            <li class="contact">
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                            <li class="history">
+                                <a href="./history.html">History</a>
+                            </li>
+                            <li class="news">
+                                <a href="./news.html">News</a>
+                            </li>
+                        </ul>
+            
+                        <div class="footer_sns">
+                            <span>SOCIAL MEDIA</span>
+                            <ul>
+                                <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="blog"><a href="" target="_blank"><i></i></a></li>
+                                <li class="post"><a href="" target="_blank"><i></i></a></li>
+                                <li><a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_right">
+                        <a href="./index.html"><img src="./images/logo.png" class="footer_logo" alt="미래비즈코리아 로고"></a>
+                        <p class="company_info">
+                            <i>(주) 미래비즈코리아</i><br>
+                            대표자&nbsp;&nbsp;김비즈<br>
+                            사업자번호&nbsp;&nbsp;000-00-00000
+                        </p>
+                        <p class="company_info">
+                            서울특별시 ㅇㅇ구 ㅇㅇ로 000 ㅇㅇㅇㅇ타워 0차 1004호<br>
+                            Copyright © Mirae Biz Korea, Co., Ltd All Rights Reserved.
+                        </p>
+    
+                        <p class="company_info">
+                            Tel&nbsp;&nbsp;<a href="tel:0000-0000" title="전화연결">0000-0000</a><br>
+                            Fax&nbsp;&nbsp;<a href="tel:02-0000-0000" title="팩스연결">02-0000-0000</a><br>
+                            Contact to&nbsp;&nbsp;<a href="mailto:mailto@mail.com" title="메일전송">mailto@mail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_m" class="footer">
+                <div class="footer_wrap">
+                    <a href="./index.html"><img src="./images/logo.png" class="footer_logo" alt="미래비즈코리아 로고"></a>
+                    <ul class="footer_menu">
+                        <li class="home">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="about">
+                            <a href="./about.html#main">About</a>
+                        </li>
+                        <li class="business">
+                            <a href="./business.html">Business</a>
+                        </li>
+                        <li class="brand">
+                            <a href="./brand.html">Brand</a>
+                        </li>
+                        <li class="contact">
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                        <li class="history">
+                            <a href="./history.html">History</a>
+                        </li>
+                        <li class="news">
+                            <a href="./news.html">News</a>
+                        </li>
+                    </ul>
+                    <p class="company_info">
+                        <i>(주) 미래비즈코리아</i><br>
+                        대표자&nbsp;&nbsp;김비즈<br>
+                        사업자번호&nbsp;&nbsp;000-00-00000
+                    </p>
+                    <p class="company_info">
+                        서울특별시 ㅇㅇ구 ㅇㅇ로 000 ㅇㅇㅇㅇ타워 0차 1004호<br>
+                        Copyright © Mirae Biz Korea, Co., Ltd All Rights Reserved.
+                    </p>
+                    <p class="company_info">
+                        Tel&nbsp;&nbsp;<a href="tel:0000-0000" title="전화연결">0000-0000</a><br>
+                        Fax&nbsp;&nbsp;<a href="tel:02-0000-0000" title="팩스연결">02-0000-0000</a><br>
+                        Contact to&nbsp;&nbsp;<a href="mailto:mailto@mail.com" title="메일전송">mailto@mail.com</a>
+                    </p>
+                    <div class="footer_sns">
+                        <ul>
+                            <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li class="blog"><a href="" target="_blank"><i></i></a></li>
+                            <li class="post"><a href="" target="_blank"><i></i></a></li>
+                            <li><a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
+
+<script>
+    $(".footer_menu .business").addClass("on").siblings().removeClass("on");
+    $("header").removeClass("bright").addClass("dark");
+
+    setTimeout(function(){
+        $("header").removeClass("dark").addClass("bright");
+    }, 3000);
+    
+    $('#businessFullPage').fullpage({
+        verticalCentered: true,
+        scrollOverflow: true,
+        anchors: ['anchor1', 'anchor2', 'footer'],
+        menu: '#menu',
+        onLeave:function(){
+            $(".cont_business_wrap_m .business_box:nth-child(2)").removeClass("ani");
+            $(".cont_business_wrap_m .business_box:nth-child(3)").removeClass("ani");
+            $(".cont_business_wrap_m .business_box:nth-child(4)").removeClass("ani");
+        },
+        afterLoad: function (anchorLink, index) {
+            $(".cont_business_wrap_m .business_box:nth-child(2)").addClass("ani");
+            $(".cont_business_wrap_m .business_box:nth-child(3)").addClass("ani");
+            $(".cont_business_wrap_m .business_box:nth-child(4)").addClass("ani");
+    
+            if(anchorLink == 'footer') {
+                $("body").addClass("hd_bg");
+                $("header").removeClass("bright").addClass("dark");
+            } else {
+                if($(window).width() < 1000) {
+                    $("body").removeClass("hd_bg");
+                    $("header").removeClass("bright").addClass("dark");
+                } else {
+                    $("body").removeClass("hd_bg");
+                    $("header").removeClass("dark").addClass("bright");
+                }
+            }
+        }
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+
+  <link href="../company/css/Pretendard/pretendard.css" resl="stylesheet"/>
+  <link href="Semantic-UI-CSS-master/semantic.min.css" rel="stylesheet"/>
+  <link href="Semantic-UI-CSS-master/calendar.min.css" rel="stylesheet"/>
+  <link href="css/common.css" rel="stylesheet"/>
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+  <script src="Semantic-UI-CSS-master/calendar.min.js"></script>
+</head>
+<body>
+<section id="header">
+
+    <div class="hbg_menu ui vertical inverted sidebar left menu visible">
+
+        <div class="hbg_btn ui black big launch right attached fixed button">
+            <i class="close arrow left icon"></i>
+            <i class="open content icon"></i>
+        </div>
+
+        <div class="item">
+            <a class="mk_logo ui logo" href="index.html">MK RENTAL</a>
+        </div>
+
+        <div class="item">
+            <div class="menu_slide header">
+              <i class="ui circular user icon"></i>
+              <span class="login_name point_co">담당자</span> 님 로그인
+              <i class="dropdown icon"></i>
+            </div>
+            <div class="menu_li menu">
+                <a class="password menu_tit item" href="password.html">비밀번호 변경</a>
+                <a class="logout menu_tit item point_co2" href="#">로그아웃</a>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="menu_slide header">사이트정보<i class="dropdown icon"></i></div>
+            <div class="menu_li menu">
+                <a class="info menu_tit item" href="information.html">기본정보</a>
+                <a class="header_footer menu_tit item" href="header_footer.html">헤더,푸터</a>
+                <a class="personal_info_process menu_tit item" href="personal_info_process.html">약관,개인정보</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="menu_slide header">제품<i class="dropdown icon"></i></div>
+            <div class="menu_li menu">
+                <a class="product_condition menu_tit item" href="product_condition.html">노출 제품 조건</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="notice">
+    <p class="ntc_tit"><i class="bullhorn icon"></i>공지사항</p>
+    <ul class="ntc_cont">
+        <li class="slide_txt"><a href="#">[LG전자 케어솔루션] 4월 LG 퓨리케어 에어로타워 오브제컬렉션 프로모션</a></li>
+        <li class="slide_txt"><a href="#">[LG전자 케어솔루션] 4월 LG DIOS 전기레인지 프로모션</a></li>
+        <li class="slide_txt"><a href="#">[LG전자 케어솔루션] 4월 LG 힐링미 안마의자 프로모션</a></li>
+    </ul>
+</section>
+
+<body>
+
+<section id="notice_detail" class="wrapper">
+	<h2 class="page_tit ui header">안내사항 상세페이지 설정</h2>
+	<div class="ui hidden divider"></div>
+
+<form class="page_form">
+	<div class="detail_form page_content">
+		<div class="ui form">
+            <div class="field">
+                <div class="two fields">
+                    <!--제목 입력-->
+                    <div class="detail_tit field">
+                        <div class="field">
+                            <h3 class="page_tit ui header">제목<a class="tit_label ui horizontal label">필수</a></h3>
+                            <input class="input_box" type="text" placeholder="제목입력(필수, 100자이하)" maxlength="100">
+                        </div>
+                    </div>
+                    <!--파일첨부-->
+                    <div class="file_add field">
+                        <div class="field">
+                            <h3 class="page_tit ui header">첨부파일</h3>
+                            <div class="file_box ui left labeled right icon input">
+                                <label class="file_btn ui teal button" for="input_file">파일찾기</label>
+                                <input class="file_btn_hidden" type="file" id="input_file">
+
+                                <input class="file_name input_box" type="text" value="첨부파일(최대20MB)" disabled="disabled">
+                                <i class="download link icon point_co" title="파일저장"></i>
+                                <i class="close link icon point_co2" title="파일삭제"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>    
+
+            <div class="ui hidden divider"></div>
+
+            <div class="notice_date field">
+                <h3 class="page_tit ui header">안내 기간 설정<a class="tit_label ui horizontal label">필수</a></h3>
+                <div class="three fields">
+
+                    <div class="selec_date field">
+                        <label class="input_label">시작 날짜</label>
+                        <div class="start_date ui calendar" id="notice_rangestart">
+                            <div class="ui input left icon">
+                                <i class="point_co calendar icon"></i>
+                                <input class="input_box" name="datestart" type="text" placeholder="시작날짜선택">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selec_date field">
+                        <label class="input_label">종료 날짜</label>
+                        <div class="end_date ui calendar" id="notice_rangeend">
+                            <div class="ui input left icon">
+                                <i class="point_co calendar icon"></i>
+                                <input class="input_box" name="dateend" type="text" placeholder="종료날짜선택">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selec_date field">
+                        <div class="ui date_none checkbox">
+                            <input type="checkbox" id="date_none">
+                            <label class="chk_label" for="date_none">기간 설정하지 않음</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>	
+
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	
+    <!--내용-->
+	<div class="detail_content page_content">
+        <h3 class="page_tit ui header">내용</h3>
+        <div class="ui form">
+
+            <div class="field">
+                <textarea class="text_box" placeholder="내용입력" disabled="disabled"></textarea>
+            </div>
+            <!--관리자에디터 추가-->
+            <div calss="admin_editer field">
+
+            </div>
+        </div>
+	</div>	
+</form>
+
+    <div class="btn_zone">
+        <button class="cancel_btn ui negative button">취소</button>
+        <button class="save_btn ui primary button">등록</button>
+    </div>
+
+</section>
+<script src="./js/common.js"></script>
+<script>
+/*파일 업로드시 파일명 보이기*/
+var fileTarget = $("#notice_detail .file_box .file_btn_hidden");
+
+fileTarget.on("change", function(){
+    if(window.FileReader){
+        var filename = $(this)[0].files[0].name;
+    }
+    else {
+        var filename = $(this).val().split("/").pop().split("\\").pop();
+    }
+    $(this).siblings(".file_name").val(filename);
+});
+
+
+/*파일 업로드시 파일명 보이기*/
+$('#notice_rangestart').calendar({
+    type: 'date',
+    endCalendar: $('#notice_rangeend')
+});
+$('#notice_rangeend').calendar({
+    type: 'date',
+    startCalendar: $('#notice_rangestart')
+});
+</script>
+</body>
+</html>

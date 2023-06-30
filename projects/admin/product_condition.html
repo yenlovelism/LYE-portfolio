@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+
+  <link href="../company/css/Pretendard/pretendard.css" resl="stylesheet"/>
+  <link href="Semantic-UI-CSS-master/semantic.min.css" rel="stylesheet"/>
+  <link href="Semantic-UI-CSS-master/calendar.min.css" rel="stylesheet"/>
+  <link href="css/common.css" rel="stylesheet"/>
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+  <script src="Semantic-UI-CSS-master/calendar.min.js"></script>
+</head>
+<body>
+<section id="header">
+
+    <div class="hbg_menu ui vertical inverted sidebar left menu visible">
+
+        <div class="hbg_btn ui black big launch right attached fixed button">
+            <i class="close arrow left icon"></i>
+            <i class="open content icon"></i>
+        </div>
+
+        <div class="item">
+            <a class="mk_logo ui logo" href="index.html">MK RENTAL</a>
+        </div>
+
+        <div class="item">
+            <div class="menu_slide header">
+              <i class="ui circular user icon"></i>
+              <span class="login_name point_co">담당자</span> 님 로그인
+              <i class="dropdown icon"></i>
+            </div>
+            <div class="menu_li menu">
+                <a class="password menu_tit item" href="password.html">비밀번호 변경</a>
+                <a class="logout menu_tit item point_co2" href="#">로그아웃</a>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="menu_slide header">사이트정보<i class="dropdown icon"></i></div>
+            <div class="menu_li menu">
+                <a class="info menu_tit item" href="information.html">기본정보</a>
+                <a class="header_footer menu_tit item" href="header_footer.html">헤더,푸터</a>
+                <a class="personal_info_process menu_tit item" href="personal_info_process.html">약관,개인정보</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="menu_slide header">제품<i class="dropdown icon"></i></div>
+            <div class="menu_li menu">
+                <a class="product_condition menu_tit item" href="product_condition.html">노출 제품 조건</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="notice">
+    <p class="ntc_tit"><i class="bullhorn icon"></i>공지사항</p>
+    <ul class="ntc_cont">
+        <li class="slide_txt"><a href="#">[LG전자 케어솔루션] 4월 LG 퓨리케어 에어로타워 오브제컬렉션 프로모션</a></li>
+        <li class="slide_txt"><a href="#">[LG전자 케어솔루션] 4월 LG DIOS 전기레인지 프로모션</a></li>
+        <li class="slide_txt"><a href="#">[LG전자 케어솔루션] 4월 LG 힐링미 안마의자 프로모션</a></li>
+    </ul>
+</section>
+
+<body>
+<section id="product_condition" class="wrapper">
+    <h2 class="page_tit ui header">노출제품조건</h2>
+    <div class="page_tit sub header"><i class="point_co tag icon"></i>노출 제품 조건 변경시에 카테고리별 제품 순위가 초기화 됩니다.</div>
+    
+    <div class="ui hidden divider"></div>
+    
+<form class="page_form">
+    <!--제조사-->
+    <div class="maker page_content">
+        <h3 class="ui header">
+            <div class="ui checkbox inline">
+                <input class="chk_box" type="checkbox" id="made_company">
+                <label class="chk_tit" for="made_company"><h3 class="chk_tit page_tit ui header">제조사</h3></label>
+            </div>
+        </h3>
+        <div class="chk_list ui padded segment">
+            <div class="ui celled horizontal list">
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="made_company1">
+                        <label class="chk_label" for="made_company1">삼성</label>
+                    </div>
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="made_company2">
+                        <label class="chk_label" for="made_company2">위니아</label>
+                    </div> 
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="made_company3">
+                        <label class="chk_label" for="made_company3">LG</label>
+                    </div>
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="made_company4">
+                        <label class="chk_label" for="made_company4">더함</label>
+                    </div>
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="made_company5">
+                        <label class="chk_label" for="made_company5">루컴즈전자</label>
+                    </div> 
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="made_company6">
+                        <label class="chk_label" for="made_company6">SK매직</label>
+                    </div>
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="made_company7">
+                        <label class="chk_label" for="made_company7">쿠쿠</label>
+                    </div>
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="made_company8">
+                        <label class="chk_label" for="made_company8">캐리어</label>
+                    </div> 
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="made_company9">
+                        <label class="chk_label" for="made_company9">코웨이</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui hidden divider"></div>
+    
+    <!--렌탈사-->
+    <div class="rental_com page_content">
+        <h3 class="ui header">
+            <div class="ui checkbox inline">
+                <input type="checkbox" id="rental_company">
+                <label class="chk_tit" for="rental_company"><h3 class="chk_tit page_tit ui header">렌탈사</h3></label>
+            </div>
+        </h3>
+        <div class="chk_list ui padded segment">
+            <div class="ui celled horizontal list">
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="rental_company1">
+                        <label class="chk_label" for="rental_company1">LG헬로비전</label>
+                    </div>
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="rental_company2">
+                        <label class="chk_label" for="rental_company2">청호나이스</label>
+                    </div> 
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="rental_company3">
+                        <label class="chk_label" for="rental_company3">스마트렌탈</label>
+                    </div>
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="rental_company4">
+                        <label class="chk_label" for="rental_company4">BS렌탈</label>
+                    </div>
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="rental_company5">
+                        <label class="chk_label" for="rental_company5">CS렌탈</label>
+                    </div> 
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="rental_company6">
+                        <label class="chk_label" for="rental_company6">코웨이</label>
+                    </div>
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="rental_company7">
+                        <label class="chk_label" for="rental_company7">SK매직</label>
+                    </div>
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="rental_company8">
+                        <label class="chk_label" for="rental_company8">바로렌탈</label>
+                    </div> 
+                </div>
+                <div class="chk_item item">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="rental_company9">
+                        <label class="chk_label" for="rental_company9">현대렌탈케어</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <div class="ui hidden divider"></div>
+
+    <!--추가 조건-->
+    <div class="condition_add page_content">
+        <h3 class="page_title header">추가 조건</h3>
+        <div class="page_tit sub header"><i class="point_co tag icon"></i>두 조건 모두 하나씩 체크 하셔야 조건 추가가 가능합니다.</div>
+   
+        <div class="ui hidden divider"></div>
+
+        <div class="ui stackable grid">
+            <div class="ui left floated six wide column">
+                <div class="select_box ui selection dropdown">
+                    <input type="hidden" name="gender">
+                    <i class="point_co dropdown icon"></i>
+                    <div class="default text">선택</div>
+                    <div class="menu">
+                        <div class="item">그룹1</div>
+                        <div class="item">그룹2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui right floated six wide column">
+                <button class="add_btn right floated ui teal button item">추가</button>
+            </div>
+        </div>
+
+        <div class="ui stackable grid">
+            <div class="two column row">
+                <!--조건1-->
+                <div class="condition_chk add1 column">
+                    <div class="ui segment">
+                        <h5 class="ui header">조건 1</h5>
+                        <div class="ui celled horizontal list">
+                            <div class="chk_item item">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" id="chk_true" name="t_f_chk">
+                                    <label class="chk_label" for="chk_true">일치</label>
+                                </div>
+                            </div>
+                            <div class="chk_item item">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" id="chk_false" name="t_f_chk">
+                                    <label class="chk_label" for="chk_false">불일치</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--조건2-->
+                <div class="condition_chk add2 column">
+                    <div class="ui segment">
+                        <h5 class="ui header">조건 2</h5>
+                        <div class="ui celled horizontal list">
+                            <div class="chk_item item">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" id="chk_and" name="a_o_chk">
+                                    <label class="chk_label" for="chk_and">그리고</label>
+                                </div>
+                            </div>
+                            <div class="chk_item item">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" id="chk_or" name="a_o_chk">
+                                    <label class="chk_label" for="chk_or">또는</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+
+    <div class="ui hidden divider"></div>
+
+    <!--최종 조건-->
+    <div class="condition_final page_content">
+        <h3 class="page_title header">최종 조건</h3>
+
+        <div class="ui hidden divider"></div>
+
+        <div class="ui stackable grid">
+            <div class="two column row">
+                <div class="eleven wide column">
+                    <button class="del_btn ui gray button item mar-top">그룹추가</button>
+                    <div class="select_box ui selection dropdown mar-top">
+                        <input type="hidden" name="gender">
+                        <i class="point_co dropdown icon"></i>
+                        <div class="default text">선택</div>
+                        <div class="menu">
+                            <div class="item">그룹1</div>
+                            <div class="item">그룹2</div>
+                        </div>
+                    </div>
+                    <button class="edit_btn ui secondary button item mar-top">그룹변경</button>
+                </div>
+                <div class="five wide column">
+                    <button class="del_btn right floated ui negative button item">삭제</button>
+                    <button class="edit_btn right floated ui teal button item">수정</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui hidden divider"></div>
+
+        <!--최종 조건 1-->
+        <div class="chk_list ui padded segment">
+            <div class="final_con_maker item">
+                <div class="ui horizontal list">
+                    <div class="chk_item item">
+                        <div class="ui checkbox">
+                            <input type="checkbox" id="made_company10">
+                            <label class="chk_label ui small header" for="made_company10">제조사</label>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="select_box ui compact selection dropdown">
+                            <i class="point_co dropdown icon"></i>
+                                <div class="default text">선택</div>
+                            <div class="menu">
+                                <div class="item">일치 </div>
+                                <div class="item">불일치</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui segment">
+                    <label>
+                        <i class="point_co check icon"></i>
+                    </label>
+                    <div class="ui horizontal bulleted list">
+                        <div class="cdt_data item">
+                            코웨이
+                        </div>
+                        <div class="cdt_data item">
+                            LG          
+                        </div>
+                        <div class="cdt_data item">
+                            제조사          
+                        </div>
+                        <div class="cdt_data item">
+                            제조사          
+                        </div>
+                        <div class="cdt_data item">
+                            제조사          
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="ui hidden divider"></div>
+
+            <div class="final_con_andor item">
+                <div class="select_box point ui compact selection dropdown">
+                    <i class="point_co2 dropdown icon"></i>
+                        <div class="default text">선택</div>
+                    <div class="menu">
+                        <div class="item">그리고 </div>
+                        <div class="item">또는</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui hidden divider"></div>
+            
+            <div class="final_con_rentalcom item">
+                <div class="ui horizontal list">
+                    <div class="chk_item item">
+                        <div class="ui checkbox">
+                            <input type="checkbox" id="rental_company10">
+                            <label class="chk_label ui small header" for="rental_company10">렌탈사</label>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="select_box ui compact selection dropdown">
+                            <i class="point_co dropdown icon"></i>
+                                <div class="default text">선택</div>
+                            <div class="menu">
+                                <div class="item">일치 </div>
+                                <div class="item">불일치</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui segment">
+                    <label>
+                        <i class="point_co check icon"></i>
+                    </label>
+                    <div class="ui horizontal bulleted list">
+                        <div class="cdt_data item">
+                            LG헬로비전
+                        </div>
+                        <div class="cdt_data item">
+                            LG헬로비전     
+                        </div>
+                        <div class="cdt_data item">
+                            렌탈사      
+                        </div>
+                        <div class="cdt_data item">
+                            렌탈사          
+                        </div>
+                        <div class="cdt_data item">
+                            렌탈사          
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="ui hidden divider"></div>
+
+        <!--그리고, 또는-->
+        <div class="final_con_andor item">
+            <div class="select_box point ui compact selection dropdown">
+                <i class="point_co2 dropdown icon"></i>
+                    <div class="default text">선택</div>
+                <div class="menu">
+                    <div class="item">그리고 </div>
+                    <div class="item">또는</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui hidden divider"></div>
+    
+        <!--최종조건 2-->
+        <div class="chk_list ui padded segment">
+            <div class="final_con_maker item">
+                <div class="ui horizontal list">
+                    <div class="chk_item item">
+                        <div class="ui checkbox">
+                            <input type="checkbox" id="made_company11">
+                            <label class="chk_label ui small header" for="made_company11">제조사</label>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="select_box ui compact selection dropdown">
+                            <i class="point_co dropdown icon"></i>
+                                <div class="default text">선택</div>
+                            <div class="menu">
+                                <div class="item">일치 </div>
+                                <div class="item">불일치</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui segment">
+                    <label>
+                        <i class="point_co check icon"></i>
+                    </label>
+                    <div class="ui horizontal bulleted list">
+                        <div class="cdt_data item">
+                            코웨이
+                        </div>
+                        <div class="cdt_data item">
+                            LG          
+                        </div>
+                        <div class="cdt_data item">
+                            제조사          
+                        </div>
+                        <div class="cdt_data item">
+                            제조사          
+                        </div>
+                        <div class="cdt_data item">
+                            제조사          
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="ui hidden divider"></div>
+
+            <div class="final_con_andor item">
+                <div class="select_box point ui compact selection dropdown">
+                    <i class="point_co2 dropdown icon"></i>
+                        <div class="default text">선택</div>
+                    <div class="menu">
+                        <div class="item">그리고 </div>
+                        <div class="item">또는</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui hidden divider"></div>
+            
+            <div class="final_con_rentalcom item">
+                <div class="ui horizontal list">
+                    <div class="chk_item item">
+                        <div class="ui checkbox">
+                            <input type="checkbox" id="rental_company11">
+                            <label class="chk_label ui small header" for="rental_company11">렌탈사</label>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="select_box ui compact selection dropdown">
+                            <i class="point_co dropdown icon"></i>
+                                <div class="default text">선택</div>
+                            <div class="menu">
+                                <div class="item">일치 </div>
+                                <div class="item">불일치</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui segment">
+                    <label>
+                        <i class="point_co check icon"></i>
+                    </label>
+                    <div class="ui horizontal bulleted list">
+                        <div class="cdt_data item">
+                            LG헬로비전
+                        </div>
+                        <div class="cdt_data item">
+                            LG헬로비전  
+                        </div>
+                        <div class="cdt_data item">
+                            렌탈사          
+                        </div>
+                        <div class="cdt_data item">
+                            렌탈사          
+                        </div>
+                        <div class="cdt_data item">
+                            렌탈사          
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+</form>    
+
+    <button class="save_btn ui right floated primary button">저장</button>
+
+</section>
+<script src="./js/common.js"></script>
+<script>
+$("#header .product_condition").addClass("on").siblings().removeClass("on");
+
+$('.ui.dropdown').dropdown();
+</script>
+</body>
+</html>

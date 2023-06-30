@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+:root {
+  --po: #bb2649;
+  --po-op50: rgb(187 38 73 / 50%);
+  --po-op30: rgb(187 38 73 / 30%);
+  --po-op10: rgb(45 3 15 / 10%);
+  --po-op05: rgb(187 38 73 / 5%);
+  --po-bg: rgb(190 78 104 / 3%);
+  --gradient: linear-gradient(
+    89.88deg,
+    rgba(255, 45, 32, 0.8) 0.1%,
+    rgba(107, 55, 255, 0.8) 99.89%
+  );
+  --gray-box: rgb(217 217 217 / 15%);
+  --gray-bg: rgb(249 249 249 / 100%);
+
+  --black: #333333;
+  --black-op50: rgb(51 51 51 / 50%);
+
+  --white: #ffffff;
+}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html {
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  line-height: 1;
+  font-family: 'SUIT';
+  font-weight: 400;
+  scroll-behavior: smooth;
+  letter-spacing: -1px;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+i {
+  font-style: normal;
+}
+a,
+button {
+  all: unset;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: 'SUIT';
+}
+select:focus,
+select:active {
+  outline: 0;
+}
+select::-ms-expand {
+  display: none;
+}
+input {
+  font-family: 'SUIT';
+}
+input::placeholder {
+  font-family: 'SUIT';
+}
+input[type='text'],
+input[type='tel'],
+input[type='password'],
+input[type='email'],
+input[type='search'],
+textarea {
+  border-style: none;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+}
+select,
+input[type='number'] {
+  border: none;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+/*데스크탑에서 스크롤바 가리기
+-------------------------------------------------------------------------------------*/
+.gnb::-webkit-scrollbar-thumb:vertical {
+  height: 0px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 0px;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

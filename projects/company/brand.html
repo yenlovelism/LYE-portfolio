@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+     
+    <!-- 모바일 주소창 컬러 지정 -->
+    <!-- Chrome, Firefox, Opera -->
+    <meta content='#0058ce' name='theme-color'/>
+
+    <!-- Windows Phone -->
+    <meta content='#0058ce' name='msapplication-navbutton-color'/>
+
+    <!-- iOS Safari -->
+    <meta content='#0058ce' name='apple-mobile-web-app-status-bar-style'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+
+    <title>미래비즈코리아</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    
+    <!--css-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="../../css/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    
+    <!--animate css-->
+    <link rel="stylesheet" href="../../css/animate.min.css">
+
+    <!--js-->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!--fullpage -->
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <script src="./js/jquery.fullPage.js"></script>
+    <script src="./js/scrolloverflow.min.js"></script>
+    
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="./js/swiper-bundle.min.js"></script>
+    
+    <!--aos-->
+    <link rel="stylesheet" href="../../css/aos.css"> 
+    <script src="../../js/aos.js"></script> 
+    <script>$(function(){AOS.init();});</script>
+
+    <!--mousefollow-->
+    <script src="./js/jquery.mousefollow.js"></script>
+
+    <!--TweenMax.js-->
+    <script src="./js/TweenMax.min.js"></script>
+
+    <!-- masonry -->
+    <script src="./js/masonry.pkgd.min.js"></script>
+    <script src="./js/imagesloaded.pkgd.js"></script>
+    <script src="./js/scrollreveal.js"></script>
+
+    <!-- textillate -->
+    <script src="./js/jquery.lettering.js"></script>
+    <script src="./js/jquery.textillate.js"></script>
+</head>
+
+<body>
+    <div class="circlep"></div>
+    <div class="circle-follow"></div>
+
+    <!--header-->
+    <header class="dark" data-aos="fade-down" data-aos-duration="1000">
+        <div class="header_wrap">
+            <div class="logo">
+               <a href="./index.html">
+                   <img src="./images/logo.png" class="dark" alt="미래비즈코리아 로고">
+                   <img src="./images/logo_w.png" class="bright" alt="미래비즈코리아 화이트 로고">
+                </a>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html#main">About</a>
+                    <ul class="sub">
+                        <li><a href="./about.html#main">기업 소개</a></li> 
+                        <li><a href="./about.html#history">연혁</a></li> 
+                        <li><a href="./about.html#keyword">키워드</a></li> 
+                        <li><a href="./about.html#vision">비전</a></li> 
+                        <li><a href="./about.html#certificate01">특허 / 인증</a></li> 
+                        <li><a href="./about.html#ci">CI</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a href="./business.html#anchor1">Business</a>
+                </li>
+                <li>
+                    <a href="./brand.html">Brand</a>
+                    <ul class="sub">
+                        <li><a href="./brand.html#family">패밀리</a></li>
+                        <li><a href="./brand.html#brand">브랜드</a></li>
+                        <li><a href="./brand.html#portfolio">포트폴리오</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                    <ul class="sub">
+                        <li><a href="./contact.html">오시는 길</a></li> 
+                        <li><a href="./contact.html#anchor2">소통 안내</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a href="./history.html">History</a>
+                </li>
+                <li>
+                    <a href="./news.html">News</a>
+                </li>
+            </ul>  
+        </div>
+    </header>
+    
+    <div class="hamburger">
+        <input type="checkbox" id="check"/> 
+        <label for="check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="hamburger_menu">
+            <ul class="hbg_gnb">
+                <li class="animate__animated">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="animate__animated">
+                    <a href="./about.html#main">About</a>
+                    <ul class="hbg_sub">
+                        <li><a href="./about.html#main">기업 소개</a></li> 
+                        <li><a href="./about.html#history">연혁</a></li> 
+                        <li><a href="./about.html#keyword">키워드</a></li> 
+                        <li><a href="./about.html#vision">비전</a></li> 
+                        <li><a href="./about.html#certificate01">특허 / 인증</a></li> 
+                        <li><a href="./about.html#ci">CI</a></li> 
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="./business.html#anchor1">Business</a>
+                    <ul class="hbg_sub">
+                        <li><a href="./business.html#anchor1">주력사업</a></li>
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="./brand.html">Brand</a>
+                    <ul class="hbg_sub">
+                        <li><a href="./brand.html#family">패밀리</a></li>
+                        <li><a href="./brand.html#brand">브랜드</a></li>
+                        <li><a href="./brand.html#portfolio">포트폴리오</a></li>
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="./contact.html">Contact</a>
+                    <ul class="hbg_sub">
+                        <li><a href="./contact.html">오시는 길</a></li> 
+                        <li><a href="./contact.html#anchor2">소통 안내</a></li> 
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="./history.html">History</a>
+                    <ul class="hbg_sub">
+                        <li><a href="./history.html">히스토리</a></li> 
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="./news.html">News</a>
+                    <ul class="hbg_sub">
+                        <li><a href="./news.html">미디어 룸</a></li> 
+                    </ul>   
+                </li>
+            </ul>
+            <div class="footer_sns">
+                <span>SOCIAL MEDIA</span>
+                <ul>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="blog"><a href="" target="_blank"><i></i></a></li>
+                    <li class="post"><a href="" target="_blank"><i></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+                <p>Copyright © Mirae Biz Korea, Co., Ltd All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/header.js"></script>    
+
+<!--family fullpage 없음 -->
+<section id="family" class="cont">
+    <div class="img_box">
+        <div class="img_box_frame"></div>
+    </div>
+    <div class="family_wrap">
+        <h2 class="tit" data-aos="fade-up" data-aos-duration="1000" data-in-effect="fadeIn">Family</h2>
+        <p class="tit_copy" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">공유경제부터 ECO비즈니스,<br> 그리고 4차 산업혁명 테크놀러지를 향하여!</p>
+    
+        <div class="family_list">
+            <ul>
+                <li>
+                    <div class="family_name">
+                        <div class="inner">
+                            <img src="./images/brand_img/family_icon1.png" alt="마케팅사업부 아이콘">
+                            <strong>마케팅사업부</strong>
+                        </div>
+                    </div>
+                    <div class="family_box line1">
+                        <span>· 타지역서비스 마케팅</span>
+                        <span>· KT비즈콜 플랫폼</span>
+                        <span>· 클라우드마케팅매니저 플랫폼</span>
+                        <div class="circle1 line1"></div>
+                        <div class="circle2 line1"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="family_name">
+                        <div class="inner">
+                            <img src="./images/brand_img/family_icon2.png" alt="렌탈사업부 아이콘">
+                            <strong>렌탈사업부</strong>
+                        </div>
+                    </div>
+                    <div class="family_box line1">
+                        <span>· VR 렌탈 쇼핑몰</span>
+                        <span>· 렌탈창업 플랫폼</span>
+                        <span>· 전국지사 및 총판/대리점 네트워크</span>
+                        <div class="circle1 line1"></div>
+                        <div class="circle2 line1"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="family_name">
+                        <div class="inner">
+                            <img src="./images/brand_img/family_icon3.png" alt="엠케이렌탈 아이콘">
+                            <strong>엠케이렌탈</strong>
+                        </div>
+                    </div>
+                    <div class="family_box line1">
+                        <span>· 렌탈 금융 플랫폼</span>
+                        <span>· B2B 대량렌탈 솔루션</span>
+                        <span>· TV홈쇼핑 플랫폼</span>
+                        <div class="circle1 line1"></div>
+                        <div class="circle2 line1"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="family_name">
+                        <div class="inner">
+                            <img src="./images/brand_img/family_icon4.png" alt="EV충전사업부 아이콘">
+                            <strong>EV충전사업부</strong>
+                        </div>
+                    </div>    
+                    <div class="family_box line1">
+                        <span>· EV충전기 쇼핑몰 'EV집밥'</span>
+                        <span>· EV충전 관제시스템</span>
+                        <span>· 설치 및 유지보수 지원팀</span>
+                        <div class="circle1 line1"></div>
+                        <div class="circle2 line1"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="family_name">
+                        <div class="inner">
+                            <img src="./images/brand_img/family_icon5.png" alt="솔루션사업부 아이콘">
+                            <strong>솔루션사업부</strong>
+                        </div>
+                    </div>
+                    <div class="family_box line2">
+                        <span>· IT 플랫폼 R&D센터</span>
+                        <span>· 플랫폼 전문개발 그룹</span>
+                        <span>· 아웃소싱 플랫폼 사업팀</span>
+                        <div class="circle1 line2"></div>
+                        <div class="circle2 line2"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="family_name">
+                        <div class="inner">
+                            <img src="./images/brand_img/family_icon6.png" alt="유통사업부 아이콘">
+                            <strong>유통사업부</strong>
+                        </div>
+                    </div>
+                    <div class="family_box line2">
+                        <span>· 기업복지몰 플랫폼 분양</span>
+                        <span>· B2B 폐쇄형쇼핑몰 '레인보우'</span>
+                        <span>· 온라인 유통 사업팀</span>
+                        <div class="circle1 line2"></div>
+                        <div class="circle2 line2"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="family_name">
+                        <div class="inner">
+                            <img src="images/brand_img/family_icon7.png" alt="VR영상사업부 아이콘">
+                            <strong>VR영상사업부</strong>
+                        </div>
+                    </div>
+                    <div class="family_box line2">
+                        <span>· VR 컨텐츠제작 및 전문인력 양성</span>
+                        <span>· 유튜브 크리에이터 그룹</span>
+                        <span>· 라이브쇼핑 제작팀</span>
+                        <div class="circle1 line2"></div>
+                        <div class="circle2 line2"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="family_name">
+                        <div class="inner">
+                            <img src="./images/brand_img/family_icon8.png" alt="통합고객센터 아이콘">
+                            <strong>통합고객센터</strong>
+                        </div>
+                    </div>
+                    <div class="family_box line2">
+                        <span>· 본사 직영 콜센터</span>
+                        <span>· 아웃소싱 콜상담 대행</span>
+                        <span>· 라이브쇼핑 제작팀</span>
+                        <div class="circle1 line2"></div>
+                        <div class="circle2 line2"></div>
+                    </div>
+                </li>
+                <div class="circleline">
+                    <svg viewBox="-7 -7 1494 376">
+                        <rect width="1480" height="362" stroke-width="7" rx="200" ry="200"/>
+                    </svg>
+                </div>
+            </ul>
+        </div>    
+    </div>
+</section>        
+
+<!--brand-->
+<section id="brand" class="cont">
+    <div class="img_box">
+        <div class="img_box_frame"></div>
+    </div>
+    <div class="brand_wrap">
+        <h2 class="tit" data-aos="fade-up" data-aos-duration="1000" >Brand</h2>
+        <p class="tit_copy" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" >모든 전문 부서가 합심하여 만든<br> 오직 '미래비즈코리아'만의 OUTPUT</p>
+        
+        <div class="brand_cate">
+            <h4>Category</h4>
+            <ul class="cate_list">
+                <li class="cate_btn on" data-filter="*"><a>All</a></li>
+                <li class="cate_btn" data-filter="rental"><a>Rental/Financial</a></li>
+                <li class="cate_btn" data-filter="ev"><a>Electric Car</a></li>
+                <li class="cate_btn" data-filter="vr"><a>VR/Metaverse</a></li>
+                <li class="cate_btn" data-filter="mkt"><a>Marketing</a></li>
+            </ul>
+        </div>
+
+        <div class="brand_list">
+            <ul>
+                <li class="list_box brand1" data-type="rental">
+                    <a href="" target="_blank">
+                        <img src="./images/brand_img/brand_img1.JPG" alt="브랜드 배경 이미지1">
+                        <div class="dim"></div>
+                        <div class="list_txt">
+                            <strong>렌탈창업플랫폼</strong>
+                            <span>렌탈상품 중개 판매사업의 쉬운 시작<br>
+                            렌탈몰제작/상품관리/상담대행 등
+                            </span>
+                            <button><i class="fas fa-plus-circle"></i> more</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_box brand3" data-type="ev">
+                    <a href="" target="_blank">
+                        <img src="./images/brand_img/brand_img2.png" alt="브랜드 배경 이미지2">
+                        <div class="dim"></div>
+                        <div class="list_txt">
+                            <strong>EV 집밥</strong>
+                            <span>대한민국 최초, 유일<br>
+                            전기차충전기 전문쇼핑몰 플랫폼</span>
+                            <button><i class="fas fa-plus-circle"></i> more</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_box brand1" data-type="rental">
+                    <a href="" target="_blank">
+                        <img src="./images/brand_img/brand_img3.png" alt="브랜드 배경 이미지3">
+                        <div class="dim"></div>
+                        <div class="list_txt">
+                            <strong>(주)엠케이렌탈</strong>
+                            <span>미래비즈코리아 공식 렌탈사<br>
+                            렌탈상품의 설계/금융/유통 컨설팅</span>
+                            <button><i class="fas fa-plus-circle"></i> more</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_box brand3" data-type="rental">
+                    <a href="" target="_blank">
+                        <img src="./images/brand_img/brand_img4.jpg" alt="브랜드 배경 이미지4">
+                        <div class="dim"></div>
+                        <div class="list_txt">
+                            <strong>렌탈금융플랫폼</strong>
+                            <span>쉬운 렌탈사 설립 올인원 솔루션<br>
+                            상품화/유통/시스템/콜센터 지원</span>
+                            <button><i class="fas fa-plus-circle"></i> more</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_box brand1" data-type="vr">
+                    <a href="" target="_blank">
+                        <img src="./images/brand_img/brand_img5.png" alt="브랜드 배경 이미지5">
+                        <div class="dim"></div>
+                        <div class="list_txt">
+                            <strong>그래픽공방</strong>
+                            <span>미래비즈코리아 VR가상공간 제작소<br>
+                            건축/인테리어/쇼핑 사이버 쇼룸 제작</span>
+                            <button><i class="fas fa-plus-circle"></i> more</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_box brand3" data-type="rental">
+                    <a href="" target="_blank">
+                        <img src="images/brand_img/brand_img6.jpg" alt="브랜드 배경 이미지6">
+                        <div class="dim"></div>
+                        <div class="list_txt">
+                            <strong>MK통합고객센터</strong>
+                            <span>미래비즈코리아 직영 콜센터<br>
+                            안정적인 'CRM'과 다양한 위탁업무</span>
+                            <button><i class="fas fa-plus-circle"></i> more</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_box brand1" data-type="rental">
+                    <a href="" target="_blank">
+                        <img src="./images/brand_img/brand_img7.png" alt="브랜드 배경 이미지7">
+                        <div class="dim"></div>
+                        <div class="list_txt">
+                            <strong>VR렌탈쇼핑몰</strong>
+                            <span>국내 출시된 모든 렌탈상품 입점<br>
+                            스펙부터 혜택까지 비교가능한 강력한 검색엔진</span>
+                            <button><i class="fas fa-plus-circle"></i> more</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_box brand3" data-type="rental">
+                    <a href="" target="_blank">
+                        <img src="./images/brand_img/brand_img8.jpg" alt="브랜드 배경 이미지8">
+                        <div class="dim"></div>
+                        <div class="list_txt">
+                            <strong>MK렌탈몰</strong>
+                            <span>MK렌탈 상품 전용 브랜드 VR편집샵<br>
+                            전문 상품 상담 통합고객센터 독립 운영</span>
+                            <button><i class="fas fa-plus-circle"></i> more</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_box brand1" data-type="rental">
+                    <a href="" target="_blank">
+                        <img src="./images/brand_img/brand_img9.png" alt="브랜드 배경 이미지9">
+                        <div class="dim"></div>
+                        <div class="list_txt">
+                            <strong>레인보우</strong>
+                            <span>사업자/기업 전용 폐쇄형 쇼핑몰<br>
+                            온라인 최저가상품 약10,000개 상품입점</span>
+                            <button><i class="fas fa-plus-circle"></i> more</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_box brand3" data-type="vr">
+                    <a href="" target="_blank">
+                        <img src="./images/brand_img/brand_img10.jpg" alt="브랜드 배경 이미지10">
+                        <div class="dim"></div>
+                        <div class="list_txt">
+                            <strong>VR개발교육진흥원</strong>
+                            <span>온라인/오프라인 전문가교육 양성기관
+                            <br>VR, 메타버스, 드론 인재 양성 및 취업</span>
+                            <button><i class="fas fa-plus-circle"></i> more</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_box brand1" data-type="mkt">
+                    <a href="" target="_blank">
+                        <img src="./images/brand_img/brand_img11.png" alt="브랜드 배경 이미지11">
+                        <div class="dim"></div>
+                        <div class="list_txt">
+                            <strong>KT비즈콜</strong>
+                            <span>KT공식 고객관리 부가서비스<br>
+                            고객정보/메모/일정/녹취/콜백/문자 등</span>
+                            <button><i class="fas fa-plus-circle"></i> more</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="list_box brand3" data-type="mkt">
+                    <a href="" target="_blank">
+                        <img src="./images/brand_img/brand_img12.png" alt="브랜드 배경 이미지12">
+                        <div class="dim"></div>
+                        <div class="list_txt">
+                            <strong>클라우드마케팅매니저</strong>
+                            <span>KT비즈콜 솔루션의 모든 기능과<br>
+                            강력한 마케팅 사업자DB까지 제공</span>
+                            <button><i class="fas fa-plus-circle"></i> more</button>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--portfolio-->
+<section id="portfolio" class="cont">
+    <div class="img_box">
+        <div class="img_box_frame"></div>
+    </div>
+    <div class="portfolio_wrap">
+        <h2 class="tit" data-aos="fade-up" data-aos-duration="1000">Portfolio</h2>
+        <p class="tit_copy" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">주옥같은 미래비즈코리아 현역 비즈니스 모델 Line-Up</p>
+        <div class="portfolio_list" >
+            <ul id="mouseCover">
+                <li class="list_box data_voucher">
+                    <a href="" target="_blank">
+                        <div class="list_txt">
+                            <div>
+                                <strong>KT 데이터바우처</strong>
+                                <button><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </a>
+                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img1.jpg" alt="포트폴리오 이미지1">
+                    <div class="cover"></div>
+                </li>
+                <li class="list_box">
+                    <a href="" target="_blank">
+                        <div class="list_txt">
+                            <div>
+                                <strong>미래비즈스토어</strong>
+                                <span>미래비즈 네이버스마트스토어</span>
+                            </div>
+                            <button><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </a>
+                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img2.jpg" alt="포트폴리오 이미지2">
+                    <div class="cover"></div>
+                </li>
+
+                <li class="list_box"> 
+                    <a href="" target="_blank">
+                        <div class="list_txt">
+                            <div>
+                                <strong>엠케이렌탈스토어</strong>
+                                <span>엠케이렌탈 네이버스마트스토어</span>
+                            </div>
+                            <button><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </a>
+                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img3.jpg" alt="포트폴리오 이미지3">
+                </li>
+                <li class="list_box"> 
+                    <a href="" target="_blank">
+                        <div class="list_txt">
+                            <div>
+                                <strong>LG 단독몰</strong>
+                                <span>LG전자 렌탈쇼핑몰</span>
+                            </div>
+                            <button><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </a>
+                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img4.jpg" alt="포트폴리오 이미지4">
+                </li>
+                <li class="list_box"> 
+                    <a href="" target="_blank">
+                        <div class="list_txt">
+                            <div>
+                                <strong>SK 단독몰</strong>
+                                <span>SK 렌탈쇼핑몰</span>
+                            </div>
+                            <button><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </a>
+                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img5.jpg" alt="포트폴리오 이미지5">
+                </li>
+                <li class="list_box"> 
+                    <a href="" target="_blank">
+                        <div class="list_txt">
+                            <div>
+                                <strong>코웨이 단독몰</strong>
+                                <span>코웨이 렌탈쇼핑몰</span>
+                            </div>
+                            <button><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </a>
+                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img6.jpg" alt="포트폴리오 이미지6">
+                </li>
+                <li class="list_box"> 
+                    <a href="" target="_blank">
+                        <div class="list_txt">
+                            <div>
+                                <strong>LG헬로비전 단독몰</strong>
+                                <span>LG헬로비전 렌탈쇼핑몰</span>
+                            </div>
+                            <button><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </a>
+                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img7.jpg" alt="포트폴리오 이미지7">
+                </li>
+                <li class="list_box"> 
+                    <a href="" target="_blank">
+                        <div class="list_txt">
+                            <div>
+                                <strong>쿠쿠 단독몰</strong>
+                                <span>쿠쿠 렌탈쇼핑몰</span>
+                            </div>
+                            <button><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </a>
+                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img8.jpg" alt="포트폴리오 이미지8">
+                </li>
+                <li class="list_box"> 
+                    <a href="" target="_blank">
+                        <div class="list_txt">
+                            <div>
+                                <strong>청호나이스 단독몰</strong>
+                                <span>청호나이스 렌탈쇼핑몰</span>
+                            </div>
+                            <button><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </a>
+                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img9.png" alt="포트폴리오 이미지9">
+                </li>
+                <li class="list_box"> 
+                    <a href="" target="_blank">
+                        <div class="list_txt">
+                            <div>
+                                <strong>렌탈 전산시스템</strong>
+                                <span>CMS 렌탈 관리자 시스템</span>
+                            </div>
+                            <button><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </a>
+                    <img class="follow_img" id="result" src="images/brand_img/portfolio_img10.jpg" alt="포트폴리오 이미지10">
+                </li>
+                <li class="list_box"> 
+                    <a href="" target="_blank">
+                        <div class="list_txt">
+                            <div>
+                                <strong>타지역서비스<br> 전산시스템</strong>
+                                <span>N사 타지역서비스 전산시스템</span>
+                            </div>
+                            <button><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </a>
+                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img11.jpg" alt="포트폴리오 이미지11">
+                </li>
+                <li class="list_box"> 
+                    <a href="" target="_blank">
+                        <div class="list_txt">
+                            <div>
+                                <strong>통합고객센터 CRM</strong>
+                                <span>자사 콜센터 전산시스템</span>
+                            </div>
+                            <button><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </a>
+                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img11.jpg" alt="포트폴리오 이미지12">
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer class="section hd_dark">
+    <div id="footer_pc" class="footer">
+        <div class="footer_wrap">
+            <div class="footer_left">
+                <ul class="footer_menu">
+                    <li class="home">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="about">
+                        <a href="./about.html#main">About</a>
+                    </li>
+
+                    <li class="business">
+                        <a href="./business.html#anchor1">Business</a>
+                    </li>    
+
+                    <li class="brand">
+                        <a href="./brand.html">Brand</a>
+                    </li>
+
+                    <li class="contact">
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                    <li class="history">
+                        <a href="./history.html">History</a>
+                    </li>
+                    <li class="news">
+                        <a href="./news.html">News</a>
+                    </li>
+                </ul>
+
+                <div class="footer_sns">
+                    <span>SOCIAL MEDIA</span>
+                    <ul>
+                        <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="blog"><a href="" target="_blank"><i></i></a></li>
+                        <li class="post"><a href="" target="_blank"><i></i></a></li>
+                        <li><a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_right">
+                <a href="./index.html"><img src="./images/logo.png" class="footer_logo" alt="미래비즈코리아 로고"></a>
+                <p class="company_info">
+                    <i>(주) 미래비즈코리아</i><br>
+                    대표자&nbsp;&nbsp;김비즈<br>
+                    사업자번호&nbsp;&nbsp;000-00-00000
+                </p>
+                <p class="company_info">
+                    서울특별시 ㅇㅇ구 ㅇㅇ로 000 ㅇㅇㅇㅇ타워 0차 1004호<br>
+                    Copyright © Mirae Biz Korea, Co., Ltd All Rights Reserved.
+                </p>
+
+                <p class="company_info">
+                    Tel&nbsp;&nbsp;<a href="tel:0000-0000" title="전화연결">0000-0000</a><br>
+                    Fax&nbsp;&nbsp;<a href="tel:02-0000-0000" title="팩스연결">02-0000-0000</a><br>
+                    Contact to&nbsp;&nbsp;<a href="mailto:mailto@mail.com" title="메일전송">mailto@mail.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="footer_m" class="footer">
+        <div class="footer_wrap">
+            <a href="./index.html"><img src="./images/logo.png" class="footer_logo" alt="미래비즈코리아 로고"></a>
+            <ul class="footer_menu">
+                <li class="home">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="about">
+                    <a href="./about.html#main">About</a>
+                </li>
+                <li class="business">
+                    <a href="./business.html">Business</a>
+                </li>
+                <li class="brand">
+                    <a href="./brand.html">Brand</a>
+                </li>
+                <li class="contact">
+                    <a href="./contact.html">Contact</a>
+                </li>
+                <li class="history">
+                    <a href="./history.html">History</a>
+                </li>
+                <li class="news">
+                    <a href="./news.html">News</a>
+                </li>
+            </ul>
+            <p class="company_info">
+                <i>(주) 미래비즈코리아</i><br>
+                대표자&nbsp;&nbsp;김비즈<br>
+                사업자번호&nbsp;&nbsp;000-00-00000
+            </p>
+            <p class="company_info">
+                서울특별시 ㅇㅇ구 ㅇㅇ로 000 ㅇㅇㅇㅇ타워 0차 1004호<br>
+                Copyright © Mirae Biz Korea, Co., Ltd All Rights Reserved.
+            </p>
+            <p class="company_info">
+                Tel&nbsp;&nbsp;<a href="tel:0000-0000" title="전화연결">0000-0000</a><br>
+                Fax&nbsp;&nbsp;<a href="tel:02-0000-0000" title="팩스연결">02-0000-0000</a><br>
+                Contact to&nbsp;&nbsp;<a href="mailto:mailto@mail.com" title="메일전송">mailto@mail.com</a>
+            </p>
+            <div class="footer_sns">
+                <ul>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="blog"><a href="" target="_blank"><i></i></a></li>
+                    <li class="post"><a href="" target="_blank"><i></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+$(".footer_menu .brand").addClass("on").siblings().removeClass("on");  
+$("body").addClass("hd_bg");
+
+/*header color*/
+$(".header_wrap").removeClass("bright");
+$(".header_wrap").addClass("dark");
+
+/*category 필터 addClass"on"*/
+$(".brand_cate .cate_list>li").on("click", function(){
+    $(".brand_cate .cate_list>li").removeClass("on");
+    $(this).addClass("on");
+});
+
+/*dim color*/
+/*홀수box에만 블루dim*/
+$(".brand_list .list_box:nth-child(odd)").children("a").children("div").addClass("blue");
+$(".brand_list .list_box:nth-child(even)").children("a").children("div").addClass("gray");
+
+/*brand box 나타나기 효과*/
+window.sr = new ScrollReveal()
+
+sr.reveal('.brand1', {
+    duration: 2000,
+    useDelay: 'always',
+    viewFactor: 0.7,
+    reset: false,
+})
+sr.reveal('.brand3', {
+    duration: 1000,
+    useDelay: 'always',
+    viewFactor: 0.7,
+    reset: false,
+})
+
+$(".family_wrap .tit").textillate( {
+    initialDelay : 100,
+    in: {
+        delay: 90,
+    }
+});
+
+/*scroll animation*/
+$(window).on('scroll', function(){
+    var win = $(window).scrollTop(); 
+    var branTop = $("#brand").offset().top - 700;
+    var portTop = $("#portfolio").offset().top - 700;
+    var familTop = $("#family").offset().top;
+
+    if ((win >= familTop) && win < branTop){
+        $("#family .family_list").addClass("ani");
+        $("#brand .img_box").removeClass("ani");
+    }
+    else if ((win >= branTop) && win < portTop){
+        $("#brand .img_box").addClass("ani");
+        $("#portfolio .img_box").removeClass("ani");
+    }
+    else if (win >= portTop) {
+        $("#portfolio .img_box").addClass("ani");
+        $("#brand .img_box").removeClass("ani");
+        $("#family .family_list").removeClass("ani");
+    }
+    else {
+        $("#brand .img_box").removeClass("ani");
+        $("#portfolio .img_box").removeClass("ani");
+        $("#family .family_list").removeClass("ani");
+    }
+});
+
+
+/*카테고리 필터*/
+const buttonDom = document.querySelector('.cate_list');
+const cateListDom = document.querySelector('.brand_list');
+const cateList = document.querySelectorAll('.list_box');
+
+buttonDom.addEventListener('click', () => {
+
+    const filter = event.target.dataset.filter || event.target.parentNode.dataset.filter;
+
+    if (filter == null) {
+        return;
+    }
+    cateListDom.classList.add('filter');
+    setTimeout(() => {
+        cateList.forEach((list_box) => {
+            if(filter === '*' || filter === list_box.dataset.type) {
+                list_box.classList.remove('invisible');
+            } else {
+                list_box.classList.add('invisible');
+            }
+        });
+        cateListDom.classList.remove('filter');
+    }, 280);
+});
+
+//포스터 마우스 따라다니는 효과
+function onMousemove(e){
+    var mPosX = 0,
+    mPosY = 0,
+    ePosX = 0,
+    ePosY = 0,
+    obj = this;
+
+    if (!e){e = window.event;}
+    if (e.pageX || e.pageY){
+        mPosX = e.pageX;
+        mPosY = e.pageY;
+    } else if (e.clientX || e.clientY){
+        mPosX = e.clientX + document.body.scrollLeft
+                + document.documentElement.scrollLeft;
+        mPosY = e.clientY + document.body.scrollTop
+                + document.documentElement.scrollTop;
+    }
+    //get parent element position in document
+    if (obj.offsetParent){
+        do {
+            ePosX += obj.offsetLeft;
+            ePosY += obj.offsetTop;
+        } while (obj = obj.offsetParent);
+    }
+    $(".portfolio_list .list_box").find(".follow_img").css({"top": mPosY-ePosY, "left": mPosX-ePosX});
+}
+var elem = document.getElementById('mouseCover');
+elem.addEventListener('mousemove', onMousemove, false);
+</script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+
+  <link href="../company/css/Pretendard/pretendard.css" resl="stylesheet"/>
+  <link href="Semantic-UI-CSS-master/semantic.min.css" rel="stylesheet"/>
+  <link href="Semantic-UI-CSS-master/calendar.min.css" rel="stylesheet"/>
+  <link href="css/common.css" rel="stylesheet"/>
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+  <script src="Semantic-UI-CSS-master/calendar.min.js"></script>
+</head>
+<style>
+   
+</style>
+<body>
+<section id="header">
+
+    <div class="hbg_menu ui vertical inverted sidebar left menu visible">
+
+        <div class="hbg_btn ui black big launch right attached fixed button">
+            <i class="close arrow left icon"></i>
+            <i class="open content icon"></i>
+        </div>
+
+        <div class="item">
+            <a class="mk_logo ui logo" href="index.html">MK RENTAL</a>
+        </div>
+
+        <div class="item">
+            <div class="menu_slide header">
+              <i class="ui circular user icon"></i>
+              <span class="login_name point_co">담당자</span> 님 로그인
+              <i class="dropdown icon"></i>
+            </div>
+            <div class="menu_li menu">
+                <a class="password menu_tit item" href="password.html">비밀번호 변경</a>
+                <a class="logout menu_tit item point_co2" href="#">로그아웃</a>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="menu_slide header">사이트정보<i class="dropdown icon"></i></div>
+            <div class="menu_li menu">
+                <a class="info menu_tit item" href="information.html">기본정보</a>
+                <a class="header_footer menu_tit item" href="header_footer.html">헤더,푸터</a>
+                <a class="personal_info_process menu_tit item" href="personal_info_process.html">약관,개인정보</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="menu_slide header">제품<i class="dropdown icon"></i></div>
+            <div class="menu_li menu">
+                <a class="product_condition menu_tit item" href="product_condition.html">노출 제품 조건</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="notice">
+    <p class="ntc_tit"><i class="bullhorn icon"></i>공지사항</p>
+    <ul class="ntc_cont">
+        <li class="slide_txt"><a href="#">[LG전자 케어솔루션] 4월 LG 퓨리케어 에어로타워 오브제컬렉션 프로모션</a></li>
+        <li class="slide_txt"><a href="#">[LG전자 케어솔루션] 4월 LG DIOS 전기레인지 프로모션</a></li>
+        <li class="slide_txt"><a href="#">[LG전자 케어솔루션] 4월 LG 힐링미 안마의자 프로모션</a></li>
+    </ul>
+</section>
+
+<body>
+
+<div id="notification" class="wrapper">
+
+	<h2 class="page_tit ui header">안내사항</h2>
+
+	<div class="ui hidden divider"></div>
+
+	<div class="page_content">
+		<!--검색 form-->
+		<form class="search_form">
+			<div class="ui form">
+				<div class="fields">
+					<div class="search_type three wide field">
+						<label class="input_label">검색타입</label>
+						<div class="select_box ui selection dropdown">
+							<input type="hidden" name="gender">
+							<i class="point_co dropdown icon"></i>
+							<div class="default text">선택</div>
+							<div class="menu">
+								<div class="item" data-value="1">제목</div>
+								<div class="item" data-value="0">회사명</div>
+							</div>
+						</div>
+					</div>
+					<div class="search_val five wide field">
+						<label class="input_label">검색 값</label>
+						<input class="input_box" type="text" placeholder="검색값입력">
+					</div>
+					<div class="selec_date four wide field">
+						<label class="input_label">검색 시작 날짜</label>
+						<div class="start_date ui calendar" id="rangestart">
+							<div class="ui input left icon">
+								<i class="point_co calendar icon"></i>
+								<input class="input_box" name="datestart" type="text" placeholder="시작날짜선택">
+							</div>
+						</div>
+					</div>
+					<div class="selec_date four wide field">
+						<label class="input_label">검색 종료 날짜</label>
+						<div class="end_date ui calendar" id="rangeend">
+							<div class="ui input left icon">
+								<i class="point_co calendar icon"></i>
+								<input class="input_box" name="dateend" type="text" placeholder="종료날짜선택">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<div class="ui hidden divider"></div>
+
+		<button class="search_btn ui right floated teal button item">검색</button>
+	</div>	
+
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div class="ui section divider"></div>
+
+	<div class="page_content">
+
+		<div class="ui hidden divider"></div>
+
+		<div class="btn_zone">
+			<button class="del_btn ui negative button">삭제</button>
+			<button class="save_btn ui primary button">등록</button>
+		</div>
+
+		<div class="ui hidden divider"></div>
+
+		<!--리스트-->
+		<label class="page_count page_tit">총 페이지 <span class="point_co account_page">12</span> / 총 건수 <span class="point_co account_num">120</span></lable>
+		<table class="page_table ui celled striped padded table">
+			<thead>
+				<tr>
+					<th class="collapsing single line">
+						<div class="item">
+						<div class="all_chk ui checkbox">
+							<input type="checkbox" id="allcheck">
+							<label class="chk_tit" for="allcheck"></label>
+						</div>
+						</div>
+					</th>
+					<th>제목</th>
+					<th>회사명</th>
+					<th>등록일</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>
+						<div class="item">
+							<div class="ui checkbox">
+								<input type="checkbox" id="ntfc01">
+								<label class="chk_label" for="ntfc01"></label>
+							</div>
+						</div>
+					</td>
+					<td class="selectable">
+						<a href="notice_detail.html">렌탈사 안내사항 입니다.</a>
+					</td>
+					<td>
+						미래비즈
+					</td>
+					<td>
+						2022-10-10
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="ui checkbox">
+							<input type="checkbox" id="ntfc02">
+							<label class="chk_label" for="ntfc02"></label>
+						</div>
+					</td>
+					<td class="selectable">
+						<a href="notice_detail.html">렌탈사 안내사항 입니다.</a>
+					</td>
+					<td>
+						미래비즈
+					</td>
+					<td>
+						2022-10-10
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="ui checkbox">
+							<input type="checkbox" id="ntfc03">
+							<label class="chk_label" for="ntfc03"></label>
+						</div>
+					</td>
+					<td class="selectable">
+						<a href="notice_detail.html">렌탈사 안내사항 입니다.</a>
+					</td>
+					<td>
+						미래비즈
+					</td>
+					<td>
+						2022-10-10
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>	
+
+	<div class="ui pagination menu">
+		<a class="active item">
+			1
+		</a>
+		<a class="item">
+			2
+		</a>
+		<a class="item">
+			3
+		</a>
+		<a class="item">
+			4
+		</a>
+	</div>
+</div>
+<script src="./js/common.js"></script>
+<script>
+
+$('#rangestart').calendar({
+    type: 'date',
+    endCalendar: $('#rangeend')
+});
+$('#rangeend').calendar({
+    type: 'date',
+    startCalendar: $('#rangestart')
+});
+
+$('.ui.dropdown').dropdown();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,449 @@
+body,html{
+    color:#424242;
+}
+
+/* header */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:15px 0;
+    background: transparent;
+    z-index:100;
+}
+
+@media all and (max-width:1600px) {
+    body{
+        font-size:14px;
+    }   
+}
+@media all and (max-width:850px) {
+    body{
+        font-size:12px;
+    }
+}
+@media all and (max-width:320px) {
+    body{
+        font-size:10px;
+    }
+}
+
+/* footer */
+footer,
+footer>div{
+    height: auto!important;
+}
+.footer{
+    width: 100%;
+    background: #FFF; 
+    padding: 40px 0;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;    
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0,0,0,0.3);
+}
+
+body {
+    overflow: auto;
+}
+body.click {
+    overflow: hidden;
+}
+
+/*vr_edu_page css*/
+#vr_edu_page {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    font-size: 1em;
+}
+#vr_edu_page .mainbackground {
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 0px;
+    width:  100%;
+    height: auto;
+}
+#vr_edu_page header,
+#vr_edu_page header.click {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-bottom: 1px solid transparent;
+    z-index: 9999 !important;
+}
+#vr_edu_page header.dim {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#vr_edu_page header.dim.click {
+    border-bottom: 1px solid transparent;
+}
+#vr_edu_page header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.3);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#vr_edu_page header.dim::before  {
+    bottom: 0;
+}
+#vr_edu_page header.click::before {
+    bottom: -100%;
+}
+#vr_edu_page .header_inner {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+    height: 90px;
+    justify-content: space-between;
+    z-index: 9999 !important;
+}
+#vr_edu_page .logo {
+    cursor: pointer;
+}
+#vr_edu_page .logo h1 {
+    position: relative;
+    letter-spacing: 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    z-index: 9999;
+}
+#vr_edu_page #menu > ul > li {
+    padding: 0 25px;
+    display: inline-block;
+    line-height: 1.5em;
+}
+#vr_edu_page #menu > ul > li > a {
+    position: relative;
+    display: block;
+    letter-spacing: 0;
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.9);
+    transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#vr_edu_page #menu > ul > li > a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 0;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: translateX(-50%);
+    transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#vr_edu_page #menu > ul > li > a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+#vr_edu_page #menu > ul > li > a:hover::before {
+    width: 100%;
+}
+#vr_edu_page #m_menu {
+    display: none;
+    width: 50px;
+    height: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+#vr_edu_page #m_menu .hbg_btn {
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.65);
+    opacity: 1;
+    transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 9999;
+}
+#vr_edu_page #m_menu .hbg_btn::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -12px;
+    width: 120%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.85);
+    transform: translateY(0) rotate(0deg);
+    transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#vr_edu_page #m_menu .hbg_btn::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -12px;
+    width: 120%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.85);
+    transform: translateY(0) rotate(0deg);;
+    transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#vr_edu_page #m_menu.click .hbg_btn {
+    background-color: rgba(255, 255, 255, 0);
+}
+#vr_edu_page #m_menu.click .hbg_btn::before {
+    transform: translateY(11px) rotate(-45deg);
+}
+#vr_edu_page #m_menu.click .hbg_btn::after {
+    transform: translateY(-11px) rotate(45deg);
+}
+#m_menu_box {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(8, 22, 32, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 9998 !important;
+    transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+#m_menu_box.click {
+    right: 0;
+}
+#m_menu_box > ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 150px 80px 80px;
+    box-sizing: border-box;
+}
+#m_menu_box > ul > li {
+    height: calc(100%/6);
+}
+#m_menu_box > ul > li > a {
+    display: block;
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+}
+#m_menu_box > ul > li > a:hover {
+    border-bottom: outset 2px #fff;
+}
+#vr_edu_page .vr_edu_inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 1 !important;
+}
+.vr_edu_inner .edu_btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color :#fff;
+    background: linear-gradient(316deg, #000000d6, #2e2e2eb0);
+    box-shadow: inset 15px 15px 25px rgb(255 255 255 / 14%), inset -10px -10px 20px rgb(0 0 0 / 30%), 0px 0px 0px rgb(92 81 126 / 50%);
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.vr_edu_inner .edu_btn:hover {
+    background: linear-gradient(316deg, #000000d6, #131313b0);
+    box-shadow: inset 20px 20px 40px rgb(0 0 0 / 25%), inset -20px -20px 30px rgba(134, 134, 134, 0.3), 0px 0px 25px rgb(92 81 126 / 50%);
+}
+.vr_edu_inner .online, 
+.vr_edu_inner .offline {
+    margin: 20px;
+    width: calc(30% - 40px);
+    min-height: 300px;
+}
+.vr_edu_inner .exchange {
+    width: calc(60% - 40px);
+    background: linear-gradient(316deg, #0f2838d6, #4d3e58b0);
+}
+.vr_edu_inner .exchange:hover {
+    background: linear-gradient(316deg, #0f2838d6, #4d3e58b0);
+}
+.vr_edu_inner .btn_wrap {
+    padding: 40px 0;
+    position: relative;
+    z-index: 1;
+}
+.vr_edu_inner .exchange .btn_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.vr_edu_inner .btn_wrap > strong {
+    margin-bottom: 1.5em;
+    display: block;
+    letter-spacing: 0;
+    font-size: 2.2em;
+    font-weight: 500;
+}
+.vr_edu_inner .exchange .btn_wrap > strong {
+    margin-bottom: 0;
+} 
+.vr_edu_inner .btn_wrap > strong > span {
+    padding-top: 12px;
+    display: block;
+    font-size: 0.65em;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.vr_edu_inner .btn_wrap > button {
+    position: relative;
+    padding: 15px 30px;
+    display: inline-block;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(315deg, #ffffff8c, #ffffff33);
+    border-radius: 50px;    
+    box-shadow: inset 5px 5px 10px rgb(255 255 255 / 67%), inset -5px -5px 10px rgb(66 66 66 / 60%);
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.vr_edu_inner .exchange .btn_wrap > button {
+        width: 60px;
+}
+.vr_edu_inner .exchange .btn_wrap > button > span {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.vr_edu_inner .btn_wrap > button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: inset 5px 5px 10px rgb(0 0 0 / 30%), inset -5px -5px 10px rgba(138, 138, 138, 0.6);
+}
+.vr_edu_inner .exchange .btn_wrap > button:hover > span {
+    left: 40%;
+}
+.vr_edu_inner .exchange .btn_wrap > button > i {
+    padding-left: 0px;
+    font-size: 0.8em;
+    opacity: 0;
+    transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.vr_edu_inner .exchange .btn_wrap > button:hover > i {
+    padding-left: 35px;
+    opacity: 1;
+}
+.vr_edu_inner .edu_btn > img {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    opacity: 0.6;
+    z-index: -1;
+}
+#vr_edu_footer {
+    width: 100%;
+    padding: 30px 0;
+}
+#vr_edu_footer .footer_inner {
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 90%;
+}
+#vr_edu_footer .footer_inner > .logo {
+    margin: 10px auto;
+    max-width: 1600px;
+    width: 100%;
+}
+#vr_edu_footer .footer_wrap .footer_txt{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    font-size: 0.925em;
+    color: rgba(0, 0, 0, 0.7);
+}
+#vr_edu_footer .footer_wrap .footer_txt.right {
+    flex-direction: column;
+    line-height: 1.3em;
+}
+#vr_edu_footer .footer_wrap .footer_txt.left span {
+    margin-right: 20px;
+    line-height: 1.6em;
+}
+#vr_edu_footer .footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+@media all and (max-width: 1600px) {
+    #vr_edu_page .header_inner {width: 90%;}
+}
+@media all and (max-width: 1040px) {
+    .vr_edu_inner .online, .vr_edu_inner .offline {width: calc(45% - 40px);}
+    .vr_edu_inner .exchange {width: calc(90% - 40px);}
+    #vr_edu_page #menu {display: none;}
+    #vr_edu_page #m_menu {display: flex;}
+    #vr_edu_footer {text-align: center;}
+    #vr_edu_footer .footer_wrap {flex-direction: column;}
+    #vr_edu_footer .footer_wrap .footer_txt {flex-direction: column; align-items: center;}
+    #vr_edu_footer .footer_wrap .footer_txt.left span {margin-right: 0; line-height: 1.8em;}
+    #vr_edu_footer .footer_wrap .footer_txt.right {margin-top: 15px; line-height: 1.5em;}
+    #vr_edu_footer img {width: 190px;}
+}
+@media all and (max-width: 640px) {
+    #vr_edu_page .vr_edu_cont .btn_wrap{font-size: 0.8em;}
+    #vr_edu_page .logo h1 {margin-left: 10px;}
+    #m_menu_box {font-size: 0.9em;}
+    #m_menu_box > ul {padding: 150px 45px 80px;}
+    #vr_edu_page .vr_edu_inner {flex-direction: column;}
+    .vr_edu_inner .edu_btn {margin: 10px; width: calc(90% - 40px); min-height: 100px;}
+    .vr_edu_inner .edu_btn > img {width: 100%; height: auto;}
+    .vr_edu_inner .btn_wrap {display: flex; align-items: center; flex-direction: row; justify-content: space-around; width: 100%;}
+    .vr_edu_inner .btn_wrap > strong {margin-bottom: 0;}
+}
+@media all and (max-width: 460px) {
+    #vr_edu_page .header_inner {height: 50px;}
+    #vr_edu_page .logo h1 {font-size: 22px;}
+    #m_menu_box {font-size: 0.8em;}
+    #m_menu_box > ul {padding: 90px 45px 80px;}
+    .vr_edu_inner .edu_btn {min-height: auto;}
+    .vr_edu_inner .btn_wrap {flex-direction: column !important;}
+    .vr_edu_inner .btn_wrap {padding: 30px 0;}
+    .vr_edu_inner .btn_wrap > strong {font-size: 1.8em; margin-bottom: 15px !important;}
+    .vr_edu_inner .exchange .btn_wrap > button {padding: 10px 30px; width: 45px;}
+}
+@media all and (max-width: 360px) {
+    #m_menu_box {font-size: 0.7em;}
+    #vr_edu_page .vr_edu_inner {margin-top: 30px;}
+    .vr_edu_inner .btn_wrap {padding: 20px 0;}
+}
+@media (hover: hover) {
+    #vr_edu_page header:hover {border-bottom: 1px solid rgba(255, 255, 255, 0.1);}
+    #vr_edu_page header:hover::before {bottom: 0;}
+    #vr_edu_page header.click:hover, #vr_edu_page header.dim.click:hover {border-bottom: 1px solid transparent;}
+    #vr_edu_page header.dim.click:hover {bottom: -100%;}
+}

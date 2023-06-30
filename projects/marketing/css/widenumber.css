@@ -1,0 +1,413 @@
+/* wide_number */
+.wide_number_tit{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top:3%;
+    transition: all 0.3s;
+}
+.wide_number_tit .main_tit {
+    padding-bottom: 30px;
+    font-size: 2.9em;
+    font-weight: 500;
+}
+.wide_number_tit.sub_tit{
+    font-size: 2.2em;
+    font-weight: 600;
+}
+.wide_number_tit>strong {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0px;
+    word-break: keep-all;
+}
+.wide_number_intro_wrap,
+.wide_number_process_wrap,
+.wide_number_agency_wrap {
+    max-width: 1600px;
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.point_blue {
+    color: var(--point-color) !important;
+}
+.point_bold {
+    font-weight: 600 !important;
+}
+
+
+/*전국대표번호 장점*/
+.section.wide_number_intro .symbol {
+    bottom: 3%;
+}
+.wide_number_pros {
+    margin-top: 2%;
+    width: 100%;
+    box-sizing: border-box;
+    animation-delay: 0.3s;
+}
+.wide_number_pros>ul {
+    margin: 3% auto;
+    width: 100%;
+}
+.wide_number_pros>ul>li {
+    position: relative;
+    margin: 50px 40px 40px 40px;
+    display: block;
+    float: left;
+    width: calc((100% - 240px)/3);
+}
+.wide_number_pros>ul>li span{
+    position: absolute;
+    left: 0;
+    top: -45%;
+    display: block;
+    font-size: 3.8em; 
+    font-weight: 500;
+    color: rgba(86, 91, 191, 0.4);
+    z-index: 1;
+}
+.wide_number_pros>ul>li p{
+    position: relative;
+    display: block;
+    padding: 20px 40px;
+    width: 100%;
+    height: 98px;
+    line-height: 1.5em;
+    letter-spacing: 0.1px;
+    word-break: keep-all;
+    font-size: 1.3em;
+    color: #403124;
+    background-color: #fff;
+    box-shadow: 5px 5px 17px rgba(86, 91, 191, 0.1);
+    border-radius: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+
+/*진행절차*/
+
+.section.wide_number_process .fp-scroller{
+    height: 100%;
+}
+.section.wide_number_process {
+    width: 100%;
+    margin: 0 auto;
+}
+.section.wide_number_process ul{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+    padding: 5%;
+}
+.section.wide_number_process ul::after{
+    position: absolute;
+    left: -10%;
+    top: calc(50% - 1px);
+    display: block;
+    z-index: -1;
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--point-color);
+}
+
+.section.wide_number_process ul li{
+    position: relative;
+    width: 385px;
+    height: 385px;
+    transition: all 0.3s;
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+.section.wide_number_process .process_cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:#fff7f2;
+    border-radius: 500px;
+    border: 3px solid var(--point-color);
+    transition: all 0.3s;
+    z-index: 2;
+}
+.section.wide_number_process .process_cont img{
+    width: 25%;
+}
+.section.wide_number_process .process_cont span{
+    padding:10% 0 0 0;
+    display: inline-block;
+    line-height: 1.5em;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+.section.wide_number_process ul li i {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 100%;
+    width: 100%;
+    font-size: 5em;
+    color: var(--point-color2-op5);
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-50%);
+}
+
+
+/*함께하는 전국대표번호 통신사*/
+
+.wide_number_agency_wrap {
+    margin: 5% auto 18%;
+}
+.wide_number_agency_wrap .agency_swiper {
+    padding: 0 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.wide_number_agency_wrap .agency_swiper .swiper-slide {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.wide_number_agency_wrap .swiper-wrapper li img{
+    display: block;
+    height: 100px;
+}
+.wide_number_agency_wrap .swiper-button-prev{
+    left: 0;
+    color: #565bbf;
+}
+.wide_number_agency_wrap .swiper-button-next{
+    right: 0;
+    color: #565bbf;
+}
+.wide_number_agency_wrap .swiper-button-next:hover, .wide_number_agency_wrap .swiper-button-prev:hover {
+    color : var(--point-color);
+}
+
+
+/*배너*/
+.section.wide_number_agency .banner_box {
+    position: absolute;
+}
+
+
+
+#wide_number .animate__fadeInUp {
+    animation-duration: 0.6s !important;
+}
+#wide_number .animate__fadeOut {
+    animation-duration: 0.2s !important;
+}
+#wide_number .symbol.animate__fadeInUp {
+    animation-delay: 0.3s;
+}
+.wide_number_pros.animate__fadeInUp {
+    animation-delay: 0.3s;
+}                                        
+.section.wide_number_process.ani ul::after{
+    animation: point-line 3s forwards;
+}
+.section.wide_number_process.ani ul li{
+    animation: fadeIn 0.4s forwards;
+}
+.section.wide_number_process.ani ul li:nth-child(1){
+    animation-delay: 0.3s;
+}
+.section.wide_number_process.ani ul li:nth-child(2){
+    animation-delay: 0.7s;
+}
+.section.wide_number_process.ani ul li:nth-child(3){
+    animation-delay: 1.1s;
+}
+.section.wide_number_process.ani ul li i {
+    animation: point-arrow linear 1.5s 1.5s infinite;
+}
+@keyframes fadeIn {
+    to {transform: translateX(0); opacity: 1;}
+}
+@keyframes point-line {
+    to {width: 120%;}
+}
+@keyframes point-arrow {
+    to {left: 150%; opacity: 1;}
+}
+
+@media all and (max-width:1600px){
+    .wide_number_process .wide_number_tit{
+        width:90%;
+        margin:0 auto;
+        text-align: left!important;
+    }
+    .section.wide_number_process .wide_number_process_wrap{
+        width: 95%;
+    }
+    .section.wide_number_process .wide_number_process_wrap ul li{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media all and (max-width:1200px){
+    .section.wide_number_process .wide_number_process_wrap ul li{
+        width: 250px;
+        height: 250px;
+        margin:0 10px;
+    }
+}
+@media all and (max-width:1600px) and (orientation: Landscape){
+    .wide_number_pros>ul>li {margin: 50px 40px 10px 40px;}
+}
+
+
+@media all and (max-width:750px) and (orientation: Portrait){
+    .section.wide_number_process {
+        height: auto;
+    }
+    .section.wide_number_process .fp-scroller {
+        height: auto;
+    }
+    .section.wide_number_process .wide_number_process_wrap{
+        width: 100%;
+        margin: 100px auto;
+    }
+    .section.wide_number_process .wide_number_process_wrap ul{
+        padding: 10%;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+    .section.wide_number_process .wide_number_process_wrap ul:after{
+        left: 50%;
+        top: 30%;
+        width: 3px;
+        height: 0%
+    }
+    .section.wide_number_process.ani ul::after{
+        animation: point-line 2s 0.3s forwards;
+    }
+    .section.wide_number_process .wide_number_process_wrap ul li{
+        width:200px;
+        height: 200px;
+        margin: 30px auto;
+        border-radius:100px;
+        border:0;
+        transform: translateX(0);
+        transform: translateY(-30px);
+    }
+    .section.wide_number_process ul li i {
+        top: 100%;
+        left: 50.5%;
+        width: auto;
+        font-size: 3em;
+        transform: translateY(0);
+        transform: translateX(-50%) rotate(90deg);
+        opacity: 0;
+        color: rgba(0, 89, 206, 0.5);
+    }
+    @keyframes point-line {
+        to {height: 50%;}
+    }
+    @keyframes fadeIn {
+        to {transform: translateY(0); opacity: 1;}
+    }
+    @keyframes point-arrow {
+        to {left: 50.5%; top: 130%; opacity: 1;}
+    }
+    .section.wide_number_process.ani ul li:nth-child(1){
+        animation-delay: 0s;
+    }
+    .section.wide_number_process.ani ul li:nth-child(2){
+        animation-delay: 0.4s;
+    }
+    .section.wide_number_process.ani ul li:nth-child(3){
+        animation-delay: 0.8s;
+    }
+    .section.wide_number_process.ani ul li i {
+        animation: point-arrow linear 1.5s 1s infinite;
+    }
+}
+@media all and (max-width:1600px){
+    .wide_number_tit,
+    .section .wide_number_process_wrap,
+    .wide_number_agency .wide_number_tit, .wide_number_pros ul,
+    .wide_number_agency_wrap .agency_swiper {
+        width:90%;
+    }
+    .wide_number_pros>ul>li{margin: 50px 20px 40px 20px; width: calc((100% - 120px)/3);}
+}
+@media all and (max-width:1400px){
+    .wide_number_agency_wrap .swiper-wrapper li img {height: 70px;}
+    .wide_number_pros>ul>li p {padding: 20px 30px;}
+    .wide_number_pros>ul>li br {display: none;}
+}
+@media all and (max-width:1200px){
+    .wide_number_agency_wrap .swiper-wrapper li img {height: 50px;}
+    .wide_number_agency .swiper-scrollbar{
+        display:none;
+    }
+    #wide_number {font-size: 0.9em;}
+    .wide_number_pros>ul>li p {height: 88px;}
+}
+@media all and (max-width:1020px){
+    .wide_number_pros>ul>li{margin: 50px 10px 40px 10px; width: calc((100% - 60px)/3);}
+    .wide_number_pros>ul>li p {padding: 20px 25px;}
+}
+@media all and (max-width:940px){
+    #wide_number {font-size: 0.8em;}
+    .wide_number_pros>ul>li span{top: -40%}
+    #wide_number~#fp-nav {
+        display:none!important;
+        right: -10px;
+        bottom: 50px;
+    }
+    #wide_number~#fp-nav li {width: 60px;}
+    #wide_number~#fp-nav ul li::after {font-size: 0.8em;}
+}
+@media all and (max-width:850px){
+    #wide_number {font-size: 0.9em;}
+    .section.wide_number_intro {height: auto;}
+    .section.wide_number_intro .wide_number_intro_wrap {margin: 100px 0;}
+    .wide_number_pros {margin-top: 40px;}
+    .wide_number_pros>ul {margin: 30px auto;}
+    .wide_number_pros>ul>li{margin: 30px 0; width: 100%;}
+    .wide_number_pros>ul>li p {height: auto; text-align: center;}
+    .wide_number_pros>ul>li span{top: -50%}
+    .wide_number_agency_wrap {margin: 10% auto 18%;}
+    .wide_number_agency_wrap .swiper-wrapper li img {height: 40px;}
+    .wide_number_agency_wrap .swiper-button-prev:after, .wide_number_agency_wrap .swiper-button-next::after{font-size: 2.5em;}
+}
+@media all and (max-width:650px){
+    .wide_number_tit .main_tit {font-size: 2.5em;}
+    .wide_number_tit.sub_tit {font-size: 2em;}
+    #wide_number~#fp-nav {right: -15px; bottom: 50px;}
+    #wide_number~#fp-nav li {margin: 0 5px ; width: 58px;}
+}
+@media all and (max-width: 540px){
+    .wide_number_tit .main_tit {font-size: 2.3em;}
+    .wide_number_tit.sub_tit {font-size: 1.7em;}
+    .wide_number_pros>ul>li span{top: -60%}
+    .wide_number_pros>ul>li p {padding: 15px 20px;}
+    .wide_number_agency_wrap .swiper-wrapper li img {height: 30px;}
+}
+@media all and (max-width: 390px){
+    .wide_number_pros>ul>li p {font-size: 1.1em;}
+    .wide_number_agency_wrap {margin: 18% auto;}
+    #wide_number~#fp-nav li {margin: 0 2px;}
+}
+@media all and (max-width:1200px) and (orientation: landscape){
+    .wide_number_tit.main_tit .sub_tit{
+        margin-top: 20px;
+    }
+}

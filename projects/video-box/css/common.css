@@ -1,0 +1,1473 @@
+/*common*/
+.color-po {
+  color: var(--po);
+}
+
+.line-po {
+  display: inline-block;
+  position: relative;
+}
+.line-po::before {
+  content: '';
+  position: absolute;
+  bottom: 15%;
+  width: 0%;
+  height: 10px;
+  background-color: var(--po-op30);
+  z-index: -1;
+  visibility: hidden;
+  transition: all 0.4s 0.6s;
+}
+
+.aos-animate .line-po::before {
+  visibility: visible;
+  width: 100%;
+}
+
+.bold-po {
+  font-weight: 600;
+}
+
+section {
+  width: 100%;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  word-break: keep-all;
+  color: var(--black);
+  overflow-x: hidden;
+}
+.contents-wrap {
+  position: relative;
+  margin: 0 auto;
+  padding: 150px 0;
+  max-width: 1330px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 1;
+}
+
+.contents-wrap.column {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.sub-title {
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.box-title {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sticky-title {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 20px;
+}
+
+.pc-line-break {
+  display: block;
+}
+
+.m-line-break {
+  display: none;
+}
+/*footer*/
+footer {
+  position: relative;
+}
+footer::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--gradient);
+}
+footer .contents-wrap {
+  padding: 40px 0;
+  align-items: flex-start;
+  text-align: left;
+}
+footer .top-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .sns-list > ul > li {
+  display: inline-block;
+  margin-right: 8px;
+}
+footer .text-area {
+  font-size: 14px;
+  font-weight: 700;
+}
+footer .text-area .info-text {
+  margin-top: 20px;
+}
+footer .text-area .info-text:last-child p {
+  display: flex;
+  align-items: center;
+}
+footer .text-area .info-text:last-child p > span:first-child {
+  display: block;
+  margin-right: 3px;
+  opacity: 0.5;
+}
+footer .text-area .info-text:last-child a {
+  font-size: 14px;
+  transition: color 0.4s;
+}
+footer .text-area .info-text:last-child a:hover {
+  color: var(--po-op50);
+}
+/*Page1 2023 비디오박스 서비스 제안*/
+.videobox-wrap01 {
+  position: relative;
+  background: var(--gradient);
+  overflow-y: hidden;
+}
+
+.videobox-wrap01::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    from 245.25deg at 50% 50%,
+    #7443ff 0deg,
+    #933eff 182.76deg,
+    #6b1dea 360deg
+  );
+  opacity: 0.25;
+}
+
+.videobox-wrap01 .contents-wrap {
+  padding: 150px 0;
+  text-align: left;
+}
+
+.videobox-wrap01 .main-text {
+  width: 45%;
+  color: var(--white);
+  text-shadow: 5px 5px 8px rgba(45, 3, 15, 0.2);
+}
+
+.videobox-wrap01 .main-text > h1 {
+  font-size: 52px;
+  font-weight: 600;
+}
+
+.videobox-wrap01 .main-text > h1 > span {
+  color: #ffe897;
+  font-weight: 800;
+}
+
+.videobox-wrap01 .img-area {
+  position: relative;
+  width: 55%;
+  z-index: 1;
+}
+
+.videobox-wrap01 .img-area > img {
+  position: absolute;
+  width: 55%;
+}
+
+.videobox-wrap01 .img-area > img:nth-child(1) {
+  position: relative;
+  left: -5%;
+  animation: jackInTheBox 1s 0.4s both, pulse 3s 1.4s infinite forwards;
+}
+
+.videobox-wrap01 .img-area > img:nth-child(2) {
+  left: 15%;
+  animation: jackInTheBox 1s 0.6s both, pulse 3s 1.6s infinite forwards;
+}
+
+.videobox-wrap01 .img-area > img:nth-child(3) {
+  left: 35%;
+  animation: jackInTheBox 1s 0.8s both, pulse 3s 1.8s infinite forwards;
+}
+
+.videobox-wrap01 .img-area > img:nth-child(4) {
+  left: 55%;
+  animation: jackInTheBox 1s 1s both, pulse 3s 2s infinite forwards;
+}
+
+.videobox-wrap01 .img-area::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(
+    46.64% 46.64% at 50% 50%,
+    rgba(229, 192, 60, 0.406) 0%,
+    rgba(255, 235, 165, 0) 100%
+  );
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.videobox-wrap01 .bgimg-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.videobox-wrap01 .bgimg-wrap > img {
+  position: absolute;
+}
+
+.videobox-wrap01 .bgimg-wrap > img.circle1 {
+  left: -3%;
+  top: -5%;
+  animation: zoomIn 0.6s both, doodoongsil 2s linear 0.8s infinite forwards;
+}
+
+.videobox-wrap01 .bgimg-wrap > img.circle2 {
+  left: 10%;
+  top: 40%;
+  animation: zoomIn 0.6s 0.5s both, doodoongsil 2s linear 1.2s infinite forwards;
+}
+
+.videobox-wrap01 .bgimg-wrap > img.circle3 {
+  right: 40%;
+  top: 25%;
+  animation: zoomIn 0.6s 0.8s both, turn 10s linear 1.5s infinite forwards;
+}
+
+.videobox-wrap01 .bgimg-wrap > img.circle4 {
+  right: 10%;
+  top: 15%;
+  animation: zoomIn 0.6s 1s both, doodoongsil 2s linear 1.6s infinite forwards;
+}
+
+.videobox-wrap01 .bgimg-wrap > img.circle5 {
+  right: 20%;
+  bottom: 30%;
+  animation: zoomIn 0.6s 0.3s both, doodoongsil 2s linear 1s infinite forwards;
+}
+
+@keyframes doodoongsil {
+  0% {
+    transform: translateY(0px);
+  }
+
+  25% {
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes turn {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*Page2 비디오박스의 서비스는?*/
+.videobox-wrap02 .sub-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.videobox-wrap02 .sub-title .bold-po {
+  font-weight: 800;
+}
+
+.videobox-wrap02 .text-area img {
+  margin: 20px 0;
+}
+
+.videobox-wrap02 .text-area .title.aos-animate ~ img {
+  animation: flipInX 0.6s 0.6s both, swing 1s 1.9s 3 forwards;
+}
+
+/*Page3 Video-BOX Hign-end Service*/
+.videobox-wrap03 {
+  background: var(--gray-bg);
+}
+
+.videobox-wrap03 .box-list {
+  width: 100%;
+}
+
+.videobox-wrap03 .box-list > ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.videobox-wrap03 .box {
+  margin: 50px 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videobox-wrap03 .box-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  background: var(--white);
+}
+
+.videobox-wrap03 .box-img > img {
+  width: 60%;
+  border-radius: 20px;
+}
+
+.videobox-wrap03 .box-text > strong {
+  margin: 30px 0 20px 0;
+}
+
+.videobox-wrap03 .box-text > p {
+  display: block;
+  font-size: 20px;
+}
+
+/*Page4 비디오박스는 Hign-end Service를 제공*/
+.videobox-wrap04 {
+  overflow-x: clip;
+}
+.videobox-wrap04 .contents-wrap {
+  align-items: flex-start;
+  text-align: left;
+}
+.videobox-wrap04 .box-list {
+  width: 65%;
+}
+.videobox-wrap04 .title {
+  width: 30%;
+}
+.videobox-wrap04 .title .icon-list {
+  margin-top: 20px;
+  display: flex;
+}
+
+.videobox-wrap04 .title .icon-list > li {
+  margin-right: 5px;
+  width: 15%;
+}
+
+.videobox-wrap04 .title .icon-list > li > img {
+  width: 100%;
+}
+
+.videobox-wrap04 .box {
+  margin-bottom: 20px;
+  padding: 30px 40px;
+  border-radius: 20px;
+  background: var(--po-bg);
+  box-sizing: border-box;
+}
+
+.videobox-wrap04 .box > * {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.videobox-wrap04 .box > strong {
+  font-size: 28px;
+}
+
+.videobox-wrap04 .box > p {
+  display: flex;
+  font-size: 24px;
+}
+
+.videobox-wrap04 .box > p > span:first-child {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+/*Page5 비디오박스 영상 둘러보기*/
+.videobox-wrap05 {
+  background: var(--gray-bg);
+}
+.videobox-wrap05 .box-list > ul {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.videobox-wrap05 .box-list > ul > li {
+  margin: 0 10px 30px;
+}
+.videobox-wrap05 .box-list > ul > li > a {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+.videobox-wrap05 .box-list > ul > li > a:hover {
+  transform: scale(1.03);
+}
+/*Page6 샘플페이지 구경하기*/
+.videobox-wrap06 {
+  background: var(--gray-bg);
+  overflow-x: clip;
+}
+.videobox-wrap06 .contents-wrap {
+  align-items: flex-start;
+  text-align: left;
+}
+.videobox-wrap06 .title {
+  width: 40%;
+  font-size: 45px;
+}
+
+.videobox-wrap06 .sub-title {
+  color: var(--black-op50);
+}
+
+.videobox-wrap06 .title .sentence-text {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black-op50);
+}
+
+.videobox-wrap06 .title.aos-animate > i {
+  animation: arrow-ani 1.5s 0.2s infinite both;
+}
+
+@keyframes arrow-ani {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+}
+
+.videobox-wrap06 a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 58%;
+  overflow-x: hidden;
+}
+
+.videobox-wrap06 .img-area > img {
+  width: 100%;
+}
+
+/*Page7 함께하는 파트너*/
+.videobox-wrap07 .title,
+.videobox-wrap07 .sub-title {
+  font-weight: 800;
+  line-height: 1.8;
+}
+
+.videobox-wrap07 .title > span {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.videobox-wrap07 .logo-swiper {
+  margin-top: 60px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.videobox-wrap07 .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videobox-wrap07 .swiper-slide > img {
+  max-width: 160px;
+  max-height: 50px;
+}
+
+/*Page8 Partner Review*/
+.videobox-wrap08 .contents-wrap {
+  width: fit-content;
+  align-items: flex-start;
+}
+
+.videobox-wrap08 .review-list {
+  margin-top: 40px;
+}
+
+.videobox-wrap08 .review-list > ul > li {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.videobox-wrap08 .review-list > ul > li > img {
+  width: 25%;
+}
+
+.videobox-wrap08 .review-list > ul > li > p {
+  margin-left: 30px;
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*Page9 비디오박스 서비스패키지*/
+.videobox-wrap09 {
+  background: var(--gray-bg);
+}
+
+.videobox-wrap09 .table-area {
+  width: 100%;
+}
+
+.videobox-wrap09 .table-area label {
+  display: inline-block;
+  margin: 40px 0 10px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+}
+
+.videobox-wrap09 .m-table {
+  display: none;
+}
+
+.videobox-wrap09 .pc-table {
+  display: table;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.videobox-wrap09 table th,
+.videobox-wrap09 table td {
+  padding: 8px 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.videobox-wrap09 .pc-table thead th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.videobox-wrap09 .pc-table thead th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.videobox-wrap09 .pc-table thead th:nth-child(1),
+.videobox-wrap09 .pc-table thead th:nth-child(3),
+.videobox-wrap09 .pc-table thead th:nth-child(4) {
+  width: 13%;
+  color: var(--white);
+  background: var(--po);
+}
+
+.videobox-wrap09 .pc-table thead th:nth-child(2),
+.videobox-wrap09 .pc-table thead th:nth-child(5),
+.videobox-wrap09 .pc-table tbody td:nth-child(4),
+.videobox-wrap09 .pc-table tbody td:nth-child(1),
+.videobox-wrap09 .pc-table tbody td:nth-child(3),
+.videobox-wrap09 .pc-table tbody td:nth-child(4) {
+  background: var(--po-op05);
+}
+
+.videobox-wrap09 .pc-table tbody td:nth-child(3) {
+  border-right: 1px solid var(--po);
+}
+
+.videobox-wrap09 .pc-table tbody tr {
+  height: 145px;
+  border-bottom: 1px solid var(--po);
+}
+
+.videobox-wrap09 .pc-table tbody td:nth-child(2),
+.videobox-wrap09 .pc-table tbody td:nth-child(5) {
+  background: var(--white);
+}
+
+.videobox-wrap09 .pc-table tbody tr td:last-child {
+  padding: 8px 20px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.videobox-wrap09 .list-area {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.videobox-wrap09 .list-area > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.videobox-wrap09 .list-area > ul > li {
+  margin-top: 40px;
+  padding: 35px 30px;
+  text-align: left;
+  width: 310px;
+  background: var(--white);
+  box-sizing: border-box;
+  box-shadow: 5px 5px 15px var(--po-op10);
+  border-radius: 20px;
+}
+
+.videobox-wrap09 .list-area > ul > li > strong {
+  margin-bottom: 30px;
+  display: inline-block;
+  padding: 2px 20px;
+  font-weight: 800;
+  border-radius: 50px;
+  color: var(--white);
+  background: var(--po);
+}
+
+.videobox-wrap09 .list-area > ul > li > p {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.videobox-wrap09 .list-area > ul > li > p:last-child {
+  margin-bottom: 0;
+}
+
+.videobox-wrap09 .list-area > ul > li > p > span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/*Page10 비디오박스 영상 마케팅 대행*/
+.videobox-wrap10 {
+  background: linear-gradient(
+    89.88deg,
+    rgba(187, 38, 73, 0.05) 0.1%,
+    rgba(119, 55, 255, 0.05) 99.89%
+  );
+}
+
+.videobox-wrap10 .contents-wrap {
+  padding: 110px 0;
+  text-align: left;
+}
+
+.videobox-wrap10 .text-area {
+  width: 60%;
+}
+
+.videobox-wrap10 .text-area .contact-info-list {
+  margin-top: 30px;
+}
+
+.videobox-wrap10 .text-area .contact-info-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.videobox-wrap10 .text-area .contact-info-list li a {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  transition: color 0.4s;
+}
+
+.videobox-wrap10 .text-area .contact-info-list li a:hover {
+  color: var(--po);
+}
+
+.videobox-wrap10 .text-area .contact-info-list li i {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.videobox-wrap10 .text-area .contact-info-list li span {
+  font-weight: 700;
+}
+
+.videobox-wrap10 .img-area {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  height: 200px;
+}
+
+.videobox-wrap10 .img-area > img:nth-child(1) {
+  position: absolute;
+  right: 40%;
+  bottom: 40%;
+  width: 40%;
+}
+
+.videobox-wrap10 .img-area > img:nth-child(2) {
+  position: absolute;
+  width: 40%;
+}
+
+.videobox-wrap10 .img-area > img:nth-child(3) {
+  position: absolute;
+  right: 40%;
+  top: 50%;
+  width: 30%;
+}
+
+/*Page11 서비스 가입문의*/
+.videobox-wrap11 .contact-form {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+}
+
+.videobox-wrap11 .contact-form .form-cell {
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.videobox-wrap11 .contact-form .half-cell {
+  width: 49%;
+}
+
+.videobox-wrap11 .contact-form .mix-cell {
+  justify-content: space-between;
+}
+
+.videobox-wrap11 .contact-form .form-cell.required-label {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.videobox-wrap11 .contact-form .form-cell > label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.videobox-wrap11 .contact-form .form-cell > label > i {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.videobox-wrap11 .contact-form .form-cell > input[type='text'],
+.videobox-wrap11 .contact-form .form-cell > input[type='number'] {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 500;
+  border-bottom: 4px solid var(--po-op30);
+  box-sizing: border-box;
+}
+
+.videobox-wrap11 .contact-form .form-cell > input::placeholder {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--black-op50);
+}
+
+.videobox-wrap11 .contact-form .form-cell.email input[name='Email-id'] {
+  width: calc(33% - 15px);
+}
+
+.videobox-wrap11 .contact-form .form-cell.email input[name='Email-domain'] {
+  width: calc(33% - 15px);
+}
+
+.videobox-wrap11 .contact-form .form-cell.email select {
+  padding: 10px 20px;
+  width: 30%;
+  font-size: 24px;
+  font-weight: 600;
+  background: url("../img/select_arrow.png") no-repeat right 10px center;
+  background-size: 20px auto;
+  border-bottom: 4px solid var(--po-op30);
+  box-sizing: border-box;
+}
+
+.videobox-wrap11 .contact-form .form-cell.email span {
+  display: inline-block;
+  width: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.videobox-wrap11 .contact-form .privacy-agree {
+  margin: 40px 0 60px;
+}
+
+.videobox-wrap11 .contact-form .privacy-agree .chk-wrap {
+  padding-left: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.videobox-wrap11 .contact-form .privacy-agree .privacy-agree-text {
+  color: var(--black);
+  transition: color 0.4s;
+}
+
+.videobox-wrap11 .contact-form .privacy-agree .privacy-agree-text:hover {
+  color: var(--po);
+}
+
+.videobox-wrap11 .contact-form .privacy-agree .chk-wrap input[type='checkbox'] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.videobox-wrap11 .contact-form .privacy-agree .chk-wrap .custom-chk {
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 3px solid var(--po);
+}
+
+.videobox-wrap11 .contact-form .privacy-agree .chk-wrap .custom-chk > i {
+  display: none;
+  position: absolute;
+  left: 49%;
+  top: 50%;
+  font-size: 18px;
+  color: var(--po);
+  transform: translate(-50%, -50%);
+}
+
+.videobox-wrap11
+  .contact-form
+  .privacy-agree
+  .chk-wrap
+  input[type='checkbox']:checked
+  ~ .custom-chk
+  > i {
+  display: block;
+}
+
+.videobox-wrap11 .contact-form .btn-zone {
+  width: 100%;
+  text-align: center;
+}
+
+.videobox-wrap11 .contact-form .btn-zone .submit-btn {
+  padding: 15px 30px;
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--po);
+  border-radius: 50px;
+}
+
+@media all and (max-width: 1360px) {
+  /*common*/
+  .contents-wrap {
+    width: 95%;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .sub-title {
+    font-size: 20px !important;
+  }
+
+  .box-title {
+    font-size: 20px !important;
+  }
+
+  .sentence-text {
+    font-size: 17px !important;
+  }
+
+  /*Page1 2023 비디오박스 서비스 제안*/
+  .videobox-wrap01 .main-text > h1 {
+    font-size: 46px;
+  }
+
+  /*Page4 비디오박스는 Hign-end Service를 제공*/
+  .videobox-wrap04 .box-list {
+    width: 63%;
+  }
+  .videobox-wrap04 .title {
+    width: 30%;
+  }
+  .videobox-wrap04 .box {
+    padding: 25px 30px;
+  }
+
+  .videobox-wrap04 .box > strong {
+    font-size: 22px !important;
+  }
+
+  .videobox-wrap04 .box > p {
+    font-size: 20px !important;
+  }
+  /*page5 비디오박스 영상 둘러보기*/
+  .videobox-wrap05 .box-list > ul > li img {
+    width: 250px;
+  }
+  /*Page6 샘플페이지 구경하기*/
+  .videobox-wrap06 .title {
+    font-size: 35px;
+  }
+  .videobox-wrap06 a {
+    width: 55%;
+  }
+  /*Page7 함께하는 파트너*/
+  .videobox-wrap07 .title > span {
+    display: block;
+    font-size: 20px;
+  }
+
+  /*Page9 비디오박스 서비스패키지*/
+  .videobox-wrap09 .pc-table {
+    font-size: 17px;
+  }
+
+  .videobox-wrap09 .list-area > ul > li {
+    width: fit-content;
+  }
+
+  /*Page10 비디오박스 영상 마케팅 대행*/
+  .videobox-wrap10 .text-area .contact-info-list li,
+  .videobox-wrap10 .text-area .contact-info-list li a {
+    font-size: 26px;
+  }
+
+  /*Page11 서비스 가입문의*/
+  .videobox-wrap11 .contact-form .form-cell.required-label {
+    font-size: 17px;
+  }
+
+  .videobox-wrap11 .contact-form .form-cell > label,
+  .videobox-wrap11 .contact-form .form-cell.email span {
+    font-size: 22px;
+  }
+
+  .videobox-wrap11 .contact-form .form-cell > input[type='text'],
+  .videobox-wrap11 .contact-form .form-cell > input[type='number'],
+  .videobox-wrap11 .contact-form .form-cell > input::placeholder,
+  .videobox-wrap11 .contact-form .form-cell.email select {
+    font-size: 20px;
+  }
+
+  .videobox-wrap11 .contact-form .privacy-agree .chk-wrap {
+    padding-left: 35px;
+    font-size: 20px;
+  }
+
+  .videobox-wrap11 .contact-form .privacy-agree .chk-wrap .custom-chk {
+    width: 20px;
+    height: 20px;
+  }
+
+  .videobox-wrap11 .contact-form .privacy-agree .chk-wrap .custom-chk > i {
+    font-size: 16px;
+  }
+
+  .videobox-wrap11 .contact-form .btn-zone .submit-btn {
+    font-size: 24px;
+  }
+}
+
+@media all and (max-width: 1020px) {
+  /*common*/
+  .contents-wrap {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sticky-title {
+    position: -webkit-initial;
+    position: initial;
+    top: auto;
+  }
+
+  .pc-line-break {
+    display: none;
+  }
+
+  .m-line-break {
+    display: block;
+  }
+
+  /*Page1 2023 비디오박스 서비스 제안*/
+  .videobox-wrap01 .contents-wrap {
+    padding: 150px 0;
+    text-align: center;
+  }
+
+  .videobox-wrap01 .main-text {
+    padding: 0 0;
+    width: 100%;
+  }
+  .videobox-wrap01 .img-area::before {
+    width: 500px;
+    height: 500px;
+  }
+  .videobox-wrap01 .img-area > img:nth-child(1) {
+    left: -30%;
+  }
+
+  /*Page3 Video-BOX Hign-end Service*/
+  .videobox-wrap03 .box-list > ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*Page4 비디오박스는 Hign-end Service를 제공*/
+  .videobox-wrap04 {
+    overflow-x: hidden;
+  }
+  .videobox-wrap04 .box-list {
+    width: 100%;
+  }
+  .videobox-wrap04 .title {
+    width: auto;
+  }
+  .videobox-wrap04 .contents-wrap {
+    align-content: center;
+  }
+
+  .videobox-wrap04 .box-list {
+    margin-top: 40px;
+    text-align: left;
+  }
+  /*Page5 비디오박스 영상 둘러보기*/
+  .videobox-wrap05 .box-list > ul > li img {
+    width: 200px;
+  }
+  /*Page6 샘플페이지 구경하기*/
+  .videobox-wrap06 {
+    overflow-x: hidden;
+  }
+
+  .videobox-wrap06 .contents-wrap {
+    align-content: center;
+  }
+  .videobox-wrap06 .title {
+    width: auto;
+  }
+  .videobox-wrap06 .title > i {
+    display: none;
+  }
+
+  .videobox-wrap06 a {
+    margin-top: 40px;
+    justify-content: center;
+    width: 75%;
+  }
+
+  /*Page7 함께하는 파트너*/
+  .videobox-wrap07 .swiper-slide > img {
+    max-width: 130px;
+    max-height: 40px;
+  }
+
+  /*Page9 비디오박스 서비스패키지*/
+  .videobox-wrap09 .list-area > ul > li {
+    width: 49%;
+  }
+
+  /*Page10 비디오박스 영상 마케팅 대행*/
+  .videobox-wrap10 .contents-wrap {
+    flex-direction: row;
+  }
+
+  .videobox-wrap10 .text-area {
+    width: 100%;
+  }
+
+  .videobox-wrap10 .img-area {
+    display: none;
+  }
+}
+
+@media all and (max-width: 640px) {
+  /*common*/
+  .title {
+    font-size: 24px;
+  }
+
+  .sub-title {
+    font-size: 16px !important;
+  }
+
+  .sentence-text {
+    font-size: 15px !important;
+  }
+
+  .line-po::before {
+    height: 8px;
+  }
+
+  .contents-wrap {
+    padding: 80px 0;
+  }
+
+  /*Page1 2023 비디오박스 서비스 제안*/
+  .videobox-wrap01 .main-text > h1 {
+    font-size: 36px;
+  }
+
+  .videobox-wrap01 .img-area {
+    width: 90%;
+  }
+
+  /*Page2 비디오박스의 서비스는?*/
+  .videobox-wrap02 .sub-title {
+    font-weight: 700;
+  }
+
+  .videobox-wrap02 .text-area > img {
+    width: 130px;
+  }
+
+  /*Page3 Video-BOX Hign-end Service*/
+  .videobox-wrap03 .box-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /*Page4 비디오박스는 Hign-end Service를 제공*/
+  .videobox-wrap04 .box {
+    padding: 15px 15px;
+  }
+
+  .videobox-wrap04 .box > strong {
+    font-size: 18px !important;
+  }
+
+  .videobox-wrap04 .box > p {
+    font-size: 16px !important;
+  }
+  /*Page5 비디오박스 영상 둘러보기*/
+  .videobox-wrap05 .box-list > ul {
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  .videobox-wrap05 .box-list > ul > li {
+    margin: 0 0 20px;
+    width: 47%;
+  }
+
+  .videobox-wrap05 .box-list > ul > li img {
+    width: 100%;
+  }
+  /*Page6 샘플페이지 구경하기*/
+  .videobox-wrap06 .contents-wrap {
+    align-items: center;
+    text-align: center;
+  }
+
+  .videobox-wrap06 .title {
+    font-size: 24px;
+  }
+  .videobox-wrap06 .title .sentence-text {
+    font-size: 14px !important;
+  }
+  .videobox-wrap06 a {
+    width: 100%;
+  }
+
+  /*Page7 함께하는 파트너*/
+  .videobox-wrap07 .title > span {
+    font-size: 16px;
+  }
+
+  .videobox-wrap07 .swiper-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .videobox-wrap07 .swiper-slide {
+    width: 160px;
+    max-height: 40px;
+    margin-bottom: 40px;
+  }
+
+  .videobox-wrap07 .swiper-slide > img {
+    max-width: 100px;
+  }
+
+  /*Page8 Partner Review*/
+  .videobox-wrap08 .contents-wrap {
+    width: 95%;
+    align-items: center;
+  }
+
+  .videobox-wrap08 .title {
+    width: 100%;
+    text-align: left;
+  }
+
+  .videobox-wrap08 .review-list > ul > li {
+    justify-content: center;
+  }
+
+  .videobox-wrap08 .review-list > ul > li > img {
+    width: 20%;
+    min-width: 60px;
+  }
+
+  .videobox-wrap08 .review-list > ul > li > p {
+    margin-left: 10px;
+  }
+
+  /*Page9 비디오박스 서비스패키지*/
+  .videobox-wrap09 .table-area label {
+    font-size: 14px;
+  }
+
+  .videobox-wrap09 .pc-table {
+    display: none;
+  }
+
+  .videobox-wrap09 .m-table {
+    display: block;
+  }
+
+  .videobox-wrap09 .m-table .table-title {
+    margin-bottom: 5px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .videobox-wrap09 .m-table > div {
+    position: relative;
+    padding: 40px 0;
+  }
+
+  .videobox-wrap09 .m-table > div::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(
+        90deg,
+        transparent,
+        transparent 50%,
+        #fff 50%,
+        #fff 100%
+      ),
+      var(--gradient);
+    background-size: 10px 3px, 100% 3px;
+    opacity: 0.3;
+  }
+
+  .videobox-wrap09 .m-table > div:first-child {
+    padding-top: 0;
+  }
+
+  .videobox-wrap09 .m-table > div:last-child::before {
+    display: none;
+  }
+
+  .videobox-wrap09 .m-table table {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .videobox-wrap09 .m-table table thead th {
+    width: 50%;
+    color: var(--white);
+    background: var(--po);
+  }
+
+  .videobox-wrap09 .m-table table tbody td {
+    height: 80px;
+    background: var(--po-op05);
+  }
+
+  .videobox-wrap09 .m-table table tbody:last-child td:last-child {
+    padding: 8px 10px;
+    text-align: left;
+  }
+
+  .videobox-wrap09 .list-area {
+    margin-top: 0;
+  }
+
+  .videobox-wrap09 .list-area > ul > li {
+    margin-top: 20px;
+    padding: 20px 10px;
+  }
+
+  .videobox-wrap09 .list-area > ul > li > strong {
+    margin-bottom: 15px;
+    padding: 2px 10px;
+    font-size: 17px !important;
+  }
+
+  .videobox-wrap09 .list-area > ul > li > p {
+    margin-bottom: 7px;
+    font-size: 14px !important;
+  }
+
+  .videobox-wrap09 .list-area > ul > li > p > span {
+    margin-right: 5px;
+  }
+
+  /*Page10 비디오박스 영상 마케팅 대행*/
+  .videobox-wrap10 .contents-wrap {
+    padding: 80px 0;
+  }
+
+  .videobox-wrap10 .text-area .contact-info-list li,
+  .videobox-wrap10 .text-area .contact-info-list li a {
+    font-size: 16px;
+  }
+
+  /*Page11 서비스 가입문의*/
+  .videobox-wrap11 .contact-form .form-cell {
+    margin-bottom: 25px;
+  }
+
+  .videobox-wrap11 .contact-form .half-cell {
+    width: 100%;
+  }
+
+  .videobox-wrap11 .contact-form .form-cell.required-label {
+    font-size: 15px;
+  }
+
+  .videobox-wrap11 .contact-form .form-cell > label,
+  .videobox-wrap11 .contact-form .form-cell.email span {
+    font-size: 16px;
+  }
+
+  .videobox-wrap11 .contact-form .form-cell > input[type='text'],
+  .videobox-wrap11 .contact-form .form-cell > input[type='number'],
+  .videobox-wrap11 .contact-form .form-cell > input::placeholder,
+  .videobox-wrap11 .contact-form .form-cell.email select {
+    font-size: 15px;
+  }
+
+  .videobox-wrap11 .contact-form .form-cell > input[type='text'],
+  .videobox-wrap11 .contact-form .form-cell > input[type='number'],
+  .videobox-wrap11 .contact-form .form-cell.email select {
+    padding: 10px 10px;
+  }
+
+  .videobox-wrap11 .contact-form .privacy-agree {
+    margin-top: 30px;
+  }
+
+  .videobox-wrap11 .contact-form .privacy-agree .chk-wrap .custom-chk {
+    width: 15px;
+    height: 15px;
+  }
+
+  .videobox-wrap11 .contact-form .privacy-agree .chk-wrap {
+    padding-left: 25px;
+    font-size: 16px;
+  }
+
+  .videobox-wrap11 .contact-form .privacy-agree .chk-wrap .custom-chk > i {
+    font-size: 13px;
+  }
+
+  .videobox-wrap11 .contact-form .btn-zone .submit-btn {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+
+  .videobox-wrap11 .contact-form .form-cell.email input[name='Email-id'] {
+    margin-bottom: 10px;
+    width: calc(100% - 30px);
+  }
+
+  .videobox-wrap11 .contact-form .form-cell.email input[name='Email-domain'],
+  .videobox-wrap11 .contact-form .form-cell.email select {
+    width: 49%;
+  }
+}
+
+@media all and (max-width: 360px) {
+  /*Page1 2023 비디오박스 서비스 제안*/
+  .videobox-wrap01 .main-text > h1 {
+    font-size: 30px;
+  }
+
+  /*Page7 함께하는 파트너*/
+  .videobox-wrap07 .swiper-slide {
+    width: 50%;
+  }
+}

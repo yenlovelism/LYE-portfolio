@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    
+    <!-- 모바일 주소창 컬러 지정 -->
+    <!-- Chrome, Firefox, Opera -->
+    <meta content='#0058ce' name='theme-color'/>
+
+    <!-- Windows Phone -->
+    <meta content='#0058ce' name='msapplication-navbutton-color'/>
+
+    <!-- iOS Safari -->
+    <meta content='#0058ce' name='apple-mobile-web-app-status-bar-style'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+
+    <title>타지역서비스 등록센터</title>
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    
+    <!--css-->
+    <link rel="stylesheet" href="../company/css/jquery.fullPage.css">
+    <link rel="stylesheet" href="../company/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../company/css/Pretendard/pretendard.css">
+    <link rel="stylesheet" href="../../css/fontawesome/all.min.css">
+    <link rel="stylesheet" href="../../css/animate.min.css">
+    <link rel="stylesheet" href="../../css/aos.css"> 
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/widenumber.css">
+    
+    <!--js-->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/aos.js"></script> 
+    <script>$(function(){AOS.init();});</script>
+    <script src="../company/js/TweenMax.min.js"></script>
+    <script src="../company/js/jquery.fullPage.js"></script>
+    <script src="../company/js/scrolloverflow.min.js"></script>
+    <script src="../company/js/swiper-bundle.min.js"></script>
+    <script src="../company/js/jquery.lettering.js"></script>
+    <script src="../company/js/jquery.textillate.js"></script>
+    <script src="../company/js/jquery.mousefollow.js"></script>
+</head>
+<body>
+    <!--mouse custom-->
+    <div class="circlep"></div>
+    <div class="circle-follow"></div>
+
+    <!--header-->
+    <header class="dark" data-aos="fade-down" data-aos-duration="1000">
+        <div class="header_wrap">
+            <div class="logo">
+               <a href="index.html" style="margin-top: -3px;">
+                   <img src="./images/logo_pup_bla.png" class="dark" alt="미래비즈코리아 로고">
+                   <img src="./images/logo_pup_w.png" class="bright" alt="미래비즈코리아 로고">
+                </a>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html#main">기업소개</a>
+                    <ul class="sub">
+                        <li><a href="about.html#main">소개</a></li> 
+                        <li><a href="about.html#history">연혁</a></li> 
+                        <li><a href="about.html#keyword">키워드</a></li> 
+                        <li><a href="about.html#certificate">특허 / 인증</a></li> 
+                        <li><a href="about.html#ci">CI</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a href="service_other_area.html">통신서비스</a>
+                    <ul class="sub">
+                        <li><a href="service_other_area.html">타지역서비스</a></li>
+                        <li><a href="service_wide_number.html">전국대표번호</a></li>
+                        <li><a href="service_callback.html">콜백문자서비스</a></li>
+                        
+                        <li><a href="service_ktbizcall.html">KT비즈콜</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="subs_benefits.html">가입혜택</a>
+                    <ul class="sub">
+                        <li><a href="subs_benefits.html#cid">CID</a></li>
+                        <li><a href="subs_benefits.html#naver">modoo! 홈페이지 무료제작</a></li>
+                        <li><a href="subs_benefits.html#modoo">네이버 검색등록 대행</a></li>
+                        <li><a href="subs_benefits.html#blog_video">블로그 동영상 제작</a></li>
+                        <li><a href="subs_benefits.html#search">키워드광고 대행 지원</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contact.html">소통안내</a>
+                    <ul class="sub">
+                        <li><a href="contact.html">오시는 길</a></li> 
+                        <li><a href="contact.html#anchor2">상담신청</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a href="reference_room.html">자료실</a>
+                    <ul class="sub">
+                        <li><a href="reference_room.html">고객후기</a></li> 
+                        <li><a href="reference_room.html#reference_room_joindown">신청서다운로드</a></li> 
+                    </ul>
+                </li>
+            </ul>  
+        </div>
+        
+    </header>
+    <div class="hamburger">
+        <input type="checkbox" id="check"/> 
+        <label for="check">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <div class="hamburger_menu">
+            <ul class="hbg_gnb">
+                <li class="animate__animated">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="animate__animated">
+                    <a href="about.html#main">기업소개</a>
+                    <ul class="hbg_sub">
+                        <li><a href="about.html#main">소개</a></li> 
+                        <li><a href="about.html#history">연혁</a></li> 
+                        <li><a href="about.html#keyword">키워드</a></li> 
+                        <li><a href="about.html#certificate">특허 / 인증</a></li> 
+                        <li><a href="about.html#ci">CI</a></li> 
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="service_other_area.html">통신서비스</a>
+                    <ul class="hbg_sub">
+                        <li><a href="service_other_area.html">타지역서비스</a></li>
+                        <li><a href="service_wide_number.html">전국대표번호</a></li>
+                        <li><a href="service_callback.html">콜백문자서비스</a></li>
+                        
+                        <li><a href="service_ktbizcall.html">KT비즈콜</a></li>
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="subs_benefits.html">가입혜택</a>
+                    <ul class="hbg_sub">
+                        <li><a href="subs_benefits.html#cid">CID</a></li>
+                        <li><a href="subs_benefits.html#naver">modoo! 홈페이지 무료제작</a></li>
+                        <li><a href="subs_benefits.html#modoo">네이버 검색등록 대행</a></li>
+                        <li><a href="subs_benefits.html#blog_video">블로그 동영상 제작</a></li>
+                        <li><a href="subs_benefits.html#search">키워드광고 대행 지원</a></li>
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="contact.html">소통안내</a>
+                    <ul class="hbg_sub">
+                        <li><a href="contact.html">오시는 길</a></li> 
+                        <li><a href="contact.html#anchor2">상담신청</a></li> 
+                    </ul>
+                </li>
+                <li class="animate__animated">
+                    <a href="reference_room.html">자료실</a>
+                    <ul class="hbg_sub">
+                        <li><a href="reference_room.html">고객후기</a></li> 
+                        <li><a href="reference_room.html#reference_room_joindown">신청서다운로드</a></li> 
+                    </ul>
+                </li>
+            </ul>
+            <div class="footer_sns">
+                <span>SOCIAL MEDIA</span>
+                <ul>
+                    <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li class="blog"><a href="" target="_blank"><i></i></a></li>
+                    <li class="post"><a href="" target="_blank"><i></i></a></li>
+                    <li><a href="" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <p>Copyright © Mirae Biz Korea, Co., Ltd All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>              
+    <!--header end-->
+
+    <div id="wide_number">
+    <div id="wide_numberFullPage">
+    
+    <!--소개-->
+    <div class="section wide_number_intro hd_dark" style="background: #fff;">
+        <div class="wide_number_intro_wrap">
+            <div class="symbol animate__animated">
+                <img src="./images/about_img/symbol_pup.png" alt="미래비즈 심볼">
+            </div>
+            <div class="wide_number_tit animate__animated">
+                <h2 class="main_tit">전국대표번호 소개</h2>
+                <strong>사업장의 하나의 대표번호로 통합하여 <span class="point_blue">전국 어디에서나 하나의 번호로 연결해 주는 서비스</span>입니다.</strong>
+            </div>
+
+            <div class="wide_number_pros animate__animated">
+                <h2 class="wide_number_tit sub_tit">전국대표번호 장점</h2>
+                <ul>
+                    <li>
+                        <span>01</span>
+                        <p class="point_bold">별도의 전화기 설치 필요 없이 <br><i class="point_bold point_blue">착신 연결로 사용 가능</i></p>
+                    </li>
+                    <li>
+                        <span>02</span>
+                        <p class="point_bold">사업장의 <i class="point_bold point_blue">신뢰도</i> 및 <br><i class="point_bold point_blue">인지도</i> 상승</p>
+                    </li>
+                    <li>
+                        <span>03</span>
+                        <p class="point_bold">다량의 전화번호를 <i class="point_bold point_blue">대표번호로 <br>통합</i>하여 관리가 용이</p>
+                    </li>
+                    <li>
+                        <span>04</span>
+                        <p class="point_bold">고객이 쉽게 기억할 수 있는 <br><i class="point_bold point_blue">평생 번호</i></p>
+                    </li>
+                    <li>
+                        <span>05</span>
+                        <p class="point_bold">착신전환으로 <i class="point_bold point_blue">장소에 구애받지 않는</i> <br>착신 전용 서비스</p>
+                    </li>
+                    <li>
+                        <span>06</span>
+                        <p class="point_bold">착신 연결 번호 <br><i class="point_bold point_blue">언제든 변경 가능</i></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 진행절차 -->
+    <div class="section wide_number_process hd_dark" style="background: #fff7f2;">
+        <div class="wide_number_process_wrap">
+            <h2 class="wide_number_tit sub_tit animate__animated">진행절차</h2>
+            <ul>
+                <li>
+                    <div class="process_cont counsel">
+                        <img src="./images/service_img/wide_number/tel_process_icon_1.png" alt="진행절차 아이콘1">
+                        <span>가입상담</span>
+                    </div>
+                    <i class="fas fa-angle-double-right"></i>
+                </li>
+                <li>
+                    <div class="process_cont sign_up">
+                        <img src="./images/service_img/wide_number/tel_process_icon_2.png" alt="진행절차 아이콘2">
+                        <span>서류접수</span>
+                    </div>
+                    <i class="fas fa-angle-double-right"></i>
+                </li>
+                <li>
+                    <div class="process_cont agency_open">
+                        <img src="./images/service_img/wide_number/tel_process_icon_3.png" alt="진행절차 아이콘3">
+                        <span>통신사<br>개통 접수</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 함께하는 전국대표번호 통신사 -->
+    <div class="section wide_number_agency hd_dark" style="background: rgba(86, 91, 191,0.05);">
+        <h2 class="wide_number_tit sub_tit animate__animated">함께하는 전국대표번호 통신사</h2>
+        <div class="wide_number_agency_wrap animate__animated">
+            <div class="agency_swiper swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <img src="./images/service_img/wide_number/lgu_logo.png" alt="통신사1">
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/service_img/wide_number/hellovisionlogo.png" alt="통신사2">
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/service_img/wide_number/sklogo.png" alt="통신사3">
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/service_img/wide_number/kct_logo1.png" alt="통신사4">
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/service_img/wide_number/sejonglogo.png" alt="통신사5">
+                    </li>
+                    <li class="swiper-slide">
+                        <img src="./images/service_img/wide_number/dream_logo1.png" alt="통신사6">
+                    </li>
+                </ul>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="banner_box banner_in animate__animated">
+           
+            <div class="banner_cont">
+                <p class="point_bold"><span class="point_blue">전국대표번호</span>에 대해 <br>더 자세히 알고 싶으신가요?</p>
+                <button class="banner_btn" onclick="window.open('/contact.html#anchor2')">상담신청하기<i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="section hd_dark">
+        <div id="footer_pc" class="footer">
+            <div class="footer_wrap">
+                <div class="footer_left">
+                    <ul class="footer_menu">
+                        <li class="home">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="about">
+                            <a href="about.html#main">기업소개</a>
+                        </li>
+                        <li class="business">
+                            <a href="service_other_area.html">통신서비스</a>
+                        </li>    
+                        <li class="brand">
+                            <a href="subs_benefits.html">가입혜택</a>
+                        </li>
+                        <li class="contact">
+                            <a href="contact.html">소통안내</a>
+                        </li>
+                        <li class="news">
+                            <a href="reference_room.html">자료실</a>
+                        </li>
+                    </ul>
+        
+                    <div class="footer_sns">
+                        <span>SOCIAL MEDIA</span>
+                        <ul>
+                            <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li class="blog"><a href="" target="_blank"><i></i></a></li>
+                            <li class="post"><a href="" target="_blank"><i></i></a></li>
+                            <li><a href="" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_right">
+                    <a href="index.html"><img src="./images/logo_pup_bla.png" class="footer_logo" alt="미래비즈블랙로고"></a>
+        
+                    <p class="company_info">
+                        <i>(주) 미래비즈코리아</i><br>
+                        대표자&nbsp;&nbsp;김비즈<br>
+                        사업자번호&nbsp;&nbsp;000-00-00000
+                    </p>
+        
+                    <p class="company_info">
+                        서울특별시 ㅇㅇ구 ㅇㅇ로 000 서울타워 0차 0000호<br>
+                        Copyright © Mirae Biz Korea, Co., Ltd All Rights Reserved.
+                    </p>
+        
+                    <p class="company_info">
+                        Tel&nbsp;&nbsp;<a href="tel:" title="전화연결">0000-0000</a><br>
+                        Fax&nbsp;&nbsp;<a href="tel:" title="팩스연결">00-0000-0000</a><br>
+                        Contact to&nbsp;&nbsp;<a href="mailto:mailto@mail.com" title="메일전송">mailto@mail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="footer_m" class="footer">
+            <div class="footer_wrap">
+                    <a href="index.html"><img src="./images/logo_pup_bla.png" class="footer_logo" alt="미래비즈블랙로고"></a>
+                    
+                    <ul class="footer_menu">
+                        <li class="home">
+                            <a href="index.html">Home</a>
+                        </li>
+        
+                        <li class="about">
+                            <a href="about.html#main">기업소개</a>
+                        </li>
+        
+                        <li class="business">
+                            <a href="service_other_area.html">통신서비스</a>
+                        </li>
+        
+                        <li class="brand">
+                            <a href="subs_benefits.html">가입혜택</a>
+                        </li>
+        
+                        <li class="contact">
+                            <a href="contact.html">소통안내</a>
+                        </li>
+        
+                        <li class="news">
+                            <a href="reference_room.html">자료실</a>
+                        </li>
+                    </ul>
+        
+                    <p class="company_info">
+                        <i>(주) 미래비즈코리아</i><br>
+                        대표자&nbsp;&nbsp;김비즈<br>
+                        사업자번호&nbsp;&nbsp;000-00-00000
+                    </p>
+        
+                    <p class="company_info">
+                        서울특별시 ㅇㅇ구 ㅇㅇ로 000 서울타워 0차 0000호<br>
+                        Copyright © Mirae Biz Korea, Co., Ltd All Rights Reserved.
+                    </p>
+        
+                    <p class="company_info">
+                        Tel&nbsp;&nbsp;<a href="tel:" title="전화연결">0000-0000</a><br>
+                        Fax&nbsp;&nbsp;<a href="tel:" title="팩스연결">00-0000-0000</a><br>
+                        Contact to&nbsp;&nbsp;<a href="mailto:mailto@mail.com" title="메일전송">mailto@mail.com</a>
+                    </p>
+        
+                    <div class="footer_sns">
+                        <ul>
+                            <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li class="blog"><a href="" target="_blank"><i></i></a></li>
+                            <li class="post"><a href="" target="_blank"><i></i></a></li>
+                            <li><a href="" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+</div>
+</div>
+
+<!--script-->
+<script src="./js/common.js"></script>
+<script>
+$(".footer_menu .business").addClass("on").siblings().removeClass("on");   
+
+// 풀페이지
+$('#wide_numberFullPage').fullpage({
+    verticalCentered: true,
+    touchSensitivity:15,
+    anchors: ['wide_number_intro', 'wide_number_process', 'wide_number_agency', 'footer'],
+    menu: '#menu',
+    scrollOverflow: true,
+    navigation: true,
+    navigationPosition: 'center',
+    onLeave: function(){
+        $(".wide_number_tit, .symbol, .wide_number_pros, .wide_number_agency_wrap").removeClass("animate__fadeInUp").addClass("animate__fadeOut")
+        $(".wide_number_process").removeClass("ani")
+        $(".banner_box").removeClass("animate__fadeIn").addClass("animate__fadeOut")
+    },
+    afterLoad: function (anchorLink, index) {
+        $(".wide_number_tit, .symbol, .wide_number_pros, .wide_number_agency_wrap").removeClass("animate__fadeOut").addClass("animate__fadeInUp")
+        $(".wide_number_process").addClass("ani")
+        $(".banner_box").removeClass("animate__fadeOut").addClass("animate__fadeIn")
+        
+        if (anchorLink == "footer") {
+            $("#fp-nav").fadeOut();
+            $("body").addClass("hd_bg");
+        } else{
+            $("#fp-nav").fadeIn();
+            $("body").removeClass("hd_bg");
+        }
+
+        if ($(".section.active").hasClass("hd_dark") === true) {
+            $("header").removeClass("bright").addClass("dark");
+            $("#fp-nav").removeClass("bright").addClass("dark");
+        } else{
+            $("header").removeClass("dark").addClass("bright");
+            $("#fp-nav").removeClass("dark").addClass("bright");
+        }
+    }
+});
+
+$(".main_tit").textillate( {
+    initialDelay :300,
+    out:{
+        effect: 'animate__fadeOut'
+    }
+});
+
+// 특허 및 인증서
+var agencySwiper = new Swiper(".agency_swiper", {
+    loop:"true",
+    grabCursor: true,
+    centeredSlides: true,
+    spaceBetween: 50,
+    slidesPerView: 3,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 3000,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            centeredSlides: false,
+        },
+        640: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+        },
+    },
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+    <title>VR개발교육진흥원</title>
+    <!-- meta tag -->
+    <meta name="author" content=" VR개발교육진흥원 ">
+    <meta name="”description”" content="VR 온라인/오프라인 전문가 양성기관">
+    <meta name="”keywords”" content="VR,브이알,VR학원,VR학교,VR제작,VR업체,VR교육,VR컨텐츠,미래비즈코리아">
+    <!-- open graph -->
+    <meta property="”og:type”" content="website">
+    <meta property="”og:title”" content="VR 온라인/오프라인 전문가 양성기관">
+    <meta property="”og:description”" content="대한민국 VR 전문가 100만 양병소">
+    <meta property="og:image" content="./images/vredu_opengraph.jpg">
+
+    <!-- 모바일 주소창 컬러 지정 -->
+    <!-- Chrome, Firefox, Opera -->
+    <meta content='#081620' name='theme-color'/>
+    <!-- Windows Phone -->
+    <meta content='#081620' name='msapplication-navbutton-color'/>
+    <!-- iOS Safari -->
+    <meta content='#081620' name='apple-mobile-web-app-status-bar-style'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+    <!-- favicon -->
+    <link rel="icon" href="./images/apple-touch-icon.png" type="image/x-icon"/>
+
+    <!--common-->
+    <link rel="stylesheet" href="../company/css/Pretendard/pretendard.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="../../css/fontawesome/all.min.css">
+
+    <!-- script -->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/gsap.min.js"></script>
+    <script src="./js/three.js"></script>
+</head>
+<body>
+<div id="vr_edu_page">
+
+<header class="vr_edu_page_header">
+    <div class="header_inner">
+        <div class="logo" onclick="location.href='/index.html'">
+            <h1>VR개발교육진흥원</h1>
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a>HOME</a></li>
+                <li><a>온라인원격수업</a></li>
+                <li><a>오프라인강좌</a></li>
+                <li><a>포트폴리오</a></li>
+                <li><a>컨텐츠거래소</a></li>
+                <li><a>VR제작의뢰</a></li>
+            </ul>
+        </nav>
+        <nav id="m_menu">
+            <button class="hbg_btn"></button>
+        </nav>
+    </div>
+</header>
+
+<div id="m_menu_box">
+    <ul>
+        <li><a>HOME</a></li>
+        <li><a>온라인원격수업</a></li>
+        <li><a>오프라인강좌</a></li>
+        <li><a>포트폴리오</a></li>
+        <li><a>컨텐츠거래소</a></li>
+        <li><a>VR제작의뢰</a></li>
+    </ul>
+</div> 
+
+<div class="vr_edu_cont">
+    <div class="vr_edu_inner">
+        <div class="edu_btn online">
+            <div class="btn_wrap">
+                <strong>온라인 원격 수업</strong>
+                <button>수업듣기</button>
+            </div>
+            <img src="./images/vr_edu_img/btn_img3.jpg" alt="온라인 원격수업 이미지">
+        </div>
+        <div class="edu_btn offline">
+            <div class="btn_wrap">
+                <strong>오프라인 강좌</strong>
+                <button>수강신청</button>
+            </div>
+            <img src="./images/vr_edu_img/btn_img1.jpg" alt="오프라인 강좌 이미지">
+        </div>
+        <div class="edu_btn exchange">
+            <div class="btn_wrap">
+                <strong>VR컨텐츠거래소
+                    <span>국내 최초 VR컨텐츠 포털</span>
+                </strong>
+                <button><span>Go</span><i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer id="vr_edu_footer">
+    <div class="footer_inner">
+        <div class="logo">
+            <img src="./images/logo.png" alt="미래비즈코리아 로고">
+        </div>
+
+        <div class="footer_wrap">
+            <div class="footer_txt left">
+                <span>(주)미래비즈코리아<br>
+                대표자 김비즈<br>
+                사업자번호 000-00-00000</span>
+
+                <span>Tel 0000-0000<br>
+                Fax 02-000-0000</span>
+
+                <span>서울특별시 ㅇㅇ구 ㅇㅇ로 000 서울타워 0차 0000호<br>
+                Copyright ⓒ Mirae Biz Korea, Co, Ltd All Rights Reserved.</span>
+            </div>
+            <div class="footer_txt right">
+                <div class="logo">
+                    <img src="./images/vr_edu_img/seoul_nambu_edu_logo.png" alt="서울특별시남부교육지원청 로고">
+                </div>
+                <span>평생직업교육학원 제 0000호</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    
+    /*three.js 우주 배경*/
+    var vrEduPage = document.getElementById("vr_edu_page");
+    var sizeW = vrEduPage.clientWidth;
+    var sizeH = vrEduPage.clientHeight;
+    
+    
+    const scene = new THREE.Scene();
+    //장면생성
+    
+    const sizes = {
+        width: sizeW,
+        height: sizeH,
+    };
+
+    //사이즈 화면맞춤
+    
+    const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100);
+    camera.position.z = 2;
+    
+    scene.add(camera);
+    //카메라 세부 설정
+    
+    
+    const renderer = new THREE.WebGLRenderer({ antialias: true, });
+    //renderer 생성
+    
+    
+    //화면 사이즈 설정
+    renderer.setSize(sizes.width, sizes.height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    //canvas가 흐릿하게 출력해주는 것을 막음
+    
+    renderer.setClearColor(new THREE.Color("#21282a"), 1);
+    //배경색을 어두운 gray로 설정
+    
+    vrEduPage.appendChild(renderer.domElement);
+    renderer.domElement.classList.add("mainbackground");
+    //html 화면에 구현
+    
+    
+    //반응형 resize event 추가
+    window.addEventListener("resize", () => {
+    
+        //업데이트 사이즈
+        sizes.width = vrEduPage.clientWidth;
+        sizes.height = vrEduPage.clientHeight;
+    
+        //업데이트 카메라
+        camera.aspect = sizes.width / sizes.height;
+        camera.updateProjectionMatrix();
+    
+        //업데이트 랜더링
+        renderer.setSize(sizes.width, sizes.height);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    });
+    
+    //도넛형 도형추가 (radius비어있는 원 반지름, tube비어있지 않은 부분반지름, radialSegment, tubularsegments)
+    const geometry = new THREE.TorusGeometry(0.7,0.2,16,100);
+    
+    const material = new THREE.PointsMaterial({ 
+        size: 0.005,
+        color: 0x87a7ca 
+    });
+    //점으로 도형 생성, color: 지정
+    
+    const sphere = new THREE.Points(geometry, material);
+    
+    scene.add(sphere);
+    
+    
+    //우주느낌의 입자(paticles) 만들어줌
+    //buffergeometry -> 사용자 정의 도형
+    const particlesGeometry = new THREE.BufferGeometry();
+    
+    const loader = new THREE.TextureLoader();
+
+
+    let canvas = document.createElement("canvas");
+    vrEduPage.appendChild(canvas);
+    let ctx = canvas.getContext("2d");
+    canvas.height = 100;
+    canvas.width = 100;
+    ctx.fillStyle = "#fff";
+    ctx.beginPath();
+    ctx.arc(50, 50, 25, 0, 2 * Math.PI);
+    ctx.fill();
+    
+    let img = canvas.toDataURL("image/png");
+    
+    const star = loader.load(img);
+    
+    const particlesmaterial = new THREE.PointsMaterial({
+        size: 0.01,
+        map: star,
+        transparent: true,
+    });
+    
+    const particlesCnt = 2000;
+    const posArray = new Float32Array(particlesCnt * 3);
+    
+    for (let i = 0; i < particlesCnt * 3; i++) {
+        posArray[i] = (Math.random() - 0.5) * (Math.random() * 5);
+    }
+    
+    
+    particlesGeometry.setAttribute(
+        "position",
+        new THREE.BufferAttribute(posArray, 3)
+    );
+    
+    const particlesMesh = new THREE.Points(particlesGeometry, particlesmaterial);
+    scene.add(particlesMesh);
+    
+    //mouse
+    document.addEventListener("mousemove", animateParticles);
+    
+    let mouseX = 0;
+    let mouseY = 0;
+    
+    function animateParticles(event) {
+        mouseY = event.clientX;
+        mouseX = event.clientY;
+    }
+    
+    
+    /*animate*/
+    
+    const clock = new THREE.Clock();
+    
+    const animate = () => {
+      window.requestAnimationFrame(animate);
+    
+      const elapsedTime = clock.getElapsedTime();
+      // Update objects
+      sphere.rotation.y = 0.3 * elapsedTime;
+      particlesMesh.rotation.y = -0.5 * (elapsedTime * 0.05);
+    
+      if (mouseX > 0) {
+        particlesMesh.rotation.x = -mouseY * (elapsedTime * 0.00002);
+        particlesMesh.rotation.y = -mouseX * (elapsedTime * 0.00002);
+      }
+    
+      renderer.render(scene, camera);
+    };
+    
+    animate();
+    
+    /*배경 끝*/
+
+
+    $(function(){
+        /*모바일 메뉴클릭*/
+        $("#m_menu").on("click", function(){
+            $(this).toggleClass("click");
+            $("#m_menu_box").toggleClass("click");
+            $("header").toggleClass("click");
+            $("body").toggleClass("click");
+        });
+
+        /*스크롤시 헤더 딤*/
+        var scroll_pos = 0;
+
+        $(window).on("scroll", function(){
+            scroll_pos = $(this).scrollTop();
+
+            if(scroll_pos > 90) {
+                $("header").addClass("dim");
+            } else {
+                $("header").removeClass("dim");
+            }
+        });
+    });
+    </script>
+</body>
+</html>

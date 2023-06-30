@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+
+  <link href="../company/css/Pretendard/pretendard.css" resl="stylesheet"/>
+  <link href="Semantic-UI-CSS-master/semantic.min.css" rel="stylesheet"/>
+  <link href="Semantic-UI-CSS-master/calendar.min.css" rel="stylesheet"/>
+  <link href="css/common.css" rel="stylesheet"/>
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+  <script src="Semantic-UI-CSS-master/calendar.min.js"></script>
+</head>
+<body>
+<section id="header">
+
+    <div class="hbg_menu ui vertical inverted sidebar left menu visible">
+
+        <div class="hbg_btn ui black big launch right attached fixed button">
+            <i class="close arrow left icon"></i>
+            <i class="open content icon"></i>
+        </div>
+
+        <div class="item">
+            <a class="mk_logo ui logo" href="index.html">MK RENTAL</a>
+        </div>
+
+        <div class="item">
+            <div class="menu_slide header">
+              <i class="ui circular user icon"></i>
+              <span class="login_name point_co">담당자</span> 님 로그인
+              <i class="dropdown icon"></i>
+            </div>
+            <div class="menu_li menu">
+                <a class="password menu_tit item" href="password.html">비밀번호 변경</a>
+                <a class="logout menu_tit item point_co2" href="#">로그아웃</a>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="menu_slide header">사이트정보<i class="dropdown icon"></i></div>
+            <div class="menu_li menu">
+                <a class="info menu_tit item" href="information.html">기본정보</a>
+                <a class="header_footer menu_tit item" href="header_footer.html">헤더,푸터</a>
+                <a class="personal_info_process menu_tit item" href="personal_info_process.html">약관,개인정보</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="menu_slide header">제품<i class="dropdown icon"></i></div>
+            <div class="menu_li menu">
+                <a class="product_condition menu_tit item" href="product_condition.html">노출 제품 조건</a>            </div>
+        </div>
+    </div>
+</section>
+
+<section id="notice">
+    <p class="ntc_tit"><i class="bullhorn icon"></i>공지사항</p>
+    <ul class="ntc_cont">
+        <li class="slide_txt"><a href="#">[LG전자 케어솔루션] 4월 LG 퓨리케어 에어로타워 오브제컬렉션 프로모션</a></li>
+        <li class="slide_txt"><a href="#">[LG전자 케어솔루션] 4월 LG DIOS 전기레인지 프로모션</a></li>
+        <li class="slide_txt"><a href="#">[LG전자 케어솔루션] 4월 LG 힐링미 안마의자 프로모션</a></li>
+    </ul>
+</section>
+<body>
+<section id="header_footer" class="wrapper">
+    <h2 class="page_tit ui header">본사 기본 설정</h2>
+    
+    <div class="ui hidden divider"></div>
+    
+
+<form class="page_form">
+    <div class="ui two column stackable grid">
+        <!--로고설정-->
+        <div class="page_content two column">
+            <h3 class="page_tit ui header">로고(Logo) 설정<a class="tit_label ui horizontal label">필수</a></h3>
+            <div class="ui form">
+                <div class="field">
+                    <div class="file_box ui left labeled right icon input">
+                        <label class="file_btn ui teal button" for="input_logo">파일찾기</label>
+                        <input class="file_btn_hidden" type="file" id="input_logo">
+
+                        <input class="file_name input_box" type="text" value="png파일만 허용" disabled="disabled">
+                        <i class="download link icon point_co" title="파일저장"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--파비콘설정-->
+        <div class="page_content two column">
+            <h3 class="page_tit ui header">파비콘(Favicon) 설정<a class="tit_label ui horizontal label">필수</a></h3>
+            <div class="ui form">
+                <div class="field">
+                    <div class="file_box ui left labeled right icon input">
+                        <label class="file_btn ui teal button" for="input_favicon">파일찾기</label>
+                        <input class="file_btn_hidden" type="file" id="input_favicon">
+
+                        <input class="file_name input_box" type="text" value="ico파일만 허용" disabled="disabled">
+                        <i class="download link icon point_co" title="파일저장"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--메타태그설정-->
+    <div class="page_content">
+        <h3 class="page_tit ui header">메타태그(Metatag) 설정<a class="tit_label ui horizontal label">필수</a></h3>
+        <div class="ui form">
+            <div class="field">
+                <textarea class="text_box" placeholder="내용입력(필수)"></textarea>
+            </div>
+        </div>
+
+        <div class="ui hidden divider"></div>
+
+        <div class="btn_zone">
+            <div class="ui right pointing red basic label">이전의 정보로 되돌리기는 1번만 가능합니다.</div>
+            <button class="cancel_btn ui negative button">되돌리기</button>
+        </div>
+    </div>
+
+    <div class="ui hidden divider"></div>
+    <div class="ui hidden divider"></div>
+    <div class="ui hidden divider"></div>
+
+    <!--헤드 스크립트 추가-->
+    <div class="page_content">
+        <h3 class="page_tit ui header">헤드(Head) 스크립트 설정</h3>
+        <div class="ui form">
+            <div class="field">
+                <textarea class="text_box small" placeholder="내용입력"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!--바디 스크립트 추가-->
+    <div class="page_content">
+        <h3 class="page_tit ui header">바디(Body) 스크립트 설정</h3>
+        <div class="ui form">
+            <div class="field">
+                <textarea class="text_box small" placeholder="내용입력"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!--푸터 스크립트 추가-->
+    <div class="page_content">
+        <h3 class="page_tit ui header">푸터(Footer) 설정<a class="tit_label ui horizontal label">필수</a></h3>
+        <div class="ui form">
+            <div class="field">
+                <textarea class="text_box small" placeholder="내용입력(필수)"></textarea>
+            </div>
+        </div>
+    </div>
+</form>
+
+    <button class="save_btn ui right floated primary button">저장</button>
+    
+</section>
+<script src="./js/common.js"></script>
+<script>
+$("#header .header_footer").addClass("on").siblings().removeClass("on");
+$("#header .header_footer").addClass("on").siblings().removeClass("on");
+
+/*파일 업로드시 파일명 보이기*/
+var fileTarget = $("#header_footer .file_box .file_btn_hidden");
+
+fileTarget.on("change", function(){
+    if(window.FileReader){
+        var filename = $(this)[0].files[0].name;
+    }
+    else {
+        var filename = $(this).val().split("/").pop().split("\\").pop();
+    }
+    $(this).siblings(".file_name").val(filename);
+});
+</script>
+</body>
+</html>

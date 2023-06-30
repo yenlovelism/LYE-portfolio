@@ -1,0 +1,200 @@
+/*자료실*/
+.reference_room_wrap {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.point_blue {
+    color: var(--point-color3) !important;
+}
+.point_bold {
+    font-weight:600 !important;
+    color: var(--point-color2);
+}
+.section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -2;
+    overflow: hidden;
+}
+.reference_room_tit.main_tit {
+    padding-bottom: 30px;
+    font-size: 2.9em;
+    font-weight: 500;
+}
+.reference_room_tit.sub_tit {
+    padding-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+
+/*타지역서비스 고객 이용 후기*/
+.section.reference_room_review {
+    height: auto !important;
+}
+.section.reference_room_review .reference_room_wrap {
+    position: relative;
+    padding: 150px 0 250px;
+}
+.section.reference_room_review .reference_room_cont>ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.section.reference_room_review .reference_room_cont>ul>li {
+    width: 25%;
+}
+.section.reference_room_review .reference_room_cont>ul>li:nth-child(2) {
+    margin-top: 200px;
+}
+.section.reference_room_review .reference_room_cont>ul>li:nth-child(3) {
+    margin-top: 100px;
+}
+.section.reference_room_review .reference_room_cont .review_box {
+    position: relative;
+    margin: 80px 0;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.section.reference_room_review .reference_room_cont .review_box span {
+    margin: 30px 0; 
+    display: inline-block;
+    line-height: 1.5em;
+    letter-spacing: 0px;
+    word-break: keep-all;
+    font-size: 1.3em;
+}
+.section.reference_room_review .reference_room_cont .review_box p {
+    line-height: 1.8em;
+    letter-spacing: 0.2px;
+    word-break: keep-all;
+    font-size: 0.987em;
+}
+.section.reference_room_review .reference_room_cont .review_box img {
+    width: 17%;
+}
+.section.reference_room_review .reference_room_cont>ul>li:nth-child(2).animate__fadeInUp {
+    animation-delay: 0.2s;
+}
+.section.reference_room_review .reference_room_cont>ul>li:nth-child(3).animate__fadeInUp {
+    animation-delay: 0.4s;
+}
+
+
+/*신청서 다운로드*/
+.section.reference_room_joindown .reference_room_tit {
+    text-align: center;
+}
+.section.reference_room_joindown .reference_room_cont>div {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.section.reference_room_joindown .reference_room_cont>div>a {
+    padding: 13px;
+    margin: 30px 25px;
+    float: left;
+    width: calc((100% - 228px)/3);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: #fff;
+    box-shadow: 5px 5px 17px rgba(86, 91, 121, 0.2);
+    box-sizing: border-box;
+}
+.section.reference_room_joindown .reference_room_cont>div>a:hover {
+    box-shadow: 4px 4px 15px rgba(86, 91, 121, 0.2) inset;
+}
+.section.reference_room_joindown .reference_room_cont .join_logo {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section.reference_room_joindown .reference_room_cont .join_logo img {
+    width: 55%;
+}
+.section.reference_room_joindown .reference_room_cont>div>a:nth-child(5) .join_logo img {
+    width: 25%;
+}
+.section.reference_room_joindown .reference_room_cont .down_btn {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.section.reference_room_joindown .reference_room_cont .down_btn span {
+    display: inline-block;
+    width: 100%;
+    padding: 28%;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section.reference_room_joindown .reference_room_cont span img {
+    width: 100%;
+}
+.reference_room_joindown .reference_room_cont>ul.animate__fadeInUp {
+    animation-delay: 0.3s;
+}
+@media all and (max-width: 1600px) {
+    .reference_room_wrap {width: 90%; font-size: 0.9em;}
+    .section.reference_room_review .reference_room_cont>ul>li {width: 28%;}
+    .section.reference_room_joindown .reference_room_cont>div {width: 90%;}
+    .section.reference_room_joindown .reference_room_cont>div>a {padding: 10px; width: calc((100% - 210px)/3);}
+}
+@media all and (max-width: 1050px) {
+    .section.reference_room_review .reference_room_cont>ul>li {width: 30%;}
+    .section.reference_room_review .reference_room_cont .review_box {padding: 40px 20px; font-size: 0.9em;}
+    .section.reference_room_joindown .reference_room_cont>div {width: 100%;}
+}
+@media all and (max-width: 850px) {
+    .section.reference_room_review .reference_room_wrap {padding: 150px 0;}
+    .section.reference_room_review .reference_room_cont>ul {justify-content: space-between;}
+    .section.reference_room_review .reference_room_cont>ul>li {width: 31.5%;}
+    .section.reference_room_review .reference_room_cont>ul>li:nth-child(2) {margin-top: 130px;}
+    .section.reference_room_review .reference_room_cont>ul>li:nth-child(3) {margin-top: 65px;}
+    .section.reference_room_review .reference_room_cont .review_box {margin: 50px 0; padding: 30px 15px;}
+
+    .section.reference_room_joindown .reference_room_cont>div>a {padding: 7px; margin: 20px 7px; width: calc((100% - 84px)/3);}
+    .section.reference_room_joindown .reference_room_cont .join_logo img {width: 60%;}
+    .section.reference_room_joindown .reference_room_cont>div>a:nth-child(5) .join_logo img {width: 30%;}
+}
+@media all and (max-width: 640px) {
+    #reference_room ~ #fp-nav {display: none !important;}
+
+    .section.reference_room_review .reference_room_cont>ul {display: block;}
+    .section.reference_room_review .reference_room_cont>ul>li {margin: 0 auto !important; width: 80%;}
+    .section.reference_room_review .reference_room_cont>ul>li.animate__fadeInUp {animation: none;}
+    .section.reference_room_review .reference_room_cont .review_box span {font-size: 1.4em;}
+
+    .section.reference_room_joindown .reference_room_cont>div>a {padding: 7px; margin: 20px 7px; width: calc((100% - 56px)/2);}
+}
+@media all and (max-width: 430px) {
+    .section.reference_room_review .reference_room_cont .review_box img {width: 20%;}
+    .section.reference_room_review .reference_room_cont>ul>li {width: 100%;}
+    .section.reference_room_joindown .reference_room_cont>div>a {height: 60px;}
+    .section.reference_room_joindown .reference_room_cont .join_logo img {width: 70%;}
+    .section.reference_room_joindown .reference_room_cont>div>a:nth-child(5) .join_logo img {width: 35%;}
+    .section.reference_room_joindown .reference_room_cont .down_btn {width: 29%;}
+}
+@media all and (max-width: 390px) {
+    .section.reference_room_joindown .reference_room_cont>div>a {height: 50px;}
+    .section.reference_room_joindown .reference_room_cont .down_btn {width: 32%;}
+}

@@ -1,0 +1,546 @@
+#service_ktbizcall {
+    background: linear-gradient(135deg, rgba(81, 87, 206, 0.8), rgba(154, 88, 209, 0.8));
+}
+
+.service_ktbizcall_wrap {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.point_org {
+    color: var(--point-color) !important;
+}
+.point_puple {
+    color: var(--point-color2) !important;
+}
+.point_bold {
+    font-weight:600 !important;
+}
+
+.section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+}
+.service_ktbizcall_tit.main_tit {
+    display: block;
+    padding-bottom: 50px;
+    font-size: 2.3em;
+    font-weight: 500;
+    color: #fff;
+}
+.service_ktbizcall_tit.sub_tit {
+    display: block;
+    padding-bottom: 40px;
+    word-break: keep-all;
+    line-height: 1.6em;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+/*bg*/
+.bling {
+    position: absolute;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+/*kt비즈콜 소개*/
+.service_ktbizcall_intro .bling1 {
+    width: 15%;
+    bottom: -8%;
+    left: -6%;
+    transform: rotate(0deg);
+    animation-name: turn;
+    animation-duration: 25s;
+}
+.service_ktbizcall_intro .bling2 {
+    top: 20%;
+    left: 5%;
+    animation-name: bling;
+    animation-duration: 2s;
+}
+.service_ktbizcall_intro .bling3 {
+    top: 15%;
+    right: 30%;
+    animation-name: bling;
+    animation-duration: 1.5s;
+}
+.service_ktbizcall_intro .bling4 {
+    bottom: 20%;
+    left: 30%;
+    animation-name: bling;
+    animation-duration: 2s;
+}
+.service_ktbizcall_intro .bling5 {
+    bottom: 3%;
+    right: 10%;
+    animation-name: bling;
+    animation-duration: 3s;
+}
+
+
+.section.service_ktbizcall_intro {
+    position: relative;
+    overflow: visible;
+}
+.section.service_ktbizcall_intro .service_ktbizcall_wrap {
+    display: flex;
+}
+.section.service_ktbizcall_intro .service_ktbizcall_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(40% - 200px);
+    margin: 0 40px 0 160px;
+    letter-spacing: 0px;
+    color: #fff;
+}
+.section.service_ktbizcall_intro .service_ktbizcall_tit {
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 3em;
+}
+.section.service_ktbizcall_intro .service_ktbizcall_tit::after {
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 35px;
+    height: 2px;
+    background: var(--point-color);
+}
+.service_ktbizcall_decs {
+    word-break: keep-all;
+    line-height: 1.8em;
+    font-size: 1.4em;
+}
+.section.service_ktbizcall_intro .service_ktbizcall_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+}
+.section.service_ktbizcall_intro .service_ktbizcall_img img {
+    width: 90%;
+    border-radius: 20px;
+    border: 15px solid #000;
+}
+
+
+/*이런 대표님들 주목해주세요.*/
+.service_ktbizcall_needs .bling1 {
+    width: 15%;
+    top: -23%;
+    left: -6%;
+    transform: rotate(0deg);
+    animation-name: turn;
+    animation-duration: 25s;
+}
+.service_ktbizcall_needs .bling2 {
+    width: 2%;
+    bottom: 20%;
+    left: 10%;
+    animation-name: shake;
+    animation-duration: 2s;
+}
+.service_ktbizcall_needs .bling3 {
+    width: 1%;
+    top: 15%;
+    right: 30%;
+    animation-name: bling;
+    animation-duration: 1.5s;
+}
+.service_ktbizcall_needs .bling4 {
+    width: 1.2%;
+    left: 20%;
+    top: 30%;
+    animation-name: bling;
+    animation-duration: 2s;
+}
+.service_ktbizcall_needs .bling5 {
+    width: 7%;
+    top: 15%;
+    right: -2%;
+    animation-name: shake;
+    animation-duration: 3s;
+}
+.service_ktbizcall_needs .bling6 {
+    width: 8%;
+    bottom: 3%;
+    right: -2%;
+    animation-name: bling;
+    animation-duration: 1.8s;
+}
+.service_ktbizcall_needs .service_ktbizcall_wrap {
+    text-align: center;
+    letter-spacing: 0;
+}    
+.service_ktbizcall_needs .service_ktbizcall_tit {
+    color: #fff;
+}
+.service_ktbizcall_needs .service_ktbizcall_decs {
+    padding: 40px 50px;
+    display: inline-block;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 5px 5px 20px var(--point-color2-op8);
+}
+.service_ktbizcall_needs .service_ktbizcall_decs i {
+    display: inline-block;
+    padding-right: 10px;
+    color: var(--point-color);
+}
+.service_ktbizcall_needs .service_ktbizcall_decs li {
+    padding: 5px 0;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+
+/*다양한 기능제공*/
+.service_ktbizcall_function .bling3 {
+    width: 1.2%;
+    left: 30%;
+    top: 20%;
+    animation-name: bling;
+    animation-duration: 2s;
+}
+.service_ktbizcall_function .bling4 {
+    width: 1%;
+    top: 10%;
+    right: 30%;
+    animation-name: bling;
+    animation-duration: 1.5s;
+}
+.service_ktbizcall_function .service_ktbizcall_wrap {
+    text-align: center;
+}
+.service_ktbizcall_function .service_ktbizcall_tit.main_tit br{
+    display: none;
+}
+.service_ktbizcall_function .service_ktbizcall_tit.sub_tit {
+    display: inline-block;
+    position: relative;
+    color: var(--point-color);
+    font-weight: 500;
+}
+.service_ktbizcall_function .service_ktbizcall_tit.sub_tit::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 37px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--point-color);
+}
+.service_ktbizcall_function .service_ktbizcall_cont>ul {
+    margin:0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.service_ktbizcall_function .service_ktbizcall_cont>ul>li {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.service_ktbizcall_function .function_box {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 17px var(--point-color2-op8);
+}
+.service_ktbizcall_function .function_box::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(242, 242, 242, 0.6);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.service_ktbizcall_function .function_box.ani::after {
+    animation: border-shadow 0.6s ease forwards;
+}
+.service_ktbizcall_function .function_box img {
+    width: 45%;
+}
+.service_ktbizcall_function .function_box span {
+    margin-top: 20px;
+    display: block;
+    font-size: 1.2em;
+}
+.service_ktbizcall_function li:nth-child(1) .function_box.ani::after {
+    animation-delay: 0.9s;
+}
+.service_ktbizcall_function li:nth-child(2) .function_box.ani::after {
+    animation-delay: 1.1s;
+}
+.service_ktbizcall_function li:nth-child(3) .function_box.ani::after {
+    animation-delay: 1.2s;
+}
+.service_ktbizcall_function li:nth-child(4) .function_box.ani::after {
+    animation-delay: 1.3s;
+}
+.service_ktbizcall_function li:nth-child(5) .function_box.ani::after {
+    animation-delay: 1.4s;
+}
+.service_ktbizcall_function li:nth-child(6) .function_box.ani::after {
+    animation-delay: 1.6s;
+}
+.service_ktbizcall_function li:nth-child(7) .function_box.ani::after {
+    animation-delay: 1.7s;
+}
+.service_ktbizcall_function li:nth-child(8) .function_box.ani::after {
+    animation-delay: 1.8s;
+}
+.service_ktbizcall_function li:nth-child(9) .function_box.ani::after {
+    animation-delay: 1.9s;
+}
+.service_ktbizcall_function li:nth-child(10) .function_box.ani::after {
+    animation-delay: 2s;
+}
+
+
+
+/*비즈니스*/
+.service_ktbizcall_business .bling1 {
+    width: 10%;
+    top: 25%;
+    left: -5%;
+    animation-name: shake;
+    animation-duration: 2s;
+}
+.service_ktbizcall_business .bling2 {
+    top: 10%;
+    left: 20%;
+    animation-name: bling;
+    animation-duration: 2s;
+}
+.service_ktbizcall_business .bling3 {
+    top: 40%;
+    left: 30%;
+    animation-name: bling;
+    animation-duration: 1.5s;
+}
+.service_ktbizcall_business .bling4 {
+    right: 30%;
+    top: 25%;
+    animation-name: shake;
+    animation-duration: 2s;
+}
+.service_ktbizcall_business .bling5 {
+    width: 15%;
+    top: -5%;
+    right: -6%;
+    transform: rotate(0deg);
+    animation-name: turn;
+    animation-duration: 25s;
+}
+.service_ktbizcall_business .main_tit {
+    width: 100%;
+    line-height: 1.3em;
+    letter-spacing: 0;
+    word-break: keep-all;
+}
+.service_ktbizcall_business .main_tit .br2 {
+    display: none;
+}
+.service_ktbizcall_business .main_tit span {
+    font-size: 0.8em;
+}
+.service_ktbizcall_business .service_ktbizcall_wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.service_ktbizcall_business .service_ktbizcall_cont {
+    margin-top: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.service_ktbizcall_business .service_ktbizcall_cont.left {
+    align-items: flex-end;
+}
+.service_ktbizcall_business .service_ktbizcall_cont.right {
+    align-items: flex-start;
+}
+.service_ktbizcall_business .business_box {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.service_ktbizcall_business .business_box.left {
+    bottom: -40px;
+}
+.service_ktbizcall_business .business_box.right {
+    top: -40px;
+}
+.service_ktbizcall_business .business_box > img {
+    width: 50%;
+}
+.service_ktbizcall_business .business_box .speechbubble {
+    position: relative;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service_ktbizcall_business .business_box .speechbubble img{
+    width: 100%;
+    filter: drop-shadow(5px 5px 7px var(--point-color2-op8));
+}
+.service_ktbizcall_business .business_box .speechbubble span {
+    position: absolute;
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    letter-spacing: 0.1px;
+    margin-bottom: 4%;
+}
+
+
+/*bottom_banner*/
+.section.bottom_banner {
+    height: auto !important;
+}
+.section .fp-tableCell {
+    height: auto !important;
+}
+#service_ktbizcall .banner_box .banner_cont {
+    box-shadow: inset 3px 3px 10px 1px rgba(176, 180, 245, 0.8), 5px 10px 14px -7px rgba(27, 31, 120, 0.5);
+    background: linear-gradient(162deg, rgba(255, 255, 255, 0.3) 5%, rgba(133, 137, 223, 0.9) 100%);
+    background-color: rgba(114, 118, 217, 0.8); 
+}
+
+@keyframes border-shadow {
+    to {left: 10px; bottom: 10px;}
+}
+@keyframes turn {
+    to {transform: rotate(360deg);}
+}
+@keyframes bling {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+@keyframes shake {
+    0% {transform: rotate(20deg);}
+    50% {transform: rotate(0deg);}
+    100% {transform: rotate(20deg);}
+}
+
+
+@media all and (max-width: 1600px) {
+    .service_ktbizcall_wrap {width: 90%;}
+    .section.service_ktbizcall_intro .service_ktbizcall_cont {margin: 0 40px 0 30px; width: calc(40% - 70px);}
+    .service_ktbizcall_function .service_ktbizcall_cont>ul {width: 90%;}
+    .service_ktbizcall_function .function_box {width: 150px; height: 150px;}
+
+    .service_ktbizcall_business .business_box .speechbubble {width: 45%;}
+}
+@media all and (max-width: 1400px) {
+    .service_ktbizcall_business .business_box .speechbubble {width: 50%;}
+}
+@media all and (max-width: 1150px) {
+    .section.service_ktbizcall_function {height: auto !important;}
+    .section.service_ktbizcall_function .service_ktbizcall_wrap {padding: 150px 0;}
+    .service_ktbizcall_function .service_ktbizcall_cont>ul {width: 100%;}
+    .service_ktbizcall_function .service_ktbizcall_cont>ul>li {width: 25%;}
+
+    .service_ktbizcall_business .business_box .speechbubble span {font-size: 1em;}
+}
+@media all and (max-width: 1020px) {
+    .section.service_ktbizcall_intro .service_ktbizcall_cont {font-size: 0.9em;}
+    .service_ktbizcall_business {height: auto !important;}
+    .service_ktbizcall_business .service_ktbizcall_wrap {padding: 150px 0; flex-direction: column; flex-wrap: nowrap;}
+    .service_ktbizcall_business .service_ktbizcall_cont {width: 60%;}
+    .service_ktbizcall_business .service_ktbizcall_cont.left, .service_ktbizcall_business .service_ktbizcall_cont.right {align-items: center;}
+    .service_ktbizcall_business .business_box.left {bottom: 0;}
+    .service_ktbizcall_business .business_box.right {margin-top: 50px; top: 0;}
+}
+@media all and (max-width: 900px) {
+    .section.service_ktbizcall_intro .service_ktbizcall_decs {font-size: 1.3em;}
+}
+@media all and (max-width: 850px) {
+    .section.service_ktbizcall_intro .service_ktbizcall_cont {margin: 0 20px 0 0; width: calc(40% - 20px);}
+    .section.service_ktbizcall_intro .service_ktbizcall_img img {border: 12px solid #000;}
+    
+    .service_ktbizcall_function .service_ktbizcall_cont>ul>li {width: 33.3%;}
+    .service_ktbizcall_function .service_ktbizcall_tit.main_tit {line-height: 1.6em;}
+    .service_ktbizcall_function .service_ktbizcall_tit.main_tit br{display: block;}
+
+    .service_ktbizcall_business .service_ktbizcall_cont {width: 70%;}
+}
+@media all and (max-width: 640px) {
+    #service_ktbizcall ~ #fp-nav {display: none !important;}
+    .section.service_ktbizcall_intro .service_ktbizcall_tit {margin-bottom: 30px; padding-bottom: 30px;}
+    .section.service_ktbizcall_intro .service_ktbizcall_tit::after {left: 50%; transform: translateX(-50%);}
+    .section.service_ktbizcall_intro .service_ktbizcall_wrap {display: flex; flex-direction: column; align-content: center; justify-content: center; align-items: center;}
+    .section.service_ktbizcall_intro .service_ktbizcall_cont {margin: 0 0 30px 0; width: 100%; text-align: center;}
+    .section.service_ktbizcall_intro .service_ktbizcall_img {width: 100%;}
+
+    .service_ktbizcall_needs .service_ktbizcall_wrap {font-size: 0.9em;  letter-spacing: -0.8px;}
+    .service_ktbizcall_needs .service_ktbizcall_decs {padding: 10px 20px !important; font-size: 1.3em;}
+
+    .service_ktbizcall_function .service_ktbizcall_wrap {font-size: 0.9em;}
+    .service_ktbizcall_function .service_ktbizcall_cont>ul>li {width: 50%;}
+    .service_ktbizcall_function .function_box {width: 125px; height: 125px;}
+
+    .service_ktbizcall_business .main_tit {font-size: 2em;}
+    .service_ktbizcall_business .service_ktbizcall_cont {width: 100%;}
+    .service_ktbizcall_business .business_box {flex-direction: column; align-items: center;}
+    .service_ktbizcall_business .business_box.left>img {order: 2; width: 60%;}
+    .service_ktbizcall_business .business_box.right>img {margin-top: 30px; width: 60%;}
+    .service_ktbizcall_business .main_tit .br2 {display: block;}
+    .service_ktbizcall_business .business_box .speechbubble span {font-size: 1.1em;}
+}
+@media all and (max-width: 430px) {
+    .service_ktbizcall_needs .service_ktbizcall_wrap {font-size: 0.8em;}
+    .service_ktbizcall_needs .service_ktbizcall_tit.sub_tit br {display: none;}
+    .service_ktbizcall_function .service_ktbizcall_wrap {font-size: 0.8em;}
+    
+    .service_ktbizcall_business .main_tit {font-size: 1.7em;}
+    .service_ktbizcall_business .business_box>img {width: 80% !important;}
+    .service_ktbizcall_business .business_box .speechbubble {width: 70%;}
+}
+@media all and (max-width: 380px) {
+    .service_ktbizcall_needs .service_ktbizcall_decs {font-size: 1.2em;}
+}
+@media all and (max-width: 360px) {
+    .service_ktbizcall_business .business_box>img {width: 90% !important;}
+    .service_ktbizcall_business .business_box .speechbubble {width: 80%;}
+    .service_ktbizcall_needs .service_ktbizcall_decs {font-size: 1em;}
+}

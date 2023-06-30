@@ -1,0 +1,76 @@
+<?php
+require_once 'config.php'; // $USERID, $PW를 가져온다
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer's autoloader
+require 'vendor/autoload.php';
+
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
+
+// 메일주소 정규식
+$check_email = preg_match("/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z]+)*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z]+)+\.[a-zA-Z]{2,3}$/i", $_POST["customerEmail"]);
+// 하단 JS의 $.ajax 로 전달받은 값들
+$customerName = $_POST["customerName"];
+$customerPhone = $_POST["customerPhone"];
+$customerJob = $_POST["customerJob"];
+$customerEmail = $_POST["customerEmail"];
+$privacyAgree = $_POST["privacyAgree"];
+
+
+
+if ($customerEmail == "@" || $check_email == true) {
+  // echo $_POST;
+
+  try {
+    //Server settings
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER; //Enable verbose debug output
+    $mail->isSMTP(); //Send using SMTP
+    $mail->Host = 'smtp.naver.com'; //naver smtp로 설정
+    $mail->SMTPAuth = true; //Enable SMTP authentication
+    $mail->Username = $USERID; //SMTP 사용자 아이디
+    $mail->Password = $PW; //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //Enable implicit TLS encryption
+    $mail->Port = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->ContentType = "text/html"; // HTML 코드 삽입 가능하게 하는것
+    $mail->CharSet = "utf-8"; // 한글 깨짐 방지
+
+    //Recipients
+    $mail->setFrom($USERID . '@naver.com', 'VideoBox'); // (메일받을 때 보이는) 보내는 사람    
+    $mail->addAddress('mailto@mail.com'); // 메일을 받을 사람         
+
+
+    // Attachments
+    // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+    // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+
+    //Content
+    $mail->isHTML(true); //Set email format to HTML
+    // 제목
+    $mail->Subject = "'$customerName'님의 비디오박스 서비스 가입문의🤗";
+    // 내용
+    $mail->Body =
+      "<h1>비디오박스 서비스 가입문의 😍</h1><br>" . "<br><h2>고객명/회사명(담당자명) : " . $customerName . "</h2><br>" . "<h2>연락처 : " . $customerPhone . "</h2><br>" . "<h2>종사하시는 업종 : " . $customerJob . "</h2><br>" . "<h2>이메일 : " . $customerEmail . "</h2><br>";
+    // $mail->AltBody = 'non-html 본문';
+
+    ob_start(); //echo가 깔끔하게 출력되게  (echo와 console.log는 비슷한 것!)
+    $tt = $mail->send();
+    ob_end_clean(); //echo가 깔끔하게 출력되게
+    if ($tt) {
+      echo '이메일 전송에 성공했습니다.';
+    } else {
+      echo '이메일 전송에 실패하였습니다. 다시 시도해주세요.';
+    }
+    ;
+    // echo 'Message has been sent';
+  } catch (Exception $e) {
+    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo '이메일 전송 중 오류가 발생했습니다. 다시 시도해주세요.';
+  }
+} else if (($check_email == false) && !$_POST["agree"]) {
+  echo "이메일이 잘못되었습니다.";
+} else {
+  echo "값이 잘못되었습니다.";
+}

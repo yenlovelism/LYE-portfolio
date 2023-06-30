@@ -1,0 +1,19 @@
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# production
+/build
+
+# misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+

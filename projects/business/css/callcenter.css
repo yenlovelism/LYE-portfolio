@@ -1,0 +1,888 @@
+h4,
+h5 {
+  font-weight: 500;
+}
+
+.wrap {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+.service-call .calling-zone h4,
+.service-call .calling-zone h4 i {
+  transition: all 0.25s linear;
+}
+
+.service-call:hover > .calling-zone h4 {
+  color: #fff !important;
+}
+
+.service-call:hover > .calling-zone h4:before {
+  background: #fff !important;
+}
+
+.service-call:hover > .calling-zone h4 i {
+  margin-left: 15px !important;
+}
+
+/* callcenter-main */
+#callcenter-main {
+  background: var(--darkgray-op05);
+}
+
+#callcenter-main .width-wrap {
+  position: relative;
+  padding: 70px 0 0 0;
+  height: 700px;
+}
+
+#callcenter-main .width-wrap .title-area {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 0;
+  padding: 0 80px 0 50px;
+  height: 80%;
+  color: var(--white);
+  background-color: var(--point-col);
+  border-radius: 10px 10px 0 0;
+  z-index: 1;
+}
+
+#callcenter-main .width-wrap .title-area h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: var(--white-op50);
+}
+
+#callcenter-main .width-wrap .title-area h1 {
+  margin: 20px 0;
+  font-size: 50px;
+  margin: 16px 0;
+}
+
+#callcenter-main .width-wrap .title-area h3 {
+  font-size: 30px;
+  line-height: 1.5;
+}
+#callcenter-main .width-wrap .img-area > img {
+  position: absolute;
+}
+#callcenter-main .width-wrap .img-area > img:nth-child(1) {
+  top: 15%;
+  right: 0;
+  width: 20%;
+}
+#callcenter-main .width-wrap .img-area > img:nth-child(2) {
+  top: 50%;
+  right: 30%;
+  width: 15%;
+}
+#callcenter-main .width-wrap .img-area > .callcenter-img {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 20%;
+}
+#callcenter-main .width-wrap .img-area > .callcenter-img > img {
+  width: 100%;
+}
+#callcenter-main .width-wrap .img-area > .callcenter-img > label {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#callcenter-main .width-wrap .img-area > .callcenter-img > label > img {
+  width: 45%;
+}
+#callcenter-main .width-wrap .img-area > .callcenter-img > label > span {
+  line-height: 1.8;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--black-op80);
+}
+/* counselling-agency */
+#counselling-agency .width-wrap {
+  padding: 276px 0;
+}
+
+#counselling-agency .width-wrap .contants-area h3 {
+  font-size: 50px;
+  line-height: 65px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+#counselling-agency .width-wrap .contants-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#counselling-agency .width-wrap .contants-area h3 span i {
+  position: relative;
+}
+
+#counselling-agency .width-wrap .contants-area h3 span i.po-dot:before {
+  top: -5px;
+}
+
+#counselling-agency .width-wrap .contants-area .box-zone {
+  display: grid;
+  grid-template-columns: repeat(4, 228px);
+  grid-template-rows: 228px;
+  gap: 96px;
+}
+
+#counselling-agency .width-wrap .contants-area .box-zone .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 10px 10px 35px rgba(78, 75, 95, 0.2);
+  border-radius: 5px;
+}
+
+#counselling-agency .width-wrap .contants-area .box-zone .box img {
+  width: 80px;
+  margin-bottom: 5px;
+}
+
+#counselling-agency .width-wrap .contants-area .box-zone .box h4 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+#counselling-agency .width-wrap .contants-area .box-zone .box h4:nth-child(2) {
+  color: var(--point-col-op50);
+}
+
+#counselling-agency .width-wrap .contants-area .box-zone .box h4:nth-child(3) {
+  font-size: 18px;
+  color: var(--darkgray-op80);
+}
+#counselling-agency .width-wrap .contants-area .box-zone .box p {
+  text-align: center;
+  line-height: 1.3;
+  font-size: 15px;
+  color: var(--darkgray-op50);
+}
+/* founder */
+#founder .width-wrap .text-area h1 {
+  line-height: 65px;
+  margin-left: 40px;
+}
+
+#founder .width-wrap .text-area ul.list-zone {
+  background: rgba(78, 75, 95, 0.02);
+  border-radius: 5px;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+#founder .width-wrap .text-area ul.list-zone li {
+  display: flex;
+}
+
+#founder .width-wrap .text-area ul.list-zone li h6 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--darkgray);
+}
+
+#founder .width-wrap .text-area ul.list-zone li i {
+  font-size: 24px;
+  color: var(--point-col-op50);
+  margin-right: 5px;
+  margin-top: 7px;
+}
+
+/* promise */
+#promise .width-wrap {
+  padding: 520px 0 276px 0;
+}
+
+#promise .width-wrap .text-area {
+  position: relative;
+  z-index: 1;
+  width: 534px;
+  background: #ffffff;
+  box-shadow: 10px 10px 35px rgba(78, 75, 95, 0.2);
+  border-radius: 5px;
+  padding: 40px;
+}
+
+#promise .width-wrap .text-area h4 {
+  font-size: 26px;
+  line-height: 33.28px;
+  color: var(--darkgray);
+  margin-bottom: 15px;
+}
+
+#promise .width-wrap .img-area {
+  position: absolute;
+  width: 734px;
+  height: 345px;
+  margin: 50% 0 0 50%;
+  top: -320px;
+  left: -136px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#promise .width-wrap .img-area img {
+  height: 345px;
+  transform: scale(1.15);
+}
+
+/* special-feature */
+#special-feature .width-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 276px;
+}
+
+#special-feature .width-wrap h1 {
+  line-height: 65px;
+  margin-bottom: 100px;
+}
+
+#special-feature .width-wrap ul.list-area {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+#special-feature .width-wrap ul.list-area li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#special-feature .width-wrap ul.list-area li .num {
+  background: #424050;
+  border-radius: 3px;
+  color: #fff;
+  width: 48px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#special-feature .width-wrap ul.list-area li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 92px;
+  background: rgba(78, 75, 95, 0.02);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--darkgray);
+}
+
+#special-feature hr {
+  position: relative;
+  height: 3px;
+  background: var(--black-op10);
+  border: var(--black-op10);
+  top: -418px;
+  z-index: 0;
+}
+
+/* service */
+#service {
+  background: url('../img/callcenter_service.jpg')
+    50% no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-size: 100%;
+}
+
+#service:before {
+  content: '';
+  background: linear-gradient(
+    359.79deg,
+    #424050 43.25%,
+    rgba(66, 64, 80, 0.5) 71.53%,
+    rgba(66, 64, 80, 0) 99.82%
+  );
+  position: absolute;
+  width: 100%;
+  height: 1500px;
+  z-index: 1;
+}
+
+#service .width-wrap {
+  padding: 276px 0;
+  z-index: 2;
+}
+
+#service .width-wrap .text-area {
+  background: rgba(78, 75, 95, 0.5);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border-radius: 10px;
+  padding: 50px;
+  width: 641px;
+  margin: 0 auto;
+}
+
+#service .width-wrap .text-area h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25.04px;
+  color: #fff;
+}
+#service .width-wrap .text-area > h4 > span {
+  font-size: 26px;
+  text-shadow: 0px 0px 20px rgb(255 255 255 / 80%);
+}
+#service .width-wrap .text-area .list-zone {
+  color: #fff;
+  margin-top: 15px;
+}
+
+#service .width-wrap .text-area .list-zone li {
+  display: flex;
+}
+
+#service .width-wrap .text-area .list-zone li h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 33px;
+}
+
+#service .width-wrap .text-area .list-zone li i {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 33px;
+  color: var(--white-op50);
+  margin-right: 7px;
+}
+
+#service .width-wrap .text-area .list-zone li span {
+  font-size: 16px;
+  color: var(--white-op50);
+}
+
+#service .width-wrap .calling-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#service .width-wrap .calling-area a {
+  width: fit-content;
+}
+
+#service .width-wrap .calling-area a .calling-zone {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#service .width-wrap .calling-area a .calling-zone h1 {
+  line-height: 65px;
+  color: #fff;
+}
+
+#service .width-wrap .calling-area a .calling-zone h4 {
+  position: relative;
+  font-size: 30px;
+  color: var(--white-op50);
+  display: flex;
+  align-items: center;
+}
+
+#service .width-wrap .calling-area a .calling-zone h4:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: var(--white-op50);
+  bottom: -4px;
+}
+
+#service .width-wrap .calling-area a .calling-zone h4 i {
+  transform: scaleX(-1);
+  margin-left: 7px;
+  font-size: 19px;
+}
+
+#service .width-wrap .calling-area a .calling-zone h2 {
+  font-size: 26px;
+  line-height: 33.28px;
+  color: var(--white-op50);
+}
+
+#service .width-wrap .calling-area a .calling-zone h2 i {
+  margin-left: 5px;
+}
+
+/* responsive */
+@media all and (max-width: 1600px) {
+}
+
+@media all and (max-width: 1400px) {
+  .wrap {
+    width: 1000px;
+  }
+
+  /* #counselling-agency .width-wrap .contants-area h3:before {
+    top: -453px;
+    left: -89px;
+} */
+
+  #counselling-agency .width-wrap .contants-area .box-zone {
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 200px;
+    gap: 66px;
+  }
+
+  #promise .width-wrap .img-area {
+    width: 636px;
+    height: 350px;
+    top: -232px;
+    left: -136px;
+  }
+
+  #special-feature .width-wrap ul.list-area li span {
+    width: 244px;
+    height: 119px;
+  }
+
+  #special-feature hr {
+    top: -445px;
+  }
+}
+
+@media all and (max-width: 1250px) {
+  .wrap {
+    width: 850px;
+  }
+  #callcenter-main .width-wrap .img-area > .callcenter-img > label > span {
+    font-size: 18px;
+  }
+  #counselling-agency .width-wrap .contants-area h3 {
+    font-size: 45px;
+    line-height: 58px;
+  }
+  /* 
+  #counselling-agency .width-wrap .contants-area h3:before {
+    width: 318px;
+    height: 12px;
+    top: -382px;
+    left: -79px;
+  } */
+
+  #counselling-agency .width-wrap .contants-area .box-zone {
+    grid-template-columns: repeat(4, 186px);
+    grid-template-rows: 186px;
+    gap: 35px;
+  }
+
+  #promise .width-wrap .img-area {
+    width: 600px;
+    height: 330px;
+    top: -189px;
+    left: -175px;
+  }
+
+  #special-feature .width-wrap ul.list-area li span {
+    width: 182px;
+    height: 119px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #service {
+    background-size: 100% 100%;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .wrap {
+    width: 550px;
+  }
+  .line-break-mo {
+    display: block;
+  }
+  #callcenter-main .width-wrap {
+    width: 90%;
+  }
+  #callcenter-main .width-wrap .title-area {
+    position: inherit;
+    background-color: transparent;
+    padding: 0 0 0 0;
+    color: var(--black);
+  }
+  #callcenter-main .width-wrap .title-area h1 {
+    line-height: 60px;
+  }
+  #callcenter-main .width-wrap .title-area h4 {
+    color: var(--black-op50);
+  }
+  #callcenter-main .width-wrap .img-area > .callcenter-img {
+    width: 110px;
+  }
+  #callcenter-main .width-wrap .img-area > .callcenter-img > label > span {
+    font-size: 16px;
+  }
+
+  #counselling-agency .width-wrap .contants-area .box-zone {
+    grid-template-columns: repeat(2, 257px);
+    grid-template-rows: repeat(2, 257px);
+    gap: 35px;
+  }
+
+  #founder .width-wrap .text-area h1 {
+    line-height: 43px;
+  }
+
+  #founder .width-wrap .text-area ul.list-zone li {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  #promise .width-wrap {
+    padding: 489px 0 276px 0;
+  }
+
+  #promise .width-wrap .text-area {
+    width: 470px;
+  }
+
+  #promise .width-wrap .img-area {
+    width: 550px;
+    height: 250px;
+    top: -36px;
+    left: -275px;
+  }
+
+  #promise .width-wrap .img-area img {
+    height: 249px;
+    transform: scale(1);
+  }
+
+  #special-feature {
+    position: relative;
+  }
+
+  #special-feature:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--black-op10);
+    top: 189px;
+  }
+
+  #special-feature .width-wrap ul.list-area {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  #special-feature .width-wrap ul.list-area li:nth-child(1),
+  #special-feature .width-wrap ul.list-area li:nth-child(2) {
+    margin-bottom: 75px;
+  }
+
+  #special-feature .width-wrap ul.list-area li span {
+    width: 233px;
+    height: 87px;
+  }
+
+  #special-feature hr {
+    top: -415px;
+  }
+
+  #service {
+    background-size: 167% 100%;
+  }
+
+  #service:before {
+    top: -200px;
+  }
+
+  #service .width-wrap {
+    padding-top: 300px;
+  }
+
+  #service .width-wrap .text-area {
+    width: 450px;
+  }
+
+  #service .width-wrap .calling-area {
+    margin-top: 50px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .wrap {
+    width: 364px;
+  }
+  .line-break-mo2 {
+    display: block;
+  }
+  #callcenter-main .width-wrap .title-area h1 {
+    font-size: 40px;
+    line-height: 1.5;
+  }
+  #callcenter-main .width-wrap .title-area h4,
+  #callcenter-main .width-wrap .title-area h3 {
+    font-size: 16px;
+  }
+  #callcenter-main .width-wrap .img-area > img:nth-child(1) {
+    right: -10%;
+    width: 165px;
+  }
+  #callcenter-main .width-wrap .img-area > img:nth-child(2) {
+    width: 110px;
+  }
+  #counselling-agency .width-wrap .contants-area h3 {
+    font-size: 26px;
+    line-height: 33.28px;
+    margin-bottom: 35px;
+  }
+
+  #counselling-agency .width-wrap .contants-area h3 span i.po-dot:before {
+    top: -2px;
+  }
+
+  #counselling-agency .width-wrap .contants-area .box-zone {
+    grid-template-columns: repeat(2, 165px);
+    grid-template-rows: repeat(2, 165px);
+    gap: 12px;
+  }
+  #counselling-agency .width-wrap .contants-area .box-zone .box img {
+    width: 65px;
+  }
+  #counselling-agency .width-wrap .contants-area .box-zone .box h4 {
+    font-size: 12px;
+  }
+  #counselling-agency
+    .width-wrap
+    .contants-area
+    .box-zone
+    .box
+    h4:nth-child(3) {
+    font-size: 14px;
+  }
+  #counselling-agency .width-wrap .contants-area .box-zone .box p {
+    font-size: 12px;
+  }
+  #founder .width-wrap .text-area h1 {
+    line-height: 33.28px;
+    margin-left: 17px;
+  }
+
+  #founder .width-wrap .text-area ul.list-zone {
+    padding: 17px;
+    margin-top: 28px;
+  }
+
+  #founder .width-wrap .text-area ul.list-zone li i {
+    font-size: 14px;
+    margin-right: 3px;
+    margin-top: 7px;
+  }
+
+  #founder .width-wrap .text-area ul.list-zone li h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #promise .width-wrap {
+    padding: 428px 0 176px 0;
+  }
+
+  #promise .width-wrap .img-area {
+    width: 364px;
+    height: 228px;
+    top: 16px;
+    left: -182px;
+  }
+
+  #promise .width-wrap .text-area {
+    width: 324px;
+    padding: 20px;
+  }
+
+  #promise .width-wrap .text-area h4 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+
+  #promise .width-wrap .text-area h6 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  #special-feature:before {
+    top: 108px;
+  }
+
+  #special-feature .width-wrap {
+    padding-bottom: 176px;
+  }
+
+  #special-feature .width-wrap h1 {
+    line-height: 33.28px;
+    margin-bottom: 50px;
+  }
+
+  #service .width-wrap .text-area {
+    width: 328px;
+    padding: 15px 15px 20px 20px;
+  }
+
+  #special-feature .width-wrap ul.list-area li:nth-child(1),
+  #special-feature .width-wrap ul.list-area li:nth-child(2) {
+    margin-bottom: 50px;
+  }
+
+  #special-feature .width-wrap ul.list-area li .num {
+    font-size: 20px;
+    line-height: 39px;
+  }
+
+  #special-feature .width-wrap ul.list-area li span {
+    width: 120px;
+    height: 77px;
+    font-size: 14px;
+    line-height: 18.2px;
+    padding: 0 13px;
+  }
+
+  #special-feature hr {
+    top: -303px;
+  }
+
+  #service {
+    background-size: 207% 100%;
+  }
+
+  #service:before {
+    top: -350px;
+  }
+
+  #service .width-wrap {
+    padding: 176px 0;
+  }
+
+  #service .width-wrap .text-area .list-zone {
+    margin: 5px 0;
+  }
+
+  #service .width-wrap .text-area .list-zone li i,
+  #service .width-wrap .text-area .list-zone li h4,
+  #service .width-wrap .text-area .list-zone li h4 span {
+    font-size: 12.8px;
+    line-height: 21px;
+  }
+
+  #service .width-wrap .calling-area a .calling-zone h1 {
+    font-size: 30px;
+    line-height: 35.08px;
+  }
+
+  #service .width-wrap .calling-area a .calling-zone h4 {
+    font-size: 24px;
+    line-height: 25.04px;
+    margin-top: 5px;
+  }
+
+  #service .width-wrap .calling-area a .calling-zone h4:before {
+    height: 2px;
+    bottom: -5px;
+  }
+
+  #service .width-wrap .calling-area a .calling-zone h4 i {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .wrap {
+    width: 340px;
+  }
+
+  #counselling-agency .width-wrap .contants-area .box-zone {
+    grid-template-columns: repeat(2, 164px);
+    grid-template-rows: repeat(2, 164px);
+    gap: 12px;
+  }
+
+  #promise .width-wrap {
+    padding: 414px 0 176px 0;
+  }
+
+  #promise .width-wrap .img-area {
+    width: 340px;
+    left: -170px;
+  }
+
+  #promise .width-wrap .text-area {
+    width: 300px;
+  }
+
+  #service .width-wrap .text-area {
+    width: 305px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .wrap {
+    width: 290px;
+  }
+
+  #counselling-agency .width-wrap .contants-area .box-zone {
+    grid-template-columns: repeat(2, 139px);
+    grid-template-rows: repeat(2, 139px);
+  }
+
+  #counselling-agency .width-wrap .contants-area .box-zone .box img {
+    width: 50px;
+    margin-bottom: 5px;
+  }
+
+  #promise .width-wrap {
+    padding: 390px 0 176px 0;
+  }
+
+  #promise .width-wrap .img-area {
+    width: 290px;
+    left: -145px;
+  }
+
+  #promise .width-wrap .text-area {
+    width: 250px;
+    padding: 20px;
+  }
+
+  #special-feature .width-wrap ul.list-area li span {
+    width: 102px;
+  }
+
+  #service .width-wrap .text-area {
+    width: 255px;
+  }
+}
