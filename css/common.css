@@ -1023,6 +1023,10 @@ footer .mute-btn.play span {
     .page02 .profile-area .text-box .resume-btn {
         padding-top: 30px;
     }
+    .page02 .profile-area .text-box .resume-btn .profile-img-sub {
+        display: none;
+        position: none;
+    }
     .page03 .grid-wrap {
         padding: 70px 0;
         display: flex;
