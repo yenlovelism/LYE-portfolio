@@ -43,6 +43,10 @@
   transform: scale(1);
 }
 /*loading*/
+.is-loading .main {
+    display: none;
+    visibility: hidden;
+}
 .loading {
     position: fixed;
     left: 0;

@@ -150,9 +150,11 @@ function initLoader() {
         }
     });
 
-    const loaderOut = gsap.timeline({ defaults: { duration: 1, delay: 4.5 } });
+    loader.from(".loading", { duration: 4.5, autoAlpha: 1 })
 
-    loaderOut.to(".loading", { autoAlpha: 0, display:"none" }, 0)
+    const loaderOut = gsap.timeline({ defaults: { duration: 1 } });
+
+    loaderOut.to(".loading", { autoAlpha: 0, display:"none"}, 0)
     .from(".main", { autoAlpha: 0 }, 0);
 
     const master = gsap.timeline();
