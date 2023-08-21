@@ -282,7 +282,8 @@ nav > ul > li > a {
     color: var(--white);
     transition: all 0.3s ease-in;
 }
-nav > ul > li > a:hover {
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--white);
     -webkit-text-fill-color: var(--point-co);
@@ -300,7 +301,8 @@ nav > ul > li > a::before {
     transition: all 0.3s ease;
     opacity: 0;
 }
-nav > ul > li > a:hover::before {
+nav > ul > li > a:hover::before,
+nav > ul > li > a:focus::before  {
     left: -40px;
     border: 1px solid var(--white);
     opacity: 1;
@@ -621,10 +623,12 @@ nav.active > ul > li:nth-child(4) {
     transition: all 0.4s ease-in-out;
     visibility: hidden;
 }
-.project-swiper .slide-box:hover a::before {
+.project-swiper .slide-box:hover a::before,
+.project-swiper .slide-box:focus a::before {
     background-color: rgb(0 0 0 / 60%);
 }
-.project-swiper .slide-box:hover a::after {
+.project-swiper .slide-box:hover a::after,
+.project-swiper .slide-box:focus a::after {
     color: var(--white);
     transform: scale(1) translateY(0px);
     visibility: visible;
@@ -646,7 +650,8 @@ nav.active > ul > li:nth-child(4) {
     color: var(--white);
     transition: color 0.4s;
 }
-.project-swiper .slide-box:hover .text {
+.project-swiper .slide-box:hover .text
+.project-swiper .slide-box:focus .text  {
     color: var(--white) !important;
 }
 .project-swiper .slide-box .text span {
@@ -797,7 +802,8 @@ footer .kakao-btn .mimoticon-img {
     background: url('../img/mimoticon03.png') no-repeat center 100%;
     background-size: 100%;
 }
-footer .kakao-btn:hover .mimoticon-img {
+footer .kakao-btn:hover .mimoticon-img,
+footer .kakao-btn:focus .mimoticon-img {
     background-image: url('../img/mimoticon02.png');
 }
 footer .kakao-btn > span {
@@ -881,6 +887,7 @@ footer .mute-btn span:nth-child(6) {
     }
 }
 footer .mute-btn:hover span,
+footer .mute-btn:focus span,
 footer .mute-btn.play span {
     animation: none;
 }

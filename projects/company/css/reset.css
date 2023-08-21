@@ -25,10 +25,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
 body{
     line-height:1;
     font-family: 'Pretendard-Regular', 'Noto Sans KR', sans-serif;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
     scroll-behavior: smooth;
     letter-spacing: -1.3px!important;
 }
@@ -50,13 +46,6 @@ table{
     border-spacing:0
 }
 
-img {
-	pointer-events : none;
-	-webkit-user-select: none !important;
-	-moz-user-select: -moz-none !important;
-	-ms-user-select: none !important;
-	user-select: none !important;
-}
 a, button {
     all: unset;
 	cursor:pointer;
@@ -69,8 +58,7 @@ a, button {
 }
 
 select { -webkit-appearance: none; -moz-appearance: none; appearance: none; font-family: 'NanumSquareRound';}
-select:focus,
-select:active{outline:0;}
+
 select::-ms-expand { display: none; }
 
 input{font-family: 'NanumSquareRound';}
@@ -81,5 +69,4 @@ input[type="password"],
 input[type="email"],
 input[type="search"],
 textarea{border-style:none; -webkit-border-radius:0; -webkit-appearance:none; font-family: 'NanumSquareRound';}
-input:focus,
-textarea:focus {outline:none;}
+

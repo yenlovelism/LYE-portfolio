@@ -97,10 +97,12 @@ header.bright ~ .hamburger p{
 header.bright ~ .hamburger label span{
     background:#fff;
 }
-.hamburger label:hover span{
+.hamburger label:hover span,
+.hamburger label:focus span{
     background:var(--point-color)!important;
 }
-header.bright .hamburger label:hover span{
+header.bright .hamburger label:hover span,
+header.bright .hamburger label:focus span{
     background:#78b2ff!important;
 }
 .header_wrap .logo img{
@@ -121,7 +123,8 @@ header.bright .hamburger label:hover span{
     font-weight:500;
     vertical-align:-webkit-baseline-middle;
 }
-.header_wrap .gnb>li:hover>a{
+.header_wrap .gnb>li:hover>a,
+.header_wrap .gnb>li>a:focus{
     color:var(--point-color);
 }
 .header_wrap .gnb>li>a:after{
@@ -136,13 +139,15 @@ header.bright .hamburger label:hover span{
     background:var(--point-color);
     transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
-header.bright .header_wrap .gnb>li:hover>a{
+header.bright .header_wrap .gnb>li:hover>a,
+header.bright .header_wrap .gnb>li>a:focus{
     color:#78b2ff;
 }
 header.bright .header_wrap .gnb>li>a:after{
     background:#78b2ff;
 }
-.header_wrap .gnb>li:hover>a:after{
+.header_wrap .gnb>li:hover>a:after,
+.header_wrap .gnb>li>a:focus::after{
     width: 100%;
 }
 .header_wrap .gnb .sub{
@@ -158,7 +163,8 @@ header.bright .header_wrap .gnb>li>a:after{
 header.dark .header_wrap .gnb .sub{
     background:rgba(255, 255, 255, 0.8);
 }
-.header_wrap .gnb>li:hover .sub{
+.header_wrap .gnb>li:hover .sub,
+.header_wrap .gnb>li:focus .sub{
     display:block;
     transform: translateY(23px);
     animation: subMnuAni .6s cubic-bezier(0.4, 0, 0.2, 1) ;
@@ -184,7 +190,8 @@ header.dark .header_wrap .gnb .sub{
 header.dark .header_wrap .gnb .sub a{
     color:#424242;
 }
-.header_wrap .gnb .sub li:hover a{
+.header_wrap .gnb .sub li:hover a,
+.header_wrap .gnb .sub li a:focus{
     opacity: 1;
 }
 
@@ -317,7 +324,8 @@ header.bright ~ .hamburger .hamburger_menu{
     opacity: 0;
     transition: all 0.5s;
 }
-.hbg_gnb>li:hover>a:after{
+.hbg_gnb>li:hover>a:after,
+.hbg_gnb>li>a:focus:after{
     opacity: 1;
 }
 .hbg_gnb .hbg_sub {
@@ -335,7 +343,8 @@ header.bright ~ .hamburger .hamburger_menu{
     font-weight: 400;
     transition: all .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
-.hbg_gnb .hbg_sub li:hover a{
+.hbg_gnb .hbg_sub li:hover a,
+.hbg_gnb .hbg_sub li a:focus{
     color:var(--point-color);
 }
 @media all and (max-width:1020px){
