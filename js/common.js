@@ -297,8 +297,11 @@ const swiperSlideEvent = (Swiper) => {
     } else if (Swiper.realIndex === 5) {
         swiperBg.style.backgroundImage = "url('./img/project-bg-img07.jpg')";
         swiperBg.animate([ {opacity: "0"}, {opacity: "0.5"}], 500)
-    } else {
+    } else if (Swiper.realIndex === 6) {
         swiperBg.style.backgroundImage = "url('./img/project-bg-img06.png')";
+        swiperBg.animate([ {opacity: "0"}, {opacity: "0.5"}], 500)
+    } else {
+        swiperBg.style.backgroundImage = "url('./img/project-bg-img08.jpg')";
         swiperBg.animate([ {opacity: "0"}, {opacity: "0.5"}], 500)
     }
 };
