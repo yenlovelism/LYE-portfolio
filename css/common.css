@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*common*/
 .color-po {
     color: var(--point-co);
@@ -275,7 +276,7 @@ nav > ul > li {
 nav > ul > li > a {
     position: relative;
     display: inline-block;
-    font-size: 5.63em;
+    font-size: 5.43em;
     font-weight: 700;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: transparent;
@@ -322,6 +323,9 @@ nav.active > ul > li:nth-child(3) {
 }
 nav.active > ul > li:nth-child(4) {
     transition-delay: 1.3s;
+}
+nav.active > ul > li:nth-child(5) {
+    transition-delay: 1.5s;
 }
 /*content*/
 /*page01*/
@@ -718,12 +722,20 @@ nav.active > ul > li:nth-child(4) {
     background-color: var(--white);
     transition: width 0.3s ease;
 }
-.page05 .grid-wrap .icon a {
-    display: inline-block;
-    font-size: 1.38em;
+.page05 .grid-wrap .icon {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
 }
-.page05 .grid-wrap .icon a:first-child {
-    margin-right: 20px;
+.page05 .grid-wrap .icon a {
+    display: flex;
+    align-items: center;
+    font-size: 1.38em;    
+}
+.page05 .grid-wrap .icon a.notion .speech-baloon {
+    font-size: 0.7em;
+    color: var(--black);
+    opacity: 0.7;
 }
 .page05 .grid-wrap .text-area .text a:hover::before,
 .page05 .grid-wrap .text-area .text a:focus::before {
@@ -813,7 +825,7 @@ footer .kakao-btn > span {
     border-bottom: 2px solid var(--black);
 }
 
-footer .speech-baloon {
+.speech-baloon {
     display: block;
     position: relative;
     margin-left: 20px;
@@ -826,10 +838,10 @@ footer .speech-baloon {
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out 0.3s forwards;
 }
-footer .speech-baloon p:nth-child(1) {
+.speech-baloon p:nth-child(1) {
     font-weight: 700;
 }
-footer .speech-baloon::before {
+.speech-baloon::before {
     content: "";
     position: absolute;
     left: -10px;
