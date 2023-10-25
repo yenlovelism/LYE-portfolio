@@ -24,7 +24,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
 }
 body{
     line-height:1;
-    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+    font-family: 'Pretendard', sans-serif;
     -webkit-user-select:none;
     -moz-user-select:none;
     -ms-user-select:none;
@@ -73,13 +73,13 @@ select:focus,
 select:active{outline:0;}
 select::-ms-expand { display: none; }
 
-input{font-family: 'NanumSquareRound';}
-input::placeholder{font-family: 'NanumSquareRound'; font-weight:900; color:#d4d4d4; font-size:14px;}
+input{font-family: 'Pretendard', sans-serif;}
+input::placeholder{font-family: 'Pretendard', sans-serif; font-weight:900; color:#d4d4d4; font-size:14px;}
 input[type="text"],
 input[type="tel"],
 input[type="password"],
 input[type="email"],
 input[type="search"],
-textarea{border-style:none; -webkit-border-radius:0; -webkit-appearance:none; font-family: 'NanumSquareRound';}
+textarea{border-style:none; -webkit-border-radius:0; -webkit-appearance:none; font-family: 'Pretendard', sans-serif;}
 input:focus,
 textarea:focus {outline:none;}

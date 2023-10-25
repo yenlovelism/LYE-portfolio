@@ -7,7 +7,6 @@ html, body {
     width: 100%;
     position: relative;
     color: #474747;
-    font-family: 'Pretendard-Regular'!important;
 }
 li, ul, ol {
     text-decoration: none;
@@ -35,14 +34,6 @@ li, ul, ol {
     border-color: var(--point-color2) !important;
 }
 
-#header a,
-.ui.header,
-.ui .header,
-.ui.button,
-.ui input,
-.ui textarea{
-    font-family: 'Pretendard-Regular'!important;
-}
 @media all and (max-width: 960px) {
     #notice,
     .wrapper {

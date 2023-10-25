@@ -16,8 +16,7 @@
     word-break: keep-all;
     white-space: nowrap;
     font-size: 7.5em;
-    font-weight: 800;
-    font-family: 'Noto Sans KR';
+    font-weight: 700;
     color: var(--point-color-op1);
     z-index: 0;
 }
@@ -139,11 +138,6 @@
     display: inline-block;
     font-size: 1.1em;
     color: var(--point-color);
-}
-.contact_us .right.info p.tel,
-.contact_us .right.info p.fax,
-.contact_us .right.info p.email {
-    font-family: 'Noto Sans KR';
 }
 .contact_us .right.info p a {
     display: inline-block;

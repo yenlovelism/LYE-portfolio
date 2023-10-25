@@ -1,3 +1,4 @@
+$(function(){
 var windowWidth = window.innerWidth;
 var figure = document.querySelector(".figure");
 var figurePath = document.querySelector(".figure path");
@@ -6,6 +7,7 @@ var figurePath = document.querySelector(".figure path");
 var thumbSwiper = new Swiper('.js-thumbSwiper', {
   speed: 1200,
   effect: 'creative',
+  oneWayMovement: true, 
   centeredSlides: true,
   autoplay: {
     delay: 3000,
@@ -15,6 +17,7 @@ var thumbSwiper = new Swiper('.js-thumbSwiper', {
   parallax: true,
   touchRatio: 0.4,
   loop: true,
+  maxBackfaceHiddenSlides: 4,
   pagination: {
     el: '.banner .swiper-pagination',
     clickable: true,
@@ -30,6 +33,8 @@ var productListSwiper = new Swiper('.js-productListSwiper', {
   touchRatio: 0.4,
   loop: true,
   speed: 1200,
+  oneWayMovement: true, 
+  maxBackfaceHiddenSlides: 4,
 });
 
 
@@ -61,7 +66,7 @@ const MobileChange = () => {
   };
   const rotateFigurePrev = () => {
     $(".figure").animate({
-      rotate: "-=90deg"
+      rotate: "+=90deg"
     }, 10);
   }
 
@@ -75,11 +80,13 @@ const MobileChange = () => {
       translate: [-300, 200, -300],
       rotate: [-10, -10, 0],
       scale: "0.8",
+      opacity: 0,
     };
     thumbSwiper.params.creativeEffect.next = {
       translate: [-50, -400, -300],
       rotate: [10, 10, 0],
       scale: "1",
+      opacity: 0,
     };
 
   } else if (windowWidth <= 720) {
@@ -92,12 +99,14 @@ const MobileChange = () => {
     thumbSwiper.params.creativeEffect.prev = {
       translate: [-400, -100, -100],
       rotate: [10, 10, 0],
-      scale: "1"
+      scale: "1",
+
     };
     thumbSwiper.params.creativeEffect.next = {
       translate: [400, -100, -100],
       rotate: [10, 10, 0],
       scale: "1",
+
     };
   }
 };
@@ -129,10 +138,10 @@ var responsiveAddproductSwiper = () => {
           stretch: 70,
         },
         allowTouchMove: true,
-        // autoplay: {
-        //   delay: 1000,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
+        },
         navigation: {
           nextEl: '.js-productSwiper .swiper-button-next',
           prevEl: '.js-productSwiper .swiper-button-prev',
@@ -152,7 +161,7 @@ var responsiveAddproductSwiper = () => {
     initSwiper();
   });
 };
-$('.js-productSwiper .swiper-button-next').on('click', function() {
-  console.log("클릭!");
-});
+
 responsiveAddproductSwiper();
+
+});

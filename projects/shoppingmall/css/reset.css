@@ -1,11 +1,17 @@
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,main,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}[hidden]{display:none}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-
-img {
-	pointer-events : none;
-	-webkit-user-select: none !important;
-	-moz-user-select: -moz-none !important;
-	-ms-user-select: none !important;
-	user-select: none !important;
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,main,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{
+	margin:0;
+	padding:0;
+	border:0;
+	font:inherit;
+	vertical-align:baseline;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{
+	display:block
+}
+ol,ul{list-style:none}
+table{
+	border-collapse:collapse;
+	border-spacing:0
 }
 a, button {
     all: unset;
@@ -18,28 +24,5 @@ a, button {
 	border:none;
 }
 
-select { -webkit-appearance: none; -moz-appearance: none; appearance: none; font-family: 'Pretendard';}
-select:focus,
-select:active{outline:0;}
-select::-ms-expand { display: none; }
-
-input{font-family: 'Pretendard';}
-input::placeholder{font-family: 'Pretendard'; font-weight:900; color:#d4d4d4; font-size:14px;}
-input[type="text"],
-input[type="tel"],
-input[type="password"],
-input[type="email"],
-input[type="search"],
-textarea{border-style:none; -webkit-border-radius:0; -webkit-appearance:none; font-family: 'Pretendard';}
-input:focus,
-textarea:focus {outline:none;}
 
 
-.ft-color01{color:#083b8e}
-.ft-color02{color:#1169f5}
-.ft-color03{color:var(--point_color)}
-
-.bg-color01{background-color:#083b8e}
-.bg-color02{background-color:#1169f5}
-.bg-color03{background-color:var(--point_color)}
-				
