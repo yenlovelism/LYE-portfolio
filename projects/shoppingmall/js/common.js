@@ -100,12 +100,14 @@ const MobileChange = () => {
       translate: [-400, -100, -100],
       rotate: [10, 10, 0],
       scale: "1",
+      opacity: 0,
 
     };
     thumbSwiper.params.creativeEffect.next = {
       translate: [400, -100, -100],
       rotate: [10, 10, 0],
       scale: "1",
+      opacity: 0,
 
     };
   }
@@ -138,10 +140,10 @@ var responsiveAddproductSwiper = () => {
           stretch: 70,
         },
         allowTouchMove: true,
-        autoplay: {
-          delay: 1000,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 1000,
+        //   disableOnInteraction: false,
+        // },
         navigation: {
           nextEl: '.js-productSwiper .swiper-button-next',
           prevEl: '.js-productSwiper .swiper-button-prev',
