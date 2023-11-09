@@ -179,8 +179,8 @@ h6 {
   animation-iteration-count: 3;
 }
 /*btn-calling,btn-gosite*/
-button.gosite,
-button.calling {
+.btn.gosite,
+.btn.calling {
   position: fixed;
   width: 60px;
   height: 60px;
@@ -195,64 +195,64 @@ button.calling {
   transition: all 0.25s linear;
   overflow: hidden;
 }
-button.gosite a,
-button.calling a {
+.btn.gosite > div,
+.btn.calling > div {
   position: relative;
 }
-button.gosite a .site-box,
-button.calling a .call-box {
+.btn.gosite .site-box,
+.btn.calling .call-box {
   display: flex;
   align-items: center;
   width: 190px;
   position: absolute;
 }
-button.gosite a .site-box img,
-button.calling a .call-box i {
+.btn.gosite .site-box img,
+.btn.calling .call-box i {
   margin-left: 16px;
   margin-right: 16px;
 }
-button.gosite a .site-box span,
-button.calling a .call-box span {
+.btn.gosite .site-box span,
+.btn.calling .call-box span {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.05em;
 }
 /* btn-calling */
-button.calling {
+.btn.calling {
   background: #5200ff;
   bottom: 300px;
 }
-button.calling a .call-box {
+.btn.calling .call-box {
   top: -13px;
   left: -174px;
 }
-button.calling a .call-box i {
+.btn.calling .call-box i {
   font-size: 28px;
   color: #fff;
   transform: scaleX(-1);
 }
-button.calling a .call-box span {
+.btn.calling .call-box span {
   color: #fff;
 }
-button.calling:hover {
+.btn.calling:hover {
   width: 191px;
 }
 /* btn-gosite */
-button.gosite {
+.btn.gosite {
   background: #fff;
   bottom: 220px;
 }
-button.gosite a .site-box {
+.btn.gosite .site-box {
   top: -19px;
   left: -158px;
 }
-button.gosite a .site-box img {
+.btn.gosite .site-box img {
   width: 38px;
 }
-button.gosite a .site-box span {
+.btn.gosite .site-box span {
   color: var(--darkgray);
 }
-button.gosite:hover {
+.btn.gosite:hover {
   width: 176px;
 }
 button.gotop {
@@ -275,8 +275,8 @@ button.gotop {
 button.gotop i {
   font-size: 28px;
 }
-button.gosite.blocktop,
-button.calling.blocktop,
+.btn.gosite.blocktop,
+.btn.calling.blocktop,
 button.gotop.blocktop {
   display: flex;
   transition: all 0.25s linear;
@@ -303,19 +303,17 @@ button.mute i {
 button.mute.sound i:before {
   content: '\f028' !important;
 }
-button.default {
+.btn.default {
   background: #4e4b5f;
   border-radius: 500px;
   padding: 15px 32px;
   transition: all 0.25s linear;
-}
-button.default a {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
 }
-button.default:active {
+.btn.default:active {
   transform: scale(0.95);
 }
 
@@ -565,16 +563,16 @@ button.default:active {
     font-size: 18px;
     line-height: 35px;
   }
-  button.gosite,
-  button.calling,
+  .btn.gosite,
+  .btn.calling,
   button.gotop,
   button.sound,
   button.mute {
     width: 50px;
     height: 50px;
   }
-  button.gosite,
-  button.calling,
+  .btn.gosite,
+  .btn.calling,
   button.gotop {
     right: 14px;
   }
@@ -582,26 +580,26 @@ button.default:active {
   button.mute {
     left: 14px;
   }
-  button.calling:hover {
+  .btncalling:hover {
     width: 180px;
   }
-  button.gosite:hover {
+  .btn.gosite:hover {
     width: 162px;
   }
-  button.calling {
+  .btn.calling {
     bottom: 260px;
   }
-  button.calling a .call-box {
+  .btn.calling .call-box {
     left: -165px;
   }
-  button.calling a .call-box i {
+  .btn.calling .call-box i {
     margin-left: 11px;
     margin-right: 11px;
   }
-  button.gosite {
+  .btn.gosite {
     bottom: 200px;
   }
-  button.gosite a .site-box {
+  .btn.gosite .site-box {
     left: -153px;
   }
   .po-grey {
@@ -646,25 +644,25 @@ button.default:active {
     font-size: 22px;
   }
 
-  button.calling {
+  .btn.calling {
     bottom: 180px;
   }
 
-  button.gosite {
+  .btn.gosite {
     bottom: 120px;
   }
 
-  button.calling:hover {
+  .btn.calling:hover {
     width: 50px;
   }
-  button.gosite:hover {
+  .btn.gosite:hover {
     width: 50px;
   }
 
-  button.calling:active {
+  .btn.calling:active {
     width: 180px;
   }
-  button.gosite:active {
+  .btn.gosite:active {
     width: 162px;
   }
 

@@ -182,13 +182,13 @@ label {
   margin: 50px 0 28.5px 0;
 }
 
-#youtube .width-wrap .button-area .under-line a {
+#youtube .width-wrap .button-area .under-line {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-#youtube .width-wrap .button-area .under-line a:before {
+#youtube .width-wrap .button-area .under-line::before {
   content: '';
   position: absolute;
   width: 239px;
@@ -198,18 +198,18 @@ label {
   right: 0;
 }
 
-#youtube .width-wrap .button-area .under-line a img {
+#youtube .width-wrap .button-area .under-line img {
   width: 120px;
   margin-right: 10px;
 }
 
-#youtube .width-wrap .button-area .under-line a h4 {
+#youtube .width-wrap .button-area .under-line h4 {
   font-size: 26px;
   line-height: 33.28px;
   color: var(--darkgray-op80);
 }
 
-#youtube .width-wrap .button-area .under-line a i {
+#youtube .width-wrap .button-area .under-line i {
   color: var(--darkgray-op80);
   font-size: 20px;
   margin-left: 4px;
@@ -751,22 +751,22 @@ input[type='text']::placeholder {
     justify-content: center;
   }
 
-  #youtube .width-wrap .button-area .under-line a img {
+  #youtube .width-wrap .button-area .under-line img {
     width: 85px;
     margin-right: 5px;
   }
 
-  #youtube .width-wrap .button-area .under-line a h4 {
+  #youtube .width-wrap .button-area .under-line h4 {
     font-size: 16px;
     line-height: 24px;
   }
 
-  #youtube .width-wrap .button-area .under-line a i {
+  #youtube .width-wrap .button-area .under-line i {
     font-size: 14px;
     margin-left: 3px;
   }
 
-  #youtube .width-wrap .button-area .under-line a:before {
+  #youtube .width-wrap .button-area .under-line:before {
     width: 148px;
     height: 2px;
     top: 24px;
