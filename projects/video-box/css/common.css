@@ -469,6 +469,7 @@ footer .text-area .info-text:last-child a:hover {
 }
 
 .videobox-wrap06 .title .sentence-text {
+  display: block;
   margin-top: 10px;
   font-size: 20px;
   font-weight: 500;
