@@ -527,14 +527,14 @@ nav.active > ul > li:nth-child(5) {
     height: 20px;
     border-bottom: 1px solid var(--black);
 }
-.page03 .skill-wrap .skill-box > dl,
+.page03 .skill-wrap .skill-box > ol,
 .page03 .skill-wrap .skill-box > p {
     text-align: right;
 }
-.page03 .skill-wrap .skill-box > dl {
+.page03 .skill-wrap .skill-box > ol {
     margin: 25px 0;
 }
-.page03 .skill-wrap .skill-box > dl > dt {
+.page03 .skill-wrap .skill-box > ol > li {
     line-height: 1.6;
     font-size: 1.25em;
 }
