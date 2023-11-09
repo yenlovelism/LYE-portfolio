@@ -392,12 +392,12 @@ footer .text-area .info-text:last-child a:hover {
   display: flex;
 }
 
-.videobox-wrap04 .title .icon-list > li {
+.videobox-wrap04 .title .icon-list > span {
   margin-right: 5px;
   width: 15%;
 }
 
-.videobox-wrap04 .title .icon-list > li > img {
+.videobox-wrap04 .title .icon-list > span > img {
   width: 100%;
 }
 
