@@ -1323,7 +1323,7 @@ header {
     background-color: rgba(0, 0, 0, 0.1);
   }
 
-  .product-list-banner .product-list ul li {
+  .product-list-banner .product-list > ul > li {
 
     width: 100%;
     height: 140px;
@@ -1380,11 +1380,11 @@ header {
     font-weight: 600;
   }
 
-  .product-list-banner .product-list .product-info-text>dl {
+  .product-list-banner .product-list .product-info-text>ul {
     margin-top: 5px;
   }
 
-  .product-list-banner .product-list .product-info-text>dl>dd {
+  .product-list-banner .product-list .product-info-text>ul>li {
     display: inline-block;
     margin-right: 20px;
     position: relative;
@@ -1392,14 +1392,14 @@ header {
     font-weight: 300;
   }
 
-  .product-list-banner .product-list .product-info-text>dl>dd::before {
+  .product-list-banner .product-list .product-info-text>ul>li::before {
     content: "ㅣ";
     position: absolute;
     right: -17px;
     opacity: 0.3;
   }
 
-  .product-list-banner .product-list .product-info-text>dl>dd:last-child:before {
+  .product-list-banner .product-list .product-info-text>ul>li:last-child:before {
     display: none;
   }
 
@@ -1527,7 +1527,7 @@ header {
       background: #fff;
       box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.15);
     }
-    .product-list-banner .product-list ul li {
+    .product-list-banner .product-list > ul > li {
       padding: 30px 0;
       width: 250px;
       height: 100%;
@@ -1550,21 +1550,21 @@ header {
       margin-top: 10px;
     }
 
-    .product-list-banner .product-list .product-contents .product-info-text dl {
+    .product-list-banner .product-list .product-contents .product-info-text ul {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
 
-    .product-list-banner .product-list .product-contents .product-info-text dl dd {
+    .product-list-banner .product-list .product-contents .product-info-text ul li {
       width: 200px;
       margin: 7px 0;
       display: flex;
       justify-content: space-between;
     }
 
-    .product-list-banner .product-list .product-contents .product-info-text dl dd::before {
+    .product-list-banner .product-list .product-contents .product-info-text ul li::before {
       display: none;
     }
 
@@ -1621,7 +1621,9 @@ header {
     }
 
     .banner .thumb-banner .swiper-slide .hashtag-list>li {
-      font-size: 16px;
+      margin-right: 5px;
+      padding: 5px 5px;
+      font-size: 15px;
     }
 
     .product-list-banner .product-slide-wrap>h3 {
@@ -1633,7 +1635,7 @@ header {
       font-size: 16px;
     }
 
-    .product-list-banner .product-list ul li {
+    .product-list-banner .product-list > ul > li {
       padding: 15px 0;
       width: 175px;
     }
@@ -1646,7 +1648,7 @@ header {
       font-size: 16px;
     }
 
-    .product-list-banner .product-list .product-contents .product-info-text dl dd {
+    .product-list-banner .product-list .product-contents .product-info-text ul li {
       width: 156px;
       font-size: 14px;
     }

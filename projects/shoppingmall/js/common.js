@@ -140,10 +140,10 @@ var responsiveAddproductSwiper = () => {
           stretch: 70,
         },
         allowTouchMove: true,
-        // autoplay: {
-        //   delay: 1000,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
+        },
         navigation: {
           nextEl: '.js-productSwiper .swiper-button-next',
           prevEl: '.js-productSwiper .swiper-button-prev',
