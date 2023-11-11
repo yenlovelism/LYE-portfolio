@@ -982,7 +982,7 @@ svg text{
 }
 .cont_count .count_wrap .count_box>div .percent b{
     display: inline-block;
-    width: 80px;
+    width: 70px;
     font-size:3rem;
     font-weight: 500;
 }
@@ -1357,6 +1357,7 @@ svg text{
     transform: translate(0, 0);
     animation:none;
 }
+
 .about_tit.main_tit .sub_tit{
     font-size: 1.3rem;
     font-weight:400;
