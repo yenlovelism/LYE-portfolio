@@ -1640,6 +1640,7 @@ background:#fff;
 }
 
 .about_tit.main_tit{
+    display: block;
     position: absolute;
     width:1600px;
     left:50%;
@@ -1653,16 +1654,19 @@ background:#fff;
     
 }
 .about_tit.main_tit .second{
+    display: block;
     margin-top: 5px;
     line-height: 1.5em;
 }
 .about_tit.main_tit .sub_tit{
+    display: block;
     font-size: .35em;
     font-weight: 200;
     margin: 40px 0 0 10px;
     color: var(--point-color);
 }
-.about_tit.main_tit .sub_tit p{
+.about_tit.main_tit .sub_tit span{
+    display: block;
     margin:10px 0;
 }
 @keyframes mainTit {
@@ -2108,28 +2112,30 @@ position: absolute;
     font-weight: 600;
     background: #fbfbfb;
 }
-.certificate_wrap .list_box .sub_tit ul{
+.certificate_wrap .list_box .sub_tit > span {
+    display: block;
     position: relative;
     width: fit-content;
     margin:0 auto;
     z-index: 1;
 }
-.certificate_wrap .list_box .sub_tit ul li{
+.certificate_wrap .list_box .sub_tit > span > span{
+    display: block;
     padding:5px 10px;
     color:#b8b8b8;
     margin-bottom:20px;
     cursor:pointer
 }
-.certificate_wrap .list_box .sub_tit ul li span{
+.certificate_wrap .list_box .sub_tit > span > span > span{
     opacity:0;
 }
-.certificate_wrap .list_box .sub_tit ul li.on{
+.certificate_wrap .list_box .sub_tit > span > span.on{
     color:var(--point-color)
 }
-.certificate_wrap .list_box .sub_tit ul li.on span{
+.certificate_wrap .list_box .sub_tit > span > span.on span{
     opacity:1;
 }
-.certificate_wrap .list_box .sub_tit ul li:last-child{
+.certificate_wrap .list_box .sub_tit > span > span:last-child{
     margin-bottom:0;
 }
 .certificate_wrap .list_box>div{
@@ -2869,7 +2875,7 @@ body #about~#fp-nav ul li:nth-child(8) a::after {
     .certificate_wrap .swiper-button-next{
         display:none;
     }
-    .certificate_wrap .list_box .sub_tit ul{
+    .certificate_wrap .list_box .sub_tit >span{
         display:flex;
         justify-content: center;
         width: fit-content;
@@ -2878,18 +2884,18 @@ body #about~#fp-nav ul li:nth-child(8) a::after {
         background:var(--point-color-op1);
         border-radius:30px;
     }
-    .certificate_wrap .list_box .sub_tit ul li{
+    .certificate_wrap .list_box .sub_tit >span >span{
         font-size:.8em;
         padding:10px 15px;
         margin:0;
         color:var(--point-color);
     }
-    .certificate_wrap .list_box .sub_tit ul li.on{
+    .certificate_wrap .list_box .sub_tit  >span >span.on{
         background:var(--point-color);
         color:#fff;
         border-radius: 20px;
     }
-    .certificate_wrap .list_box .sub_tit ul li span{
+    .certificate_wrap .list_box .sub_tit  >span >span > span{
         display:none;
     }
     .symbol{
@@ -4092,7 +4098,7 @@ svg text {
     transform: translateY(0);
     text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
 } 
-.brand_list .list_box .list_txt button {
+.brand_list .list_box .list_txt .more_btn {
     margin-top: 25px;
     display: block;
     font-family: 'Noto Sans KR';
@@ -4103,7 +4109,7 @@ svg text {
     transition: all 0.5s;
     transform: translateY(50px);
 }
-.brand_list .list_box .list_txt button i{
+.brand_list .list_box .list_txt .more_btn i{
     display: inline-block;
     font-size: 1.300em;
     color: var(--point-color);
@@ -4111,11 +4117,11 @@ svg text {
     transition: all 0.5s;
     vertical-align: middle;
 }
-.brand_list .list_box>a:hover .list_txt button {
+.brand_list .list_box>a:hover .list_txt .more_btn {
     transform: translateY(0);
     opacity: 0.9;
 }
-.brand_list .list_box>a:hover .list_txt button i{
+.brand_list .list_box>a:hover .list_txt .more_btn i{
     opacity: 0.9;
 }
 @media all and (max-width: 1600px){
@@ -4147,7 +4153,7 @@ svg text {
 @media all and (max-width: 850px){
     .brand_wrap {padding: 80px 50px;}
     .brand_list .list_box .list_txt strong {font-size: 1.3em;}
-    .brand_list .list_box .list_txt button {margin-top: 10px; font-size: 1em;}
+    .brand_list .list_box .list_txt .more_btn{margin-top: 10px; font-size: 1em;}
 }
 @media all and (max-width: 750px){
     #brand .img_box .img_box_frame {background-size: contain; background-position: left top; background-attachment: fixed;}
@@ -4157,13 +4163,13 @@ svg text {
     .brand_wrap {padding: 80px 30px;}
     .brand_list .list_box .list_txt strong {font-size: 1.2em; transform: translateY(170%);}
     .brand_cate .cate_list>li>a {padding: 10px 20px;}
-    .brand_list .list_box .list_txt button {font-size: 0.9em;}
+    .brand_list .list_box .list_txt .more_btn {font-size: 0.9em;}
     .brand_list .list_box .list_txt i {font-size: 0.8em;}
 }
 @media all and (max-width: 500px){
     .brand_list .list_box .list_txt strong {font-size: 1.1em;}
     .brand_list .list_box .list_txt span {font-size: 0.6em;}
-    .brand_list .list_box .list_txt button {font-size: 0.8em;}
+    .brand_list .list_box .list_txt .more_btn {font-size: 0.8em;}
     .brand_list .list_box .list_txt i {font-size: 0.7em;}
 }
 @media all and (max-width: 450px){
@@ -4172,9 +4178,9 @@ svg text {
     .brand_list .list_box .dim {opacity: 0.5;}
     .brand_list .list_box .list_txt strong {letter-spacing: 0; color: #1c1c1c; transform: translateY(0); font-size: 1em;}
     .brand_list .list_box .list_txt span {display:none;}
-    .brand_list .list_box .list_txt button {color: #1c1c1c; transform: translateY(0); opacity: 0.9; font-size: 0.7em;}
-    .brand_list .list_box .list_txt button i{opacity: 0.9;}
-    .brand_list .list_box>a:hover .list_txt button {color: #fff}
+    .brand_list .list_box .list_txt .more_btn {color: #1c1c1c; transform: translateY(0); opacity: 0.9; font-size: 0.7em;}
+    .brand_list .list_box .list_txt .more_btn i{opacity: 0.9;}
+    .brand_list .list_box>a:hover .list_txt .more_btn  {color: #fff}
     .brand_list .list_box .list_txt i {font-size: 0.6em;}
     .brand_list>ul {margin-top: 60px;}
 }
@@ -4183,8 +4189,8 @@ svg text {
 }
 @media all and (max-width: 360px){
     .brand_list .list_box .list_txt strong {font-size: 0.7em;}
-    .brand_list .list_box .list_txt button {font-size: 0.6em;}
-    .brand_list .list_box .list_txt button i{opacity: 0.5em;}
+    .brand_list .list_box .list_txt button.more_btn  {font-size: 0.6em;}
+    .brand_list .list_box .list_txt .more_btn i{opacity: 0.5em;}
 }
 
 
@@ -4219,14 +4225,14 @@ svg text {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
+    z-index: 1;
     opacity: 0;
     transition: opacity 0.5s;
 }
 .portfolio_list .list_box:hover .follow_img {
     opacity: 1;
 }
-.portfolio_list .list_box a::before {
+/* .portfolio_list .list_box a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -4235,8 +4241,8 @@ svg text {
     height: 0;
     background-color: #000;
     transition: all 0.3s;
-    z-index: 1;
-}
+    z-index: -1;
+} */
 .portfolio_list .list_box:hover a {
     padding: 35px 50px;
 }
@@ -4275,7 +4281,7 @@ svg text {
     color: #888;
     transition: all 0.4s;
 }
-.portfolio_list .list_box .list_txt button {
+.portfolio_list .list_box .list_txt .right_btn {
     display: inline-block;
     font-size: 3.5em;
     font-weight: 800;

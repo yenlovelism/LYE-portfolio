@@ -1,19 +1,26 @@
-(function($, window, document, undefined){
+/*
+ * mousefollow v0.1.0
+ * author 1224100678@qq.com
+ * https://github.com/YuTingtao/mousefollow.js
+ */
+;(function($, window, document, undefined){
+
 	var mouseFollow = function(el, opt){
 		var _ = this;
 		_.el = el,
 		_.defaults = {
 			className: 'js-follow',  
 			html: '',                
-			speed: 200,         
-			x: 20,                  
-			y: 20                 
+			speed: 200,              
+			x: 20,                   
+			y: 20                   
 		},
 		_.settings = $.extend({}, _.defaults, opt);
 	}
 
-	mouseFollow.prototype = {
 
+	mouseFollow.prototype = {
+	
 		init: function() {
 			var _ = this;
 			_.addDOM();
@@ -22,6 +29,7 @@
 			_.mouseOut();
 		},
 
+		
 		addDOM: function(){
 			var _ = this;
 			if (!$('.'+_.settings.className).length) {
@@ -29,6 +37,7 @@
 			}
 		},
 
+		
 		mouseEnter: function() {
 			var _ = this;
 			_.el.mouseenter(function() {
@@ -36,6 +45,7 @@
 			});
 		},
 
+		
 		mouseMove: function() {
 			var _ = this;
 			var _class = _.settings.className,
@@ -79,6 +89,7 @@
 			});
 		},
 
+	
 		mouseOut: function() {
 			var _ = this;
 			_.el.mouseleave(function() {
@@ -88,7 +99,9 @@
 	}
 
 	$.fn.mousefollow = function(option){
+		
 		var mousefollow = new mouseFollow(this, option);
+		
 		return mousefollow.init();
 	}
 })(jQuery, window, document);

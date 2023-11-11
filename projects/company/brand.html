@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
      
     <!-- 모바일 주소창 컬러 지정 -->
     <!-- Chrome, Firefox, Opera -->
-    <meta content='#0058ce' name='theme-color'/>
+    <meta content="#0058ce" name="theme-color">
 
     <!-- Windows Phone -->
-    <meta content='#0058ce' name='msapplication-navbutton-color'/>
+    <meta content="#0058ce" name="msapplication-navbutton-color">
 
     <!-- iOS Safari -->
-    <meta content='#0058ce' name='apple-mobile-web-app-status-bar-style'/>
-    <meta content='yes' name='apple-mobile-web-app-capable'/>
+    <meta content="#0058ce" name="apple-mobile-web-app-status-bar-style">
 
     <title>미래비즈코리아</title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     
     <!--css-->
     <link rel="stylesheet" href="./css/reset.css">
@@ -49,6 +48,8 @@
 
     <!--mousefollow-->
     <script src="./js/jquery.mousefollow.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/ScrollTrigger.min.js"></script>
 
     <!--TweenMax.js-->
     <script src="./js/TweenMax.min.js"></script>
@@ -365,7 +366,7 @@
                             <span>렌탈상품 중개 판매사업의 쉬운 시작<br>
                             렌탈몰제작/상품관리/상담대행 등
                             </span>
-                            <button><i class="fas fa-plus-circle"></i> more</button>
+                            <div class="more_btn"><i class="fas fa-plus-circle"></i> more</div>
                         </div>
                     </a>
                 </li>
@@ -377,7 +378,7 @@
                             <strong>EV 집밥</strong>
                             <span>대한민국 최초, 유일<br>
                             전기차충전기 전문쇼핑몰 플랫폼</span>
-                            <button><i class="fas fa-plus-circle"></i> more</button>
+                            <div class="more_btn"><i class="fas fa-plus-circle"></i> more</div>
                         </div>
                     </a>
                 </li>
@@ -389,7 +390,7 @@
                             <strong>(주)엠케이렌탈</strong>
                             <span>미래비즈코리아 공식 렌탈사<br>
                             렌탈상품의 설계/금융/유통 컨설팅</span>
-                            <button><i class="fas fa-plus-circle"></i> more</button>
+                            <div><i class="fas fa-plus-circle"></i> more</div>
                         </div>
                     </a>
                 </li>
@@ -401,7 +402,7 @@
                             <strong>렌탈금융플랫폼</strong>
                             <span>쉬운 렌탈사 설립 올인원 솔루션<br>
                             상품화/유통/시스템/콜센터 지원</span>
-                            <button><i class="fas fa-plus-circle"></i> more</button>
+                            <div class="more_btn"><i class="fas fa-plus-circle"></i> more</div>
                         </div>
                     </a>
                 </li>
@@ -413,7 +414,7 @@
                             <strong>그래픽공방</strong>
                             <span>미래비즈코리아 VR가상공간 제작소<br>
                             건축/인테리어/쇼핑 사이버 쇼룸 제작</span>
-                            <button><i class="fas fa-plus-circle"></i> more</button>
+                            <div class="more_btn"><i class="fas fa-plus-circle"></i> more</div>
                         </div>
                     </a>
                 </li>
@@ -425,7 +426,7 @@
                             <strong>MK통합고객센터</strong>
                             <span>미래비즈코리아 직영 콜센터<br>
                             안정적인 'CRM'과 다양한 위탁업무</span>
-                            <button><i class="fas fa-plus-circle"></i> more</button>
+                            <div class="more_btn"><i class="fas fa-plus-circle"></i> more</div>
                         </div>
                     </a>
                 </li>
@@ -437,7 +438,7 @@
                             <strong>VR렌탈쇼핑몰</strong>
                             <span>국내 출시된 모든 렌탈상품 입점<br>
                             스펙부터 혜택까지 비교가능한 강력한 검색엔진</span>
-                            <button><i class="fas fa-plus-circle"></i> more</button>
+                            <div class="more_btn"><i class="fas fa-plus-circle"></i> more</div>
                         </div>
                     </a>
                 </li>
@@ -449,7 +450,7 @@
                             <strong>MK렌탈몰</strong>
                             <span>MK렌탈 상품 전용 브랜드 VR편집샵<br>
                             전문 상품 상담 통합고객센터 독립 운영</span>
-                            <button><i class="fas fa-plus-circle"></i> more</button>
+                            <div class="more_btn"><i class="fas fa-plus-circle"></i> more</div>
                         </div>
                     </a>
                 </li>
@@ -461,7 +462,7 @@
                             <strong>레인보우</strong>
                             <span>사업자/기업 전용 폐쇄형 쇼핑몰<br>
                             온라인 최저가상품 약10,000개 상품입점</span>
-                            <button><i class="fas fa-plus-circle"></i> more</button>
+                            <div class="more_btn"><i class="fas fa-plus-circle"></i> more</div>
                         </div>
                     </a>
                 </li>
@@ -473,7 +474,7 @@
                             <strong>VR개발교육진흥원</strong>
                             <span>온라인/오프라인 전문가교육 양성기관
                             <br>VR, 메타버스, 드론 인재 양성 및 취업</span>
-                            <button><i class="fas fa-plus-circle"></i> more</button>
+                            <div class="more_btn"><i class="fas fa-plus-circle"></i> more</div>
                         </div>
                     </a>
                 </li>
@@ -485,7 +486,7 @@
                             <strong>KT비즈콜</strong>
                             <span>KT공식 고객관리 부가서비스<br>
                             고객정보/메모/일정/녹취/콜백/문자 등</span>
-                            <button><i class="fas fa-plus-circle"></i> more</button>
+                            <div class="more_btn"><i class="fas fa-plus-circle"></i> more</div>
                         </div>
                     </a>
                 </li>
@@ -497,7 +498,7 @@
                             <strong>클라우드마케팅매니저</strong>
                             <span>KT비즈콜 솔루션의 모든 기능과<br>
                             강력한 마케팅 사업자DB까지 제공</span>
-                            <button><i class="fas fa-plus-circle"></i> more</button>
+                            <div class="more_btn"><i class="fas fa-plus-circle"></i> more</div>
                         </div>
                     </a>
                 </li>
@@ -521,12 +522,11 @@
                         <div class="list_txt">
                             <div>
                                 <strong>KT 데이터바우처</strong>
-                                <button><i class="fas fa-arrow-right"></i></button>
+                                <div class="right_btn"><i class="fas fa-arrow-right"></i></div>
                             </div>
                         </div>
                     </a>
-                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img1.jpg" alt="포트폴리오 이미지1">
-                    <div class="cover"></div>
+                    <img class="follow_img" id="result9" src="./images/brand_img/portfolio_img8.jpg" alt="포트폴리오 이미지8">
                 </li>
                 <li class="list_box">
                     <a href="" target="_blank">
@@ -535,11 +535,10 @@
                                 <strong>미래비즈스토어</strong>
                                 <span>미래비즈 네이버스마트스토어</span>
                             </div>
-                            <button><i class="fas fa-arrow-right"></i></button>
+                            <div class="right_btn"><i class="fas fa-arrow-right"></i></div>
                         </div>
                     </a>
-                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img2.jpg" alt="포트폴리오 이미지2">
-                    <div class="cover"></div>
+                    <img class="follow_img" id="result1" src="./images/brand_img/portfolio_img1.jpg" alt="포트폴리오 이미지1">
                 </li>
 
                 <li class="list_box"> 
@@ -549,10 +548,11 @@
                                 <strong>엠케이렌탈스토어</strong>
                                 <span>엠케이렌탈 네이버스마트스토어</span>
                             </div>
-                            <button><i class="fas fa-arrow-right"></i></button>
+                            <div class="right_btn"n><i class="fas fa-arrow-right"></i></div>
                         </div>
                     </a>
-                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img3.jpg" alt="포트폴리오 이미지3">
+                    <img class="follow_img" id="result10" src="images/brand_img/portfolio_img10.jpg" alt="포트폴리오 이미지10">
+              
                 </li>
                 <li class="list_box"> 
                     <a href="" target="_blank">
@@ -561,10 +561,11 @@
                                 <strong>LG 단독몰</strong>
                                 <span>LG전자 렌탈쇼핑몰</span>
                             </div>
-                            <button><i class="fas fa-arrow-right"></i></button>
+                            <div class="right_btn"><i class="fas fa-arrow-right"></i></div>
                         </div>
                     </a>
-                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img4.jpg" alt="포트폴리오 이미지4">
+                    <img class="follow_img" id="result2" src="./images/brand_img/portfolio_img2.jpg" alt="포트폴리오 이미지2" >
+                  
                 </li>
                 <li class="list_box"> 
                     <a href="" target="_blank">
@@ -573,10 +574,11 @@
                                 <strong>SK 단독몰</strong>
                                 <span>SK 렌탈쇼핑몰</span>
                             </div>
-                            <button><i class="fas fa-arrow-right"></i></button>
+                            <div class="right_btn"><i class="fas fa-arrow-right"></i></div>
                         </div>
                     </a>
-                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img5.jpg" alt="포트폴리오 이미지5">
+                    <img class="follow_img" id="result3" src="./images/brand_img/portfolio_img3.jpg" alt="포트폴리오 이미지3">
+                   
                 </li>
                 <li class="list_box"> 
                     <a href="" target="_blank">
@@ -585,10 +587,12 @@
                                 <strong>코웨이 단독몰</strong>
                                 <span>코웨이 렌탈쇼핑몰</span>
                             </div>
-                            <button><i class="fas fa-arrow-right"></i></button>
+                            <div class="right_btn"><i class="fas fa-arrow-right"></i></div>
                         </div>
                     </a>
-                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img6.jpg" alt="포트폴리오 이미지6">
+                    <img class="follow_img" id="result4" src="./images/brand_img/portfolio_img4.jpg" alt="포트폴리오 이미지4">
+                
+                    
                 </li>
                 <li class="list_box"> 
                     <a href="" target="_blank">
@@ -597,10 +601,10 @@
                                 <strong>LG헬로비전 단독몰</strong>
                                 <span>LG헬로비전 렌탈쇼핑몰</span>
                             </div>
-                            <button><i class="fas fa-arrow-right"></i></button>
+                            <div class="right_btn"><i class="fas fa-arrow-right"></i></div>
                         </div>
                     </a>
-                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img7.jpg" alt="포트폴리오 이미지7">
+                    <img class="follow_img" id="result5" src="./images/brand_img/portfolio_img5.jpg" alt="포트폴리오 이미지5">
                 </li>
                 <li class="list_box"> 
                     <a href="" target="_blank">
@@ -609,10 +613,11 @@
                                 <strong>쿠쿠 단독몰</strong>
                                 <span>쿠쿠 렌탈쇼핑몰</span>
                             </div>
-                            <button><i class="fas fa-arrow-right"></i></button>
+                            <div class="right_btn"><i class="fas fa-arrow-right"></i></div>
                         </div>
                     </a>
-                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img8.jpg" alt="포트폴리오 이미지8">
+                    <img class="follow_img" id="result6" src="./images/brand_img/portfolio_img6.jpg" alt="포트폴리오 이미지6">
+                  
                 </li>
                 <li class="list_box"> 
                     <a href="" target="_blank">
@@ -621,10 +626,11 @@
                                 <strong>청호나이스 단독몰</strong>
                                 <span>청호나이스 렌탈쇼핑몰</span>
                             </div>
-                            <button><i class="fas fa-arrow-right"></i></button>
+                            <div class="right_btn"><i class="fas fa-arrow-right"></i></div>
                         </div>
                     </a>
-                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img9.png" alt="포트폴리오 이미지9">
+                    <img class="follow_img" id="result7" src="./images/brand_img/portfolio_img7.jpg" alt="포트폴리오 이미지7">
+                   
                 </li>
                 <li class="list_box"> 
                     <a href="" target="_blank">
@@ -633,10 +639,12 @@
                                 <strong>렌탈 전산시스템</strong>
                                 <span>CMS 렌탈 관리자 시스템</span>
                             </div>
-                            <button><i class="fas fa-arrow-right"></i></button>
+                            <div class="right_btn"><i class="fas fa-arrow-right"></i></div>
                         </div>
                     </a>
-                    <img class="follow_img" id="result" src="images/brand_img/portfolio_img10.jpg" alt="포트폴리오 이미지10">
+                    <img class="follow_img" id="result9" src="./images/brand_img/portfolio_img9.png" alt="포트폴리오 이미지9">
+                   
+                   
                 </li>
                 <li class="list_box"> 
                     <a href="" target="_blank">
@@ -645,22 +653,10 @@
                                 <strong>타지역서비스<br> 전산시스템</strong>
                                 <span>N사 타지역서비스 전산시스템</span>
                             </div>
-                            <button><i class="fas fa-arrow-right"></i></button>
+                            <div class="right_btn"><i class="fas fa-arrow-right"></i></div>
                         </div>
                     </a>
-                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img11.jpg" alt="포트폴리오 이미지11">
-                </li>
-                <li class="list_box"> 
-                    <a href="" target="_blank">
-                        <div class="list_txt">
-                            <div>
-                                <strong>통합고객센터 CRM</strong>
-                                <span>자사 콜센터 전산시스템</span>
-                            </div>
-                            <button><i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </a>
-                    <img class="follow_img" id="result" src="./images/brand_img/portfolio_img11.jpg" alt="포트폴리오 이미지12">
+                    <img class="follow_img" id="result11" src="./images/brand_img/portfolio_img11.jpg" alt="포트폴리오 이미지11">
                 </li>
             </ul>
         </div>
@@ -784,7 +780,7 @@
 </footer>
 
 <script>
-
+$(function(){
 $(".footer_menu .brand").addClass("on").siblings().removeClass("on");  
 $("body").addClass("hd_bg");
 
@@ -878,7 +874,7 @@ buttonDom.addEventListener('click', () => {
         cateListDom.classList.remove('filter');
     }, 280);
 });
-
+});
 //포스터 마우스 따라다니는 효과
 function onMousemove(e){
     var mPosX = 0,

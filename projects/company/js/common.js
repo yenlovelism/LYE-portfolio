@@ -49,23 +49,5 @@ $(function(){
     
             $("a, button, label, .hover_evt").hover(hoverFunc, unhoverFunc);
     }
-    //fullpage.js 웹접근성 관련 버그 수정 코드
-    var focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
 
-    $(document).on('focusin', focusableElementsString, checkFocus);
-    function checkFocus(){
-        if (!$(this).closest('.fp-section.active').length) {
-            $('.fp-section.active').focus();
-        }
-    };
-    $('#homeFullPage').fullpage({
-        onLeave: function(index, nextIndex, direction){
-            $('.fp-section').eq(nextIndex - 1)
-            .attr('tabindex', 0)
-            .siblings().removeAttr('tabindex');
-        },
-        afterLoad:function(){
-            $('.fp-section.active').attr('tabindex', 0);
-        }
-    });
 });    
